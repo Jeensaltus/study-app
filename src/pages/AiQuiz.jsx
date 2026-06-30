@@ -23,7 +23,7 @@ import { getTopicWeights } from "../data/examWeights";
 import { getBankStats, QUESTION_TYPE_LABELS } from "../utils/quizBank";
 import { exportQuizToPdf } from "../utils/quizPdfExport";
 import QuizPdfDocument from "../components/QuizPdfDocument";
-import { saveQuizToHistory } from "../utils/quizGeneratorStorage";
+import { clearActiveQuizSession, readActiveQuizSession, saveActiveQuizSession, saveQuizToHistory } from "../utils/quizGeneratorStorage";
 import PageLoader from "../components/PageLoader";
 import { useSubject } from "../hooks/useSubject";
 import { useProgress } from "../hooks/useProgress";
@@ -737,14 +737,35 @@ export default function AiQuiz() {
   useEffect(() => {
     if (!subject) return;
     const defaults = progress.settings.quizDefaults ?? {};
-    setSettings({
+    const baseSettings = {
       topicTitles: subject.chapters.map((c) => c.title),
       count: defaults.count ?? 5,
       difficulty: defaults.difficulty ?? "normal",
       format: defaults.format ?? "multiple-choice",
       examMode: "all",
-    });
+    };
+
+    const saved = readActiveQuizSession(subject.id);
+    if (saved?.settings) {
+      setSettings({ ...baseSettings, ...saved.settings });
+    } else {
+      setSettings(baseSettings);
+    }
+
+    if (saved?.quiz) {
+      setQuiz(saved.quiz);
+      const format = saved.settings?.format ?? baseSettings.format;
+      setScreen(saved.screen ?? (format === "pdf" ? "pdf" : "quiz"));
+    } else {
+      setQuiz(null);
+      setScreen("setup");
+    }
   }, [subject, progress.settings.quizDefaults]);
+
+  useEffect(() => {
+    if (!subject || !quiz || !settings) return;
+    saveActiveQuizSession(subject.id, { quiz, screen, settings });
+  }, [subject, quiz, screen, settings]);
 
   useEffect(() => {
     if (!subject || !settings) return;
@@ -801,6 +822,7 @@ export default function AiQuiz() {
   }
 
   function backToSetup() {
+    clearActiveQuizSession(subject.id);
     setScreen("setup");
     setQuiz(null);
   }

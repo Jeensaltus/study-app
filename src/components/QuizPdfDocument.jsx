@@ -31,10 +31,10 @@ function PdfHeader({ quiz }) {
     <header data-pdf-header className="border-b-2 border-slate-900 pb-4">
       <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">Freshman Study · แบบฝึกหัด</p>
       <h1 className="mt-1 text-[22px] font-bold leading-tight text-slate-900">ข้อสอบ {quiz.subject}</h1>
-      <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-[12px] text-slate-500">
-        <span>จำนวน {quiz.questions.length} ข้อ</span>
-        <span>ระดับ: {quiz.difficultyLabel ?? quiz.difficulty ?? "ปกติ"}</span>
-        <span>วันที่: {dateLabel}</span>
+      <div className="pdf-header-meta mt-3 flex flex-nowrap items-baseline gap-x-8 text-[12px] text-slate-500">
+        <span className="shrink-0 whitespace-nowrap">จำนวน {quiz.questions.length} ข้อ</span>
+        <span className="shrink-0 whitespace-nowrap">ระดับ: {quiz.difficultyLabel ?? quiz.difficulty ?? "ปกติ"}</span>
+        <span className="shrink-0 whitespace-nowrap">วันที่: {dateLabel}</span>
       </div>
       <div className="mt-4 grid grid-cols-2 gap-4 text-[12px] text-slate-600">
         <div>

@@ -37,9 +37,9 @@ textarea {
 }
 .quiz-pdf-page .pdf-math-inline {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   position: relative;
-  top: -0.14em;
+  top: 0.1em;
   line-height: 1;
 }
 .quiz-pdf-page .pdf-math-inline .katex {
@@ -55,6 +55,10 @@ textarea {
 }
 .quiz-pdf-page .pdf-math-block .katex {
   font-size: 1.15em;
+}
+
+.quiz-pdf-page .pdf-header-meta {
+  white-space: nowrap;
 }
 
 /* PDF solution — high contrast for html2canvas */
