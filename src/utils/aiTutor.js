@@ -331,8 +331,16 @@ function geminiFallbackNotice(error) {
   return "ตอนนี้ Gemini ตอบไม่ได้ชั่วคราวครับ ผมจะใช้โหมด local tutor ตอบแทนก่อน";
 }
 
+function formatApiErrorDetail(error) {
+  const msg = error?.message?.trim();
+  return msg ? `\n\nข้อผิดพลาด: ${msg}` : "";
+}
+
 function nvidiaFallbackNotice(error, modelName = "NVIDIA model") {
   const lower = String(error?.message ?? error).toLowerCase();
+  if (lower.includes("timeout") || lower.includes("504") || lower.includes("too long") || lower.includes("abort")) {
+    return `ตอนนี้ ${modelName} ใช้เวลานานเกินไป (Vercel Free จำกัด ~10 วินาที) — แนะนำใช้ Gemini Flash บนเว็บที่ deploy แล้ว`;
+  }
   if (lower.includes("404")) {
     return `ตอนนี้เรียก ${modelName} ไม่สำเร็จ เพราะ endpoint หรือ model บน NVIDIA API ตอบกลับว่าไม่พบข้อมูล (404) ผมจะใช้โหมด local tutor ตอบแทนก่อน`;
   }
@@ -362,7 +370,7 @@ export async function askTutor(messages, model = "gemini-2.5-flash") {
       return await askNvidia(messages, model);
     } catch (error) {
       console.error("NVIDIA API Error:", error);
-      return `${nvidiaFallbackNotice(error, config.name)}${localFallbackSuffix(messages)}\n\n---\n\n${await localTutorReply(latest)}`;
+      return `${nvidiaFallbackNotice(error, config.name)}${formatApiErrorDetail(error)}${localFallbackSuffix(messages)}\n\n---\n\n${await localTutorReply(latest)}`;
     }
   }
 
@@ -377,10 +385,10 @@ export async function askTutor(messages, model = "gemini-2.5-flash") {
           return await askGemini(messages, model);
         } catch (retryError) {
           console.error("Gemini retry failed:", retryError);
-          return `${geminiFallbackNotice(retryError)}${localFallbackSuffix(messages)}\n\n---\n\n${await localTutorReply(latest)}`;
+          return `${geminiFallbackNotice(retryError)}${formatApiErrorDetail(retryError)}${localFallbackSuffix(messages)}\n\n---\n\n${await localTutorReply(latest)}`;
         }
       }
-      return `${geminiFallbackNotice(error)}${localFallbackSuffix(messages)}\n\n---\n\n${await localTutorReply(latest)}`;
+      return `${geminiFallbackNotice(error)}${formatApiErrorDetail(error)}${localFallbackSuffix(messages)}\n\n---\n\n${await localTutorReply(latest)}`;
     }
   }
 

@@ -82,12 +82,30 @@ function readJsonBody(req) {
 }
 
 function sendJson(res, status, payload) {
+  if (typeof res.status === "function" && typeof res.json === "function") {
+    res.status(status).json(payload);
+    return;
+  }
   const body = JSON.stringify(payload);
   res.writeHead(status, {
     "Content-Type": "application/json; charset=utf-8",
     "Content-Length": Buffer.byteLength(body),
   });
   res.end(body);
+}
+
+function resolveRequestPath(req, routeOverride) {
+  if (routeOverride) return routeOverride.replace(/\/$/, "");
+
+  const fromQuery = req.query?.path;
+  if (fromQuery) {
+    const suffix = Array.isArray(fromQuery) ? fromQuery.join("/") : String(fromQuery);
+    return `/api/ai/${suffix}`.replace(/\/+/g, "/").replace(/\/$/, "");
+  }
+
+  const rawUrl = req.url ?? "";
+  const path = rawUrl.startsWith("http") ? new URL(rawUrl).pathname : rawUrl.split("?")[0];
+  return path.replace(/\/$/, "") || "/";
 }
 
 function buildGeminiParts(message) {
@@ -127,7 +145,8 @@ async function geminiChat(body) {
 
   const model = body.model ?? "gemini-2.5-flash";
   const latestMessage = body.messages?.[body.messages.length - 1];
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+  const trimmedKey = apiKey.trim();
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(trimmedKey)}`;
 
   const payload = {
     systemInstruction: body.systemInstruction
@@ -141,7 +160,7 @@ async function geminiChat(body) {
 
   const response = await fetch(url, {
     method: "POST",
-    headers: geminiRequestHeaders(apiKey),
+    headers: geminiRequestHeaders(trimmedKey),
     body: JSON.stringify(payload),
   });
 
@@ -164,11 +183,12 @@ async function geminiGenerate(body) {
   }
 
   const model = body.model ?? "gemini-2.5-flash";
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+  const trimmedKey = apiKey.trim();
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(trimmedKey)}`;
 
   const response = await fetch(url, {
     method: "POST",
-    headers: geminiRequestHeaders(apiKey),
+    headers: geminiRequestHeaders(trimmedKey),
     body: JSON.stringify({
       contents: [{ role: "user", parts: [{ text: body.prompt ?? "" }] }],
       generationConfig: {
@@ -204,9 +224,10 @@ async function nvidiaChat(body) {
       model: modelId,
       messages: body.messages ?? [],
       temperature: body.temperature ?? 0.7,
-      max_tokens: body.max_tokens ?? 8192,
+      max_tokens: body.max_tokens ?? 2048,
       top_p: body.top_p ?? 0.9,
     }),
+    signal: AbortSignal.timeout(25_000),
   });
 
   const data = await response.json();
@@ -218,9 +239,8 @@ async function nvidiaChat(body) {
   return { text: data.choices?.[0]?.message?.content ?? "" };
 }
 
-export async function handleAiApiRequest(req, res) {
-  const rawUrl = req.url ?? "";
-  const url = rawUrl.startsWith("http") ? new URL(rawUrl).pathname : rawUrl.split("?")[0];
+export async function handleAiRoute(req, res, routeOverride) {
+  const url = resolveRequestPath(req, routeOverride);
 
   if (req.method === "GET" && url === "/api/ai/status") {
     sendJson(res, 200, getAiStatus());
@@ -232,7 +252,7 @@ export async function handleAiApiRequest(req, res) {
   }
 
   const deviceId = req.headers["x-device-id"];
-  if (deviceId) {
+  if (deviceId && typeof res.setHeader === "function") {
     res.setHeader("X-Device-Id-Ack", String(deviceId).slice(0, 36));
   }
 
@@ -255,8 +275,19 @@ export async function handleAiApiRequest(req, res) {
     sendJson(res, 404, { error: "Unknown AI route" });
     return true;
   } catch (error) {
+    if (error.name === "TimeoutError" || error.name === "AbortError") {
+      sendJson(res, 504, {
+        error: "NVIDIA model took too long — try Gemini Flash on free hosting, or retry",
+      });
+      return true;
+    }
     const status = error.message === "Request body too large" ? 413 : 500;
     sendJson(res, status, { error: error.message ?? "AI proxy error" });
     return true;
   }
+}
+
+/** @deprecated use handleAiRoute — kept for local dev server */
+export async function handleAiApiRequest(req, res) {
+  return handleAiRoute(req, res);
 }
