@@ -19,7 +19,6 @@ function getGeminiApiKey() {
 function isLikelyGeminiApiKey(key) {
   return typeof key === "string" && key.startsWith("AIza");
 }
-}
 
 function getNvidiaApiKey() {
   return process.env.NVIDIA_API_KEY ?? process.env.VITE_NVIDIA_API_KEY ?? "";
