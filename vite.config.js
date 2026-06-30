@@ -86,7 +86,7 @@ export default defineConfig(({ mode }) => {
         manualChunks(id) {
           if (id.includes("node_modules")) {
             if (id.includes("recharts")) return "vendor-recharts";
-            if (id.includes("jspdf") || id.includes("html2canvas")) return "vendor-pdf";
+            if (id.includes("jspdf") || id.includes("html2canvas") || id.includes("html-to-image")) return "vendor-pdf";
           if (id.includes("@google/genai")) return "vendor-genai";
           if (id.includes("katex") || id.includes("react-katex")) return "vendor-katex";
           if (id.includes("react-dom") || id.includes("react-router")) return "vendor-react";

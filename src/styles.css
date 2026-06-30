@@ -26,18 +26,28 @@ textarea {
   font-size: 1.04em;
 }
 
-/* PDF export — keep KaTeX sums/fractions aligned when captured by html2canvas */
+/* PDF preview/export — align inline KaTeX with Sarabun Thai on the same line */
 .quiz-pdf-page .pdf-math-text {
   line-height: 1.65;
 }
-.quiz-pdf-page .pdf-math-text .katex {
-  font-size: 1.08em;
+.quiz-pdf-page .katex,
+.quiz-pdf-page .katex .katex-html,
+.quiz-pdf-page .katex .base {
+  overflow: visible !important;
+}
+.quiz-pdf-page .pdf-math-inline {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -0.16em;
+  line-height: 0;
+}
+.quiz-pdf-page .pdf-math-inline .katex {
+  font-size: 1.05em;
   line-height: normal;
   text-indent: 0;
-}
-.quiz-pdf-page .pdf-math-text .katex:not(.katex-display) {
   display: inline-block;
-  vertical-align: -0.12em;
+  vertical-align: baseline;
 }
 .quiz-pdf-page .pdf-math-block .katex-display {
   margin: 0;

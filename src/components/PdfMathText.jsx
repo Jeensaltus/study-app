@@ -26,7 +26,11 @@ export default function PdfMathText({ text = "", className = "" }) {
               </span>
             );
           }
-          return <InlineMath key={`m-i-${index}`} math={latex} />;
+          return (
+            <span key={`m-i-${index}`} className="pdf-math-inline">
+              <InlineMath math={latex} />
+            </span>
+          );
         }
         return <Fragment key={`t-${index}`}>{part}</Fragment>;
       })}
