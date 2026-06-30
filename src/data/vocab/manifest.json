@@ -1,0 +1,15 @@
+{
+  "total": 9895,
+  "thaiCoverage": 9895,
+  "lexitronCoverage": 9369,
+  "stillMissing": 0,
+  "byLevel": {
+    "A1": 1164,
+    "A2": 1411,
+    "B1": 2446,
+    "B2": 2778,
+    "C1": 1085,
+    "C2": 1011
+  },
+  "generatedAt": "2026-06-28T09:05:52.618Z"
+}

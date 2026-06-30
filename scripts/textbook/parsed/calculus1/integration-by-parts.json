@@ -1,0 +1,35 @@
+{
+  "id": "integration-by-parts",
+  "title": "Integration by Parts",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 7.1, p.387–396",
+  "chapterId": "integration-techniques",
+  "concept": "Integration by parts: $\\int u\\,dv=uv-\\int v\\,du$ มาจาก product rule ใช้ LIATE เลือก $u$: Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential",
+  "formula": "\\int u\\,dv = uv - \\int v\\,du",
+  "warning": "เลือก $u$ ผิดอาจทำให้ $\\int v\\,du$ ยากขึ้น — ลองสลับถ้าจำเป็น",
+  "examples": [
+    {
+      "title": "พหุนomial × exponential",
+      "level": "Medium",
+      "tip": "LIATE: $u=x$, $dv=e^x dx$",
+      "problem": "หา $\\int x e^x\\,dx$",
+      "steps": [
+        "$u=x$, $dv=e^x dx$ → $du=dx$, $v=e^x$",
+        "$\\int xe^x dx=xe^x-\\int e^x dx=xe^x-e^x+C$"
+      ],
+      "answer": "$e^x(x-1)+C$"
+    },
+    {
+      "title": "อินทิกรัลของ $\\ln x$",
+      "level": "Medium",
+      "tip": "ตั้ง $u=\\ln x$, $dv=dx$",
+      "problem": "หา $\\int \\ln x\\,dx$",
+      "steps": [
+        "$u=\\ln x$, $dv=dx$ → $du=\\dfrac{1}{x}dx$, $v=x$",
+        "$x\\ln x-\\int x\\cdot\\dfrac{1}{x}dx=x\\ln x-x+C$"
+      ],
+      "answer": "$x\\ln x-x+C$"
+    }
+  ],
+  "practice": "หา $\\int x^2\\sin x\\,dx$ (ใช้ integration by parts สองครั้ง)",
+  "graph": "integral"
+}

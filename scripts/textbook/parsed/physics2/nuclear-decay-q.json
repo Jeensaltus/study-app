@@ -1,0 +1,35 @@
+{
+  "id": "nuclear-decay-q",
+  "title": "Nuclear Decay and Q-Values",
+  "source": "Serway Physics for Scientists and Engineers, Ch 44.5, p.1130–1140",
+  "chapterId": "modern-physics",
+  "concept": "พลังงาน Q ของ nuclear decay: $Q=(m_{initial}-m_{final})c^2$ ใช้ mass ใน u คูณ $931.5\\,MeV/u$ สำหรับ $\\alpha$, $\\beta$ decay เปรียบเทียบ $Q$ ของหลาย pathway",
+  "formula": "Q=\\Delta mc^2,\\quad 1\\,u=931.5\\,MeV/c^2",
+  "warning": "mass ของ electron ใน $\\beta$ decay มักรวมใน atomic mass table — ใช้ mass ของ neutral atom",
+  "examples": [
+    {
+      "title": "Alpha decay Q-value",
+      "level": "Medium",
+      "tip": "หา $\\Delta m$ แล้วคูณ 931.5",
+      "problem": "$^{281}_{84}Po \\to\\,^{277}_{82}Pb + ^4_2He$  ให้ $m(Po)=281.008973\\,u$, $m(Pb)=277.004573\\,u$, $m(He)=4.002602\\,u$ หา $Q$",
+      "steps": [
+        "$\\Delta m=281.008973-277.004573-4.002602=-0.001798\\,u$",
+        "Wait: $m_f=277.004573+4.002602=277.007175$",
+        "$\\Delta m=281.008973-277.007175=0.001798\\,u$",
+        "$Q=0.001798\\times931.5\\approx1.67\\,MeV$"
+      ],
+      "answer": "$Q\\approx1.67\\,MeV$"
+    },
+    {
+      "title": "เปรียบเทียบ Q ของ decay modes",
+      "level": "Hard",
+      "tip": "เลือก pathway ที่ $Q$ สูงสุด (exothermic มากสุด)",
+      "problem": "isotope X สลาย $\\alpha$ หรือ $\\beta^-$ ให้ $Q_\\alpha=4.2\\,MeV$, $Q_\\beta=0.8\\,MeV$ — decay ไหน energetically favored?",
+      "steps": [
+        "$Q_\\alpha>Q_\\beta$ → $\\alpha$ ปล่อยพลังงานมากกว่า (ถ้า barrier อนุญาต)"
+      ],
+      "answer": "$\\alpha$ decay มี $Q$ สูงกว่า"
+    }
+  ],
+  "practice": "$^{235}U$ $\\alpha$ decay หา $Q$ ถ้า $\\Delta m=0.0059\\,u$"
+}

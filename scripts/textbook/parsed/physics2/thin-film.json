@@ -1,0 +1,32 @@
+{
+  "id": "thin-film",
+  "title": "Thin Film Interference",
+  "source": "Serway Physics for Scientists and Engineers, Ch 37.5, p.1015–1025",
+  "chapterId": "wave-optics",
+  "concept": "Thin film interference: สะท้อนที่หน้าตัดอาจมี phase shift $\\pi$ (จาก $n_{film}>n_{air}$) เงื่อนไข constructive: $2nt=(m+\\frac{1}{2})\\lambda$ (one shift) หรือ $2nt=m\\lambda$ (no shift)",
+  "formula": "2nt=m\\lambda\\;\\text{(no phase shift)},\\quad 2nt=(m+\\tfrac12)\\lambda\\;\\text{(one shift)}",
+  "warning": "ตรวจ phase shift ทุก interface — แว่นตา anti-reflective ใช้ $t=\\lambda/(4n)$",
+  "examples": [
+    {
+      "title": "แว่นตา AR coating",
+      "level": "Medium",
+      "tip": "หนัง $t=\\lambda/(4n)$ ทำลาย interference สะท้อน",
+      "problem": "ชั้น $n=1.38$ บนแก้ว $n=1.50$ สำหรับ $\\lambda=550\\,nm$ หา $t$ ขั้นต่ำ",
+      "steps": [
+        "$t=\\lambda/(4n)=550/(4\\times1.38)\\approx99.6\\,nm$"
+      ],
+      "answer": "$t\\approx100\\,nm$"
+    },
+    {
+      "title": "น้ำมันบนถนน",
+      "level": "Basic",
+      "tip": "สีที่เห็นขึ้นกับ $t$ และ $\\lambda$",
+      "problem": "ฟิล์ม $n=1.33$ หนา $t=380\\,nm$ ในอากาศ หา $\\lambda$ ที่ constructive (first order, one shift)",
+      "steps": [
+        "$2nt=(m+\\frac12)\\lambda$ → $\\lambda=2(1.33)(380)/1.5\\approx674\\,nm$ (red)"
+      ],
+      "answer": "$\\lambda\\approx674\\,nm$"
+    }
+  ],
+  "practice": "ฟิล์ม $n=1.45$ หนา $120\\,nm$ หา $\\lambda$ ที่สะท้อนเสริม (m=1, one shift)"
+}

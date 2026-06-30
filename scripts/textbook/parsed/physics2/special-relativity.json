@@ -1,0 +1,35 @@
+{
+  "id": "special-relativity",
+  "title": "Special Relativity",
+  "source": "Serway Physics for Scientists and Engineers, Ch 39, p.1030–1050",
+  "chapterId": "modern-physics",
+  "concept": "ทฤษฎีสัมพัทธภาพพิเศษ: กฎฟิสิกส์เหมือนกันในทุก inertial frame ความเร็วแสง $c$ คือค่าสูงสุด time dilation $t=\\gamma t_0$ length contraction $L=L_0/\\gamma$ โดย $\\gamma=1/\\sqrt{1-v^2/c^2}$ พลังงาน-มวล $E=mc^2$",
+  "formula": "t=\\gamma t_0,\\quad L=\\frac{L_0}{\\gamma},\\quad E=mc^2,\\quad \\gamma=\\frac{1}{\\sqrt{1-v^2/c^2}}",
+  "warning": "Time dilation ทำให้เวลา 'ช้าลง' ใน frame ที่เคลื่อนที่ — อย่าสลับ $t$ กับ $t_0$ และใช้ $c=3.00\\times10^8\\,m/s$",
+  "examples": [
+    {
+      "title": "Time dilation",
+      "level": "Basic",
+      "tip": "หา $\\gamma$ ก่อน แล้วคูณ proper time",
+      "problem": "นักบินเคลื่อนที่ $v=0.60c$ วัดเวลา $t_0=10\\,min$ ในเครื่อง หา $t$ ใน lab frame",
+      "steps": [
+        "$\\gamma=1/\\sqrt{1-0.36}=1/\\sqrt{0.64}=1.25$",
+        "$t=\\gamma t_0=1.25(10)=12.5\\,min$"
+      ],
+      "answer": "$t=12.5\\,min$"
+    },
+    {
+      "title": "Relativistic energy",
+      "level": "Medium",
+      "tip": "ใช้ $E=\\gamma mc^2$ สำหรับ total energy",
+      "problem": "อิเล็กตรอน ($m=9.11\\times10^{-31}\\,kg$) เร่งถึง $v=0.80c$ หา kinetic energy",
+      "steps": [
+        "$\\gamma=1/\\sqrt{1-0.64}=1/0.6\\approx1.667$",
+        "$K=(\\gamma-1)mc^2=0.667(9.11\\times10^{-31})(9\\times10^{16})$",
+        "$K\\approx5.47\\times10^{-14}\\,J\\approx0.34\\,MeV$"
+      ],
+      "answer": "$K\\approx0.34\\,MeV$"
+    }
+  ],
+  "practice": "ยานอวกาศยาว $100\\,m$ ใน rest frame เคลื่อนที่ $v=0.90c$ หา $L$ ที่ observer บนพื้นดินเห็น"
+}

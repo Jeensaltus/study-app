@@ -1,0 +1,33 @@
+{
+  "id": "elasticity",
+  "title": "Stress, Strain, and Young's Modulus",
+  "source": "Serway Physics for Scientists and Engineers, Ch 12, p.320–335",
+  "chapterId": "statics-elasticity",
+  "concept": "Stress $\\sigma=F/A$ (Pa), strain $\\epsilon=\\Delta L/L_0$ กฎ Hooke: $\\sigma=Y\\epsilon$ โดย $Y$ คือ Young's modulus สปริง: $F=kx$ เป็นกรณีพิเศษของ elasticity",
+  "formula": "\\sigma=\\frac{F}{A},\\quad \\epsilon=\\frac{\\Delta L}{L_0},\\quad Y=\\frac{\\sigma}{\\epsilon}",
+  "warning": "ใช้ Hooke's law ได้เฉพาะ elastic region — เกิน yield point จะ deform ถาวร",
+  "examples": [
+    {
+      "title": "ยืดเส้นเหล็ก",
+      "level": "Basic",
+      "tip": "ใช้ $\\Delta L=FL_0/(AY)$",
+      "problem": "เส้นเหล็ก $L_0=2\\,m$, $A=1\\,mm^2$, $Y=2\\times10^{11}\\,Pa$ รับ $F=200\\,N$ หา $\\Delta L$",
+      "steps": [
+        "$A=10^{-6}\\,m^2$",
+        "$\\Delta L=200(2)/(10^{-6})(2\\times10^{11})=2\\times10^{-6}\\,m$"
+      ],
+      "answer": "$\\Delta L=2\\,\\mu m$"
+    },
+    {
+      "title": "เปรียบเทียบสปริงกับ wire",
+      "level": "Medium",
+      "tip": "effective $k=AY/L_0$",
+      "problem": "wire เดียวกับข้อบน หา $k$ equivalent",
+      "steps": [
+        "$k=AY/L_0=(2\\times10^{11})(10^{-6})/2=10^5\\,N/m$"
+      ],
+      "answer": "$k=10^5\\,N/m$"
+    }
+  ],
+  "practice": "ท่ออลูมิเนียม $L=1\\,m$, $A=0.5\\,cm^2$, $Y=7\\times10^{10}\\,Pa$ รับ $F=500\\,N$ หา $\\Delta L$"
+}

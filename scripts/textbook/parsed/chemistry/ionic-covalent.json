@@ -1,0 +1,36 @@
+{
+  "id": "ionic-covalent",
+  "title": "Ionic and Covalent Bonding",
+  "source": "Chemistry: The Central Science 12th ed., Ch 8.1–8.3, p.295–315",
+  "chapterId": "bonding",
+  "concept": "พันธะไอออนิก: ถ่ายโอน $e^-$ ระหว่างโลหะและอโลหะ → ไอออนบวก/ลบ ยึดกันด้วยแรง electrostatic พันธะโควาเลนต์: ใช้คู่อิเล็กตรอนร่วมกัน ถ้า $\\Delta EN>1.7$ → ionic; $0.5-1.7$ → polar covalent; $<0.5$ → nonpolar covalent พลังงานพันธะ: พลังงานที่ต้องใช้ในการทำลาย 1 mol ของพันธะ",
+  "formula": "\\Delta EN>1.7\\to\\text{ionic},\\quad \\Delta EN<0.5\\to\\text{nonpolar}",
+  "warning": "EN ต่างมาก → ionic; ใกล้กัน → covalent",
+  "examples": [
+    {
+      "title": "ประเภทพันธะ — HCl, NaCl, Cl₂",
+      "level": "Basic",
+      "tip": "",
+      "problem": "จำแนก HCl, NaCl, $Cl_2$ ว่าเป็นพันธะชนิดใด ($EN$: H=2.1, Cl=3.0, Na=0.9)",
+      "steps": [
+        "HCl: $\\Delta EN=3.0-2.1=0.9$ → polar covalent",
+        "NaCl: $\\Delta EN=3.0-0.9=2.1$ → ionic",
+        "$Cl_2$: $\\Delta EN=0$ → nonpolar covalent"
+      ],
+      "answer": "$Cl_2$: $\\Delta EN=0$ → nonpolar covalent"
+    },
+    {
+      "title": "จำแนก bond type จาก EN",
+      "level": "Medium",
+      "tip": "$\\Delta EN>1.7$ มัก ionic; $\\Delta EN<0.5$ nonpolar covalent; กลางๆ polar covalent",
+      "problem": "จำแนก $H_2O$, MgO, $N_2$ ($EN$: H=2.1, O=3.5, Mg=1.2, N=3.0)",
+      "steps": [
+        "$H_2O$: $\\Delta EN=3.5-2.1=1.4$ → polar covalent",
+        "MgO: $\\Delta EN=3.5-1.2=2.3$ → ionic",
+        "$N_2$: $\\Delta EN=0$ → covalent (nonpolar)"
+      ],
+      "answer": "$H_2O$ covalent, MgO ionic, $N_2$ covalent"
+    }
+  ],
+  "practice": "จำแนก $H_2O$, MgO, $N_2$ ($EN$: O=3.5, Mg=1.2, N=3.0)"
+}

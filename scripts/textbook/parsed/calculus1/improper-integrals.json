@@ -1,0 +1,35 @@
+{
+  "id": "improper-integrals",
+  "title": "Improper Integrals",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 7.8, p.458–468",
+  "chapterId": "integration-techniques",
+  "concept": "Improper integral คือ integral ที่ขอบไม่จำกัด หรือ integrand ไม่จำกัดที่ขอบ กำหนดเป็นขีดจำกัด: $\\int_a^\\infty f=\\lim_{t\\to\\infty}\\int_a^t f$; ถ้าขีดจำกัดมีอยู่และจำกัด บอกว่า converges",
+  "formula": "\\int_a^\\infty f(x)\\,dx=\\lim_{t\\to\\infty}\\int_a^t f(x)\\,dx",
+  "warning": "ต้องคำนวณ limit อย่างระมัดระวัง — อย่าแทน $\\infty$ เป็นตัวเลข",
+  "examples": [
+    {
+      "title": "Infinite interval",
+      "level": "Medium",
+      "tip": "ตั้ง limit แล้วประเมิน",
+      "problem": "หา $\\int_1^\\infty \\dfrac{1}{x^2}\\,dx$",
+      "steps": [
+        "$\\lim_{t\\to\\infty}\\int_1^t x^{-2}dx=\\lim_{t\\to\\infty}[-\\dfrac{1}{x}]_1^t$",
+        "$=\\lim_{t\\to\\infty}(1-\\dfrac{1}{t})=1$ → converges"
+      ],
+      "answer": "$1$ (converges)"
+    },
+    {
+      "title": "Integrand ไม่จำกัดที่ขอบ",
+      "level": "Hard",
+      "tip": "แยก integral ที่จุด discontinuity",
+      "problem": "หา $\\int_0^1 \\dfrac{1}{\\sqrt{x}}\\,dx$",
+      "steps": [
+        "$\\lim_{t\\to 0^+}\\int_t^1 x^{-1/2}dx=\\lim_{t\\to 0^+}[2\\sqrt{x}]_t^1$",
+        "$=2-0=2$ → converges"
+      ],
+      "answer": "$2$ (converges)"
+    }
+  ],
+  "practice": "หาว่า $\\int_1^\\infty \\dfrac{1}{x}\\,dx$ converge หรือ diverge",
+  "graph": "integral"
+}

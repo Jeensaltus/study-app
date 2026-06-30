@@ -1,0 +1,35 @@
+{
+  "id": "reflection-refraction",
+  "title": "Reflection and Refraction",
+  "source": "Serway Physics for Scientists and Engineers, Ch 35, p.965–985",
+  "chapterId": "optics",
+  "concept": "การสะท้อน: มุมตกเท่ากับมุมสะท้อน $\\theta_i=\\theta_r$. การหักเห: Snell's law $n_1\\sin\\theta_1=n_2\\sin\\theta_2$. Critical angle เมื่อ $n_1>n_2$ คือ $\\sin\\theta_c=n_2/n_1$ และเกิด total internal reflection เมื่อ $\\theta_1>\\theta_c$.",
+  "formula": "\\theta_i=\\theta_r, \\quad n_1\\sin\\theta_1=n_2\\sin\\theta_2, \\quad \\sin\\theta_c=\\frac{n_2}{n_1}",
+  "warning": "Snell's law ใช้ $n_1\\sin\\theta_1=n_2\\sin\\theta_2$ — มุมวัดจาก normal",
+  "examples": [
+    {
+      "title": "Snell's law — อากาศเข้าน้ำ",
+      "level": "Basic",
+      "tip": "ใช้ Snell's law เมื่อแสงจากอากาศเข้าสู่น้ำ",
+      "problem": "แสงจากอากาศ $n=1.00$ ตกกระทบผิวน้ำ $n=1.33$ ที่มุม $30°$ จงหามุมหักเห",
+      "steps": [
+        "$\\sin\\theta_2=1.00\\sin30°/1.33=0.376$",
+        "$\\theta_2=22.1°$"
+      ],
+      "answer": "$\\theta_2\\approx22.1°$"
+    },
+    {
+      "title": "Total internal reflection",
+      "level": "Medium",
+      "tip": "ถ้า $n_1\\sin\\theta_1>n_2$ จะ $\\sin\\theta_2>1$ → ไม่มีหักเห เกิด TIR",
+      "problem": "แสงจากแก้ว $n=1.52$ ไปอากาศที่มุม $42°$ จงหามุมหักเห",
+      "steps": [
+        "$n_1\\sin\\theta_1=1.52\\sin42°=1.52\\times0.669=1.02$",
+        "$\\sin\\theta_2=1.02>1$ — ไม่มีมุมหักเหที่เป็นไปได้",
+        "เกิด total internal reflection — แสงสะท้อนกลับเข้าแก้ว"
+      ],
+      "answer": "Total internal reflection (ไม่มีหักเห)"
+    }
+  ],
+  "practice": "แสงจากแก้ว $n=1.52$ ไปอากาศที่มุม $42°$ จงหามุมหักเห"
+}

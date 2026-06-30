@@ -1,0 +1,36 @@
+{
+  "id": "intermolecular-forces",
+  "title": "Intermolecular Forces",
+  "source": "Chemistry: The Central Science 12th ed., Ch 11.1–11.2, p.410–425",
+  "chapterId": "solids-liquids",
+  "concept": "แรงระหว่างโมเลกุลกำหนดจุดเดือดและความหนืด: London dispersion (ทุกโมเลกุล), dipole-dipole (โมเลกุล polar), hydrogen bonding (H กับ F, O, N) แรงยิ่งแรง → จุดเดือดสูง ความดันไอต่ำ",
+  "formula": "\\text{LDF} < \\text{dipole-dipole} < \\text{H-bond}",
+  "warning": "Hydrogen bond ต้องมี H ติดกับ F, O หรือ N โดยตรง — ไม่ใช่ทุกพันธะที่มี H",
+  "examples": [
+    {
+      "title": "เปรียบเทียบจุดเดือด",
+      "level": "Basic",
+      "tip": "แรงระหว่างโมเลกุลแรงขึ้น → ต้องใช้พลังงานมากขึ้นในการแยก",
+      "problem": "เรียงจุดเดือด: $CH_4$, $CH_3OH$, $CH_3CH_3$",
+      "steps": [
+        "$CH_4$: LDF เท่านั้น → จุดเดือดต่ำสุด ($-161°C$)",
+        "$CH_3CH_3$: LDF มากกว่า $CH_4$ → สูงกว่าเล็กน้อย",
+        "$CH_3OH$: H-bond → สูงสุด ($65°C$)"
+      ],
+      "answer": "$CH_4 < C_2H_6 < CH_3OH$"
+    },
+    {
+      "title": "ทำนายแรงระหว่างโมเลกุล",
+      "level": "Medium",
+      "tip": "ดู polarity และโอกาส H-bond",
+      "problem": "ระบุแรงหลักใน $H_2O$, $CO_2$, $HF$",
+      "steps": [
+        "$H_2O$: polar + H-bond (O-H···O)",
+        "$CO_2$: polar bond แต่ linear → dipole cancel → LDF เท่านั้น",
+        "$HF$: polar + H-bond (H-F···F) แรงมาก"
+      ],
+      "answer": "$H_2O$, $HF$: H-bond; $CO_2$: LDF"
+    }
+  ],
+  "practice": "อธิบายทำไม $NH_3$ ($bp=-33°C$) มีจุดเดือดสูงกว่า $PH_3$ ($bp=-87°C$) แม้ M ใกล้เคียงกัน"
+}

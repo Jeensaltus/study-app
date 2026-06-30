@@ -1,0 +1,35 @@
+{
+  "id": "separable-equations",
+  "title": "Separable Equations",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 9.3, p.568–576",
+  "chapterId": "differential-equations",
+  "concept": "Separable ODE: $\\dfrac{dy}{dx}=g(x)h(y)$ แยก $\\dfrac{dy}{h(y)}=g(x)dx$ แล้ว integrate ทั้งสองข้าง ใส่ constant จาก initial condition",
+  "formula": "\\frac{dy}{dx}=g(x)h(y) \\Rightarrow \\int\\frac{dy}{h(y)}=\\int g(x)\\,dx",
+  "warning": "ตรวจ steady-state solutions ที่ $h(y_0)=0$ แยก — อาจหายเมื่อหาร",
+  "examples": [
+    {
+      "title": "Exponential decay",
+      "level": "Basic",
+      "tip": "แยกตัวแปรแล้ว integrate",
+      "problem": "แก้ $\\dfrac{dy}{dx}=-2y$, $y(0)=5$",
+      "steps": [
+        "$\\dfrac{dy}{y}=-2dx$ → $\\ln|y|=-2x+C$",
+        "$y=Ke^{-2x}$; $y(0)=5$ → $K=5$"
+      ],
+      "answer": "$y=5e^{-2x}$"
+    },
+    {
+      "title": "Logistic equation",
+      "level": "Medium",
+      "tip": "partial fractions หลังแยกตัวแปร",
+      "problem": "แก้ $\\dfrac{dy}{dx}=y(1-y)$, $y(0)=1/2$",
+      "steps": [
+        "$\\dfrac{dy}{y(1-y)}=dx$",
+        "$\\ln\\left|\\dfrac{y}{1-y}\\right|=x+C$",
+        "$y(0)=1/2$ → $C=0$ → $y=\\dfrac{e^x}{1+e^x}$"
+      ],
+      "answer": "$y=\\dfrac{e^x}{1+e^x}$"
+    }
+  ],
+  "practice": "แก้ $\\dfrac{dy}{dx}=\\dfrac{x}{y^2}$ โดย $y(1)=1$"
+}

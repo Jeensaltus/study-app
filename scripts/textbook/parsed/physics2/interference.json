@@ -1,0 +1,35 @@
+{
+  "id": "interference",
+  "title": "Interference and Young's Double Slit",
+  "source": "Serway Physics for Scientists and Engineers, Ch 37, p.1005–1025",
+  "chapterId": "wave-optics",
+  "concept": "การแทรกสอด: superposition ของคลื่น เงื่อนไข constructive $ \\Delta path=m\\lambda$, destructive $(m+\\frac{1}{2})\\lambda$ Young's double slit: $y_{bright}=\\frac{m\\lambda L}{d}$ บนจอระยะ $L$",
+  "formula": "\\Delta path=m\\lambda\\text{ (bright)},\\quad y=\\frac{m\\lambda L}{d}",
+  "warning": "ใช้ wavelength ในสื่อเดียวกัน — ใน double slit มักเป็นสุญญากาศ/อากาศ",
+  "examples": [
+    {
+      "title": "Young's double slit — ตำแหน่ง fringe",
+      "level": "Basic",
+      "tip": "ใช้ $y=m\\lambda L/d$",
+      "problem": "แสง $\\lambda=600\\,nm$, $d=0.20\\,mm$, $L=2.0\\,m$ หาระยะ fringe แรก ($m=1$)",
+      "steps": [
+        "$y=(600\\times10^{-9})(2.0)/(0.20\\times10^{-3})$",
+        "$y=6.0\\times10^{-3}\\,m=6.0\\,mm$"
+      ],
+      "answer": "$y=6.0\\,mm$"
+    },
+    {
+      "title": "Thin film interference",
+      "level": "Medium",
+      "tip": "phase change ที่ boundary กำหนด constructive/destructive",
+      "problem": "ฟilm น้ำมัน $n=1.50$ บนน้ำ $n=1.33$ ความหนา $t=200\\,nm$ แสง $\\lambda=600\\,nm$ ใน air สะท้อน constructive หรือไม่",
+      "steps": [
+        "reflection ที่ top (air-oil): มี phase shift $180°$",
+        "reflection ที่ bottom (oil-water): ไม่ shift (n ขึ้น)",
+        "$2nt=600\\,nm$ → destructive ใน air (bright ใน transmission)"
+      ],
+      "answer": "Reflected light: destructive (dark fringe)"
+    }
+  ],
+  "practice": "Slit separation $0.15\\,mm$, $\\lambda=500\\,nm$, $L=1.5\\,m$ หา spacing ระหว่าง bright fringes"
+}

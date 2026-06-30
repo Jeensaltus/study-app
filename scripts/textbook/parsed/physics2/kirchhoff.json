@@ -1,0 +1,36 @@
+{
+  "id": "kirchhoff",
+  "title": "Kirchhoff's Rules",
+  "source": "Serway Physics for Scientists and Engineers, Ch 28, p.810–830",
+  "chapterId": "circuits",
+  "concept": "กฎ Junction (KCL): $\\sum I_{in}=\\sum I_{out}$ (อนุรักษ์ประจุ) กฎ Loop (KVL): $\\sum\\Delta V=0$ (อนุรักษ์พลังงาน) ขั้นตอนใช้ Kirchhoff: (1) กำหนดทิศกระแสในแต่ละ branch (2) ใช้กฎ junction ที่แต่ละ node (3) ใช้กฎ loop จนครบสมการ (4) แก้ระบบสมการ",
+  "formula": "\\sum I_{in}=\\sum I_{out}, \\quad \\sum\\Delta V_{loop}=0",
+  "warning": "KCL: กระแสเข้า = กระแสออกที่ junction; KVL: ผลรวม $\\Delta V$ รอบ loop = 0 (เลือกทิศ loop ให้ชัด)",
+  "examples": [
+    {
+      "title": "Kirchhoff — วงจรสองแบตเตอรี่",
+      "level": "Basic",
+      "tip": "",
+      "problem": "วงจรมีแบตเตอรี่ $12\\,V$ และ $6\\,V$ ต่อกับตัวต้านทาน $4\\,\\Omega$ และ $2\\,\\Omega$ แบบ series หากระแส",
+      "steps": [
+        "กฎ Loop: $12-6-4I-2I=0$",
+        "$6=6I$",
+        "$I=1\\,A$"
+      ],
+      "answer": "$I=1\\,A$"
+    },
+    {
+      "title": "KCL — วงจร parallel",
+      "level": "Medium",
+      "tip": "ที่ junction: กระแสรวมแยกเข้า branch ตาม $I=V/R$ ของแต่ละทาง",
+      "problem": "แบตเตอรี่ $12\\,V$ ต่อ $R_1=6\\,\\Omega$ และ $R_2=3\\,\\Omega$ แบบ parallel หากระแสรวม",
+      "steps": [
+        "$I_1=V/R_1=12/6=2\\,A$, $I_2=12/3=4\\,A$",
+        "KCL ที่ junction: $I_{total}=I_1+I_2=6\\,A$",
+        "KVL: แรงดันทุก branch เท่ากัน $12\\,V$ ✓"
+      ],
+      "answer": "$I_{total}=6\\,A$"
+    }
+  ],
+  "practice": "วงจร bridge Wheatstone มีตัวต้านทาน 4 ตัว ใช้ Kirchhoff หากระแสในแต่ละ branch"
+}

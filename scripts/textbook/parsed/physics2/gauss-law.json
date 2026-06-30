@@ -1,0 +1,38 @@
+{
+  "id": "gauss-law",
+  "title": "Gauss's Law",
+  "source": "Serway Physics for Scientists and Engineers, Ch 24, p.740–760",
+  "chapterId": "electric-field",
+  "concept": "Gauss's Law: $\\Phi_E=\\oint\\vec E\\cdot d\\vec A=\\frac{q_{enc}}{\\varepsilon_0}$ (flux ไฟฟ้าผ่านผิวปิดใดๆ เท่ากับประจุที่อยู่ภายในหารด้วย $\\varepsilon_0$) ใช้หาสนามไฟฟ้าจากการกระจายประจุที่มีสมมาตร: ทรงกลม ($E=kq/r^2$), ทรงกระบอก ($E=\\lambda/2\\pi\\varepsilon_0 r$), ระนาบ ($E=\\sigma/2\\varepsilon_0$)",
+  "formula": "\\oint\\vec E\\cdot d\\vec A=\\frac{q_{enc}}{\\varepsilon_0}",
+  "warning": "Gaussian surface ต้องมีสมมาตรกับการกระจายประจุ — มิฉะนั้น $E$ ไม่คงที่บนผิว",
+  "examples": [
+    {
+      "title": "Gauss's Law — ทรงกลมประจุ",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ใช้ Gauss's Law หา E นอกทรงกลมที่มีประจุ $Q$ รัศมี $R$ ที่ระยะ $r>R$",
+      "steps": [
+        "เลือก Gaussian surface เป็นทรงกลมรัศมี $r$",
+        "ด้วยสมมาตรทรงกลม $E$ คงที่บนผิว และขนานกับ $d\\vec A$",
+        "$\\Phi_E=E(4\\pi r^2)=\\frac{Q}{\\varepsilon_0}$",
+        "$E=\\frac{Q}{4\\pi\\varepsilon_0 r^2}=\\frac{kQ}{r^2}$ (เหมือน point charge)"
+      ],
+      "answer": "$E=\\frac{Q}{4\\pi\\varepsilon_0 r^2}=\\frac{kQ}{r^2}$"
+    },
+    {
+      "title": "สนามไฟฟ้าภายในตัวนำที่สมดุล",
+      "level": "Medium",
+      "tip": "ใน electrostatic equilibrium ประจุส่วนเกินอยู่ที่ผิว — $q_{enc}=0$ ภายใน",
+      "problem": "ใช้ Gauss's Law แสดงว่าสนามไฟฟ้าภายในตัวนำที่สมดุลเป็นศูนย์",
+      "steps": [
+        "เลือก Gaussian surface ใดๆ อยู่ภายในตัวนำ (ไม่ถึงผิว)",
+        "ใน equilibrium ไม่มีประจุภายใน → $q_{enc}=0$",
+        "$\\oint\\vec E\\cdot d\\vec A=q_{enc}/\\varepsilon_0=0$",
+        "ดังนั้น $E=0$ ทุกจุดภายในตัวนำ"
+      ],
+      "answer": "$E=0$ ภายในตัวนำที่สมดุล"
+    }
+  ],
+  "practice": "ใช้ Gauss's Law แสดงว่าสนามไฟฟ้าภายในตัวนำที่สมดุลเป็นศูนย์"
+}

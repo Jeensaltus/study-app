@@ -1,0 +1,34 @@
+{
+  "id": "universal-gravitation",
+  "title": "Newton's Law of Universal Gravitation",
+  "source": "Serway Physics for Scientists and Engineers, Ch 13, p.320–340",
+  "chapterId": "gravitation",
+  "concept": "กฎแรงโน้มถ่วงสากล: $F=G\\frac{m_1m_2}{r^2}$ โดย $G=6.67\\times10^{-11}\\,N\\cdot m^2/kg^2$ แรงเป็น attractive ทำงานตามเส้นที่เชื่อม mass centers พลังงานศักย์โน้มถ่วง $U=-G\\frac{m_1m_2}{r}$ (ศูนย์ที่ $r\\to\\infty$)",
+  "formula": "F=G\\frac{m_1m_2}{r^2},\\quad U=-G\\frac{m_1m_2}{r}",
+  "warning": "ใช้ $r$ เป็นระยะระหว่างศูนย์มวล — สำหรับโลก-วัตถุใกล้พื้น ใช้ $F=mg$ ได้เมื่อ $R\\ll r_{Earth}$",
+  "examples": [
+    {
+      "title": "แรงโน้มถ่วงระหว่างสอง mass",
+      "level": "Basic",
+      "tip": "แทน $G,m_1,m_2,r$ ในสูตร",
+      "problem": "mass $1000\\,kg$ และ $2000\\,kg$ ห่าง $0.50\\,m$ หา $F$",
+      "steps": [
+        "$F=6.67\\times10^{-11}\\frac{(1000)(2000)}{0.25}$",
+        "$F=6.67\\times10^{-11}\\times8\\times10^6=5.34\\times10^{-4}\\,N$"
+      ],
+      "answer": "$F\\approx5.3\\times10^{-4}\\,N$"
+    },
+    {
+      "title": "น้ำหนักบนผิวโลก",
+      "level": "Medium",
+      "tip": "ใช้ $g=GM/R^2$",
+      "problem": "พิสูจน์ว่า $g=9.8\\,m/s^2$ จาก $M_E=5.97\\times10^{24}\\,kg$, $R=6.37\\times10^6\\,m$",
+      "steps": [
+        "$g=GM/R^2=6.67\\times10^{-11}(5.97\\times10^{24})/(6.37\\times10^6)^2$",
+        "$g\\approx9.8\\,m/s^2$"
+      ],
+      "answer": "$g\\approx9.8\\,m/s^2$"
+    }
+  ],
+  "practice": "ดวงจันทร์ $M=7.35\\times10^{22}\\,kg$, $R=1.74\\times10^6\\,m$ หา $g$ บนผิวจันทร์"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "motional-emf",
+  "title": "Motional EMF and Induced Current",
+  "source": "Serway Physics for Scientists and Engineers, Ch 31.3, p.895–905",
+  "chapterId": "magnetism",
+  "concept": "Motional EMF: แท่งหรือสายตัดสนามแม่เหล็ก $\\mathcal{E}=Blv$ (B, L, v ตั้งฉากกัน) ถ้าเส้นทางโค้ง ใช้ $\\mathcal{E}=\\oint(\\vec v\\times\\vec B)\\cdot d\\vec l$ หรือ Faraday $\\mathcal{E}=-d\\Phi/dt$",
+  "formula": "\\mathcal{E}=Blv,\\quad \\Phi_B=BA\\cos\\theta",
+  "warning": "ทิศ $\\mathcal{E}$ จาก Lenz's law — กระแสที่เกิดต้านการเคลื่อนที่",
+  "examples": [
+    {
+      "title": "Rod สไลด์บน rails",
+      "level": "Basic",
+      "tip": "ใช้ $\\mathcal{E}=Blv$",
+      "problem": "แท่งยาว $L=0.40\\,m$ เคลื่อนที่ $v=2.0\\,m/s$ ตั้งฉาก $B=0.50\\,T$ หา EMF",
+      "steps": [
+        "$\\mathcal{E}=Blv=0.50(0.40)(2.0)=0.40\\,V$"
+      ],
+      "answer": "$\\mathcal{E}=0.40\\,V$"
+    },
+    {
+      "title": "Faraday — พื้นที่เปลี่ยน",
+      "level": "Hard",
+      "tip": "ใช้ $\\mathcal{E}=-d\\Phi/dt$ เมื่อ B คงที่",
+      "problem": "ขดลวด $N=100$ พื้นที่ $A=0.02\\,m^2$ ใน $B=0.3\\,T$ หมุน $90°$ ใน $0.05\\,s$ หา $|\\mathcal{E}|$",
+      "steps": [
+        "$\\Delta\\Phi=BA(1-0)=0.3(0.02)=6\\times10^{-3}\\,Wb$",
+        "$|\\mathcal{E}|=N\\dfrac{\\Delta\\Phi}{\\Delta t}=100(6\\times10^{-3}/0.05)=12\\,V$"
+      ],
+      "answer": "$|\\mathcal{E}|=12\\,V$"
+    }
+  ],
+  "practice": "สาย $0.25\\,m$ แกว่ง $3\\,m/s$ ใน $B=0.8\\,T$ ตั้งฉาก หา motional EMF"
+}

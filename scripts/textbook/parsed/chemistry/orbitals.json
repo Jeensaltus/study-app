@@ -1,0 +1,36 @@
+{
+  "id": "orbitals",
+  "title": "Quantum Numbers and Orbitals",
+  "source": "Chemistry: The Central Science 12th ed., Ch 6.5–6.6, p.240–260",
+  "chapterId": "atomic-structure",
+  "concept": "4 quantum numbers: $n$ (principal, 1,2,3,...), $l$ (angular momentum, 0 ถึง $n-1$: s,p,d,f), $m_l$ (magnetic, $-l$ ถึง $+l$), $m_s$ (spin, $+1/2$ หรือ $-1/2$) Pauli exclusion: ในออร์บิทัลหนึ่ง มีได้ไม่เกิน 2 อิเล็กตรอน และต้อง spin ตรงข้าม จำนวนออร์บิทัล: s=1, p=3, d=5, f=7",
+  "formula": "n=1,2,3,\\ldots; \\quad l=0,1,\\ldots,n-1; \\quad m_l=-l,\\ldots,+l",
+  "warning": "Pauli: ออร์บิทัลหนึ่งมี electron ได้ไม่เกิน 2 ตัว spin ตรงข้าม",
+  "examples": [
+    {
+      "title": "จำนวน Orbital ใน $n=3$",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ระดับพลังงาน $n=3$ มีกี่ออร์บิทัล และรับอิเล็กตรอนได้กี่ตัว",
+      "steps": [
+        "$n=3$: $l$ เป็น 0, 1, 2 (3s, 3p, 3d)",
+        "ออร์บิทัล: 3s=1, 3p=3, 3d=5 → รวม 9 ออร์บิทัล",
+        "อิเล็กตรอน: $9\\times2=18$ ตัว"
+      ],
+      "answer": "อิเล็กตรอน: $9\\times2=18$ ตัว"
+    },
+    {
+      "title": "Quantum numbers ของ 2p",
+      "level": "Medium",
+      "tip": "2p หมายถึง $n=2$, $l=1$ — $m_l$ มี 3 ค่า, แต่ละค่ามี $m_s=\\pm1/2$",
+      "problem": "เขียน quantum numbers ที่เป็นไปได้ทั้งหมดสำหรับ electron ใน 2p orbital",
+      "steps": [
+        "$n=2$, $l=1$ (p orbital)",
+        "$m_l=-1,0,+1$ และ $m_s=+1/2$ หรือ $-1/2$",
+        "รวม 6 ชุด: $(2,1,-1,\\pm1/2)$, $(2,1,0,\\pm1/2)$, $(2,1,+1,\\pm1/2)$"
+      ],
+      "answer": "6 ชุด quantum numbers"
+    }
+  ],
+  "practice": "เขียน quantum numbers ที่เป็นไปได้ทั้งหมดสำหรับ electron ใน 2p orbital"
+}

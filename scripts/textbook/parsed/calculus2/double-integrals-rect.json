@@ -1,0 +1,36 @@
+{
+  "id": "double-integrals-rect",
+  "title": "Double Integrals over Rectangles",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 15.1–15.2, p.928–942",
+  "chapterId": "double-integrals",
+  "concept": "Double integral บนสี่เหลี่ยม $R=[a,b]\\times[c,d]$: $\\iint_R f(x,y)\\,dA=\\int_a^b\\int_c^d f(x,y)\\,dy\\,dx$ Fubini's theorem: สลับลำดับ integration ได้ถ้า $f$ continuous",
+  "formula": "\\iint_R f(x,y)\\,dA=\\int_a^b\\int_c^d f(x,y)\\,dy\\,dx",
+  "warning": "limits ของ integral ต้องสอดคล้องกับ region — dx ก่อน/หลัง dy เปลี่ยน limits",
+  "examples": [
+    {
+      "title": "Iterated integral พื้นฐาน",
+      "level": "Basic",
+      "tip": "integrate ทีละตัวแปร",
+      "problem": "หา $\\int_0^1\\int_0^2 xy\\,dy\\,dx$",
+      "steps": [
+        "$\\int_0^2 xy\\,dy=x\\dfrac{y^2}{2}\\Big|_0^2=2x$",
+        "$\\int_0^1 2x\\,dx=[x^2]_0^1=1$"
+      ],
+      "answer": "$1$"
+    },
+    {
+      "title": "Volume ใต้ surface",
+      "level": "Medium",
+      "tip": "$V=\\iint_R f(x,y)\\,dA$ เมื่อ $f\\ge 0$",
+      "problem": "หาปริมาตรใต้ $z=1-x-y$ บน $R: 0\\le x\\le 1, 0\\le y\\le 1-x$",
+      "steps": [
+        "$\\int_0^1\\int_0^{1-x}(1-x-y)\\,dy\\,dx$",
+        "inner: $[(1-x)y-y^2/2]_0^{1-x}=(1-x)^2/2$",
+        "$\\int_0^1\\dfrac{(1-x)^2}{2}dx=\\dfrac{1}{6}$"
+      ],
+      "answer": "$\\dfrac{1}{6}$"
+    }
+  ],
+  "practice": "หา $\\iint_R (x+y)\\,dA$ โดย $R=[0,2]\\times[0,1]$",
+  "graph": "integral"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "kinetic-theory",
+  "title": "Kinetic Theory of Gases",
+  "source": "Serway Physics for Scientists and Engineers, Ch 19, p.490–510",
+  "chapterId": "thermodynamics",
+  "concept": "ทฤษฎีจลน์ของก๊าซ: อนุภาคเคลื่อนที่สุ่มชนกัน สร้างความดัน $P=\\frac{1}{3}\\rho\\overline{v^2}$ สำหรับ ideal gas $PV=nRT$ ความเร็ว RMS $\\overline{v^2}=3k_BT/m=3RT/M$ พลังงานจลน์เฉลี่ยต่ออนุภาค $\\frac{3}{2}k_BT$",
+  "formula": "PV=nRT,\\quad v_{rms}=\\sqrt{3RT/M}",
+  "warning": "ใช้ $R=8.314\\,J/mol\\cdot K$ กับ $n$ (mol) หรือ $k_B=1.38\\times10^{-23}\\,J/K$ กับจำนวนอนุภาค — อย่าสับสนหน่วย",
+  "examples": [
+    {
+      "title": "Ideal gas law — หาความดัน",
+      "level": "Basic",
+      "tip": "แปลงหน่วยให้ SI ก่อน",
+      "problem": "ก๊าซ $n=0.50\\,mol$ ใน $V=10\\,L$ ที่ $T=300\\,K$ หา $P$",
+      "steps": [
+        "$V=0.010\\,m^3$",
+        "$P=nRT/V=0.50(8.314)(300)/0.010$",
+        "$P=1.247\\times10^5\\,Pa\\approx1.25\\,atm$"
+      ],
+      "answer": "$P\\approx1.25\\times10^5\\,Pa$"
+    },
+    {
+      "title": "ความเร็ว RMS",
+      "level": "Medium",
+      "tip": "ใช้ $v_{rms}=\\sqrt{3RT/M}$",
+      "problem": "หา $v_{rms}$ ของ $N_2$ ($M=28\\,g/mol$) ที่ $400\\,K$",
+      "steps": [
+        "$M=0.028\\,kg/mol$",
+        "$v_{rms}=\\sqrt{3(8.314)(400)/0.028}=\\sqrt{356400}$",
+        "$v_{rms}\\approx597\\,m/s$"
+      ],
+      "answer": "$v_{rms}\\approx600\\,m/s$"
+    }
+  ],
+  "practice": "ถัง $O_2$ $32\\,g$ ที่ $27°C$, $P=2\\,atm$, $V=5\\,L$ หา $T$ ใน Kelvin แล้วตรวจว่าเป็น ideal gas หรือไม่ ($R=0.0821\\,L\\cdot atm/mol\\cdot K$)"
+}

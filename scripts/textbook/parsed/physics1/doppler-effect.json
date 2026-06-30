@@ -1,0 +1,32 @@
+{
+  "id": "doppler-effect",
+  "title": "Doppler Effect",
+  "source": "Serway Physics for Scientists and Engineers, Ch 17, p.435–455",
+  "chapterId": "oscillations-waves",
+  "concept": "Doppler effect: $f'=\\dfrac{v\\pm v_o}{v\\mp v_s}f$ — บวก/ลบตามทิศ relative motion; สำหรับ source และ observer เคลื่อนที่บนเส้นตรง",
+  "formula": "f'=\\frac{v\\pm v_o}{v\\mp v_s}f",
+  "warning": "เข้าหากัน → $f$ สูงขึ้น; ถอยห่าง → $f$ ต่ำลง — ตรวจเครื่องหมายทั้ง $v_o$ และ $v_s$",
+  "examples": [
+    {
+      "title": "Source เข้าใกล้",
+      "level": "Basic",
+      "tip": "ใช้ $f'=(v/(v-v_s))f$",
+      "problem": "รถ $v_s=30\\,m/s$ บีบแตร $600\\,Hz$ เข้าหาผู้ยืนนิ่ง ($v=340\\,m/s$) หา $f'$",
+      "steps": [
+        "$f'=(340/(340-30))\\times600\\approx652\\,Hz$"
+      ],
+      "answer": "$f'\\approx652\\,Hz$"
+    },
+    {
+      "title": "Observer เคลื่อนที่",
+      "level": "Medium",
+      "tip": "ทั้ง source และ observer",
+      "problem": "source $500\\,Hz$ หยุดนิ่ง observer วิ่งเข้าหา $20\\,m/s$ หา $f'$",
+      "steps": [
+        "$f'=((340+20)/340)\\times500\\approx529\\,Hz$"
+      ],
+      "answer": "$f'\\approx529\\,Hz$"
+    }
+  ],
+  "practice": "Ambulance $700\\,Hz$ วิ่งออก $25\\,m/s$ หา $f'$ ที่ผู้ฟังนิ่ง"
+}

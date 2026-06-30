@@ -1,0 +1,33 @@
+{
+  "id": "wave-basics",
+  "title": "Wave Properties",
+  "source": "Serway Physics for Scientists and Engineers, Ch 16, p.410–435",
+  "chapterId": "waves-optics",
+  "concept": "คลื่นเป็นการแพร่การสั่นสะเทือนในสื่อหรือสนาม แบ่งเป็นคลื่นตามยาวและตามขวาง ความเร็วคลื่นสัมพันธ์กับความถี่และความยาวคลื่น: $v=f\\lambda$. Superposition ทำให้เกิด interference และ standing waves เมื่อคลื่นทั้งสองทับซ้อนกัน",
+  "formula": "v=f\\lambda, \\quad T=1/f, \\quad \\lambda=v/f",
+  "warning": "แยกความเร็วคลื่น $v$ กับความเร็วอนุภาคของ medium — อย่าสับสน $f$ กับ $\\omega$",
+  "examples": [
+    {
+      "title": "Wave speed จาก $f$ และ $\\lambda$",
+      "level": "Basic",
+      "tip": "ใช้ $v=f\\lambda$ เมื่อรู้ความถี่และความยาวคลื่น",
+      "problem": "คลื่นบนเชือกมีความถี่ $5\\,Hz$ และความยาวคลื่น $0.4\\,m$ จงหาความเร็วคลื่น",
+      "steps": [
+        "$v=f\\lambda=5(0.4)=2.0\\,m/s$"
+      ],
+      "answer": "$v=2.0\\,m/s$"
+    },
+    {
+      "title": "ความถี่จาก $v$ และ $\\lambda$",
+      "level": "Medium",
+      "tip": "จัดรูป $v=f\\lambda$ เป็น $f=v/\\lambda$",
+      "problem": "เสียงในห้องมีความยาวคลื่น $0.75\\,m$ และความเร็วเสียง $340\\,m/s$ จงหาความถี่",
+      "steps": [
+        "$f=v/\\lambda=340/0.75$",
+        "$f=453\\,Hz$"
+      ],
+      "answer": "$f=453\\,Hz$"
+    }
+  ],
+  "practice": "ถ้าเสียงในห้องมีความยาวคลื่น $0.75\\,m$ และความเร็วเสียง $340\\,m/s$ จงหาความถี่"
+}

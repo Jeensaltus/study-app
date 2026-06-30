@@ -1,0 +1,35 @@
+{
+  "id": "faraday",
+  "title": "Faraday's Law and Induction",
+  "source": "Serway Physics for Scientists and Engineers, Ch 31, p.885–905",
+  "chapterId": "magnetism",
+  "concept": "Faraday's Law: $\\mathcal{E}=-\\frac{d\\Phi_B}{dt}$ โดย $\\Phi_B=\\int\\vec B\\cdot d\\vec A$ คือ magnetic flux เครื่องหมายลบมาจาก Lenz's Law: กระแสที่เกิดขึ้นต้านการเปลี่ยนแปลงของ flux สำหรับ $N$ รอบ: $\\mathcal{E}=-N\\frac{d\\Phi_B}{dt}$",
+  "formula": "\\mathcal{E}=-N\\frac{d\\Phi_B}{dt}, \\quad \\Phi_B=BA\\cos\\theta",
+  "warning": "Lenz's law: กระแสเหนี่ยวนำต่อต้านการเปลี่ยน flux — ตรวจเครื่องหมาย $\\mathcal{E}$",
+  "examples": [
+    {
+      "title": "Faraday's Law — หา EMF จาก ΔΦ",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ขดลวด 50 รอบ พื้นที่ $0.02\\,m^2$ สนามแม่เหล็กเปลี่ยนจาก 0 เป็น $0.4\\,T$ ใน $0.1\\,s$ หา EMF",
+      "steps": [
+        "$\\frac{d\\Phi_B}{dt}=A\\frac{dB}{dt}=0.02\\times\\frac{0.4}{0.1}=0.08\\,Wb/s$",
+        "$|\\mathcal{E}|=N\\frac{d\\Phi_B}{dt}=50\\times0.08=4\\,V$"
+      ],
+      "answer": "$|\\mathcal{E}|=N\\frac{d\\Phi_B}{dt}=50\\times0.08=4\\,V$"
+    },
+    {
+      "title": "EMF สูงสุดจากขดลวดหมุน",
+      "level": "Medium",
+      "tip": "Peak EMF: $\\mathcal{E}_{max}=NBA\\omega$ โดย $\\omega=2\\pi f$",
+      "problem": "ขดลวด 1 รอบ หมุนใน $B=0.5\\,T$ อัตรา $60\\,rev/s$ พื้นที่ $0.01\\,m^2$ หา peak EMF",
+      "steps": [
+        "$\\omega=2\\pi(60)=377\\,rad/s$",
+        "$\\mathcal{E}_{max}=NBA\\omega=0.5\\times0.01\\times377$",
+        "$\\mathcal{E}_{max}=1.89\\,V$"
+      ],
+      "answer": "$\\mathcal{E}_{max}\\approx1.89\\,V$"
+    }
+  ],
+  "practice": "ขดลวดหมุนใน B คงที่ $0.5\\,T$ อัตรา $60\\,rev/s$ พื้นที่ $0.01\\,m^2$ หา peak EMF"
+}

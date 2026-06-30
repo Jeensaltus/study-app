@@ -1,0 +1,35 @@
+{
+  "id": "pv-thermo-cycle",
+  "title": "PV Diagrams and Thermodynamic Cycles",
+  "source": "Serway Physics for Scientists and Engineers, Ch 20.5, p.510–520",
+  "chapterId": "thermodynamics",
+  "concept": "PV diagram: งาน $W=\\oint P\\,dV$ (พื้นที่รอบ loop) สำหรับ cyclic process $\\Delta U=0$ ดังนั้น $Q_{net}=W$ กระบวนการ isobaric $W=P\\Delta V$, isochoric $W=0$, adiabatic $Q=0$",
+  "formula": "\\Delta U=Q-W,\\quad W=\\oint P\\,dV",
+  "warning": "Convention: $W>0$ เมื่อระบบขยาย — ตาราง Q, W, $\\Delta U$ ต้องสอดคล้องกับทิศ process",
+  "examples": [
+    {
+      "title": "ตาราง cyclic A→B→C→D",
+      "level": "Hard",
+      "tip": "ใช้ $\\Delta U=0$ รอบ cycle ตรวจ Q รวม",
+      "problem": "ideal gas ทำ cycle: A→B isobaric $P=0.8\\,atm$, $V:2\\to8\\,L$; B→C adiabatic; C→D isobaric $P=0.4\\,atm$, $V:8\\to2\\,L$; D→A isochoric หา $W_{cycle}$ ถ้า $W_{AB}=480\\,J$",
+      "steps": [
+        "$W_{BC}=0$ (adiabatic reversible approx หรือให้ในโจทย์)",
+        "$W_{CD}=P\\Delta V=0.4\\,atm\\times(-6\\,L)$ (negative — compression)",
+        "รวม $W_{cycle}=$ พื้นที่ใน PV diagram"
+      ],
+      "answer": "ใช้พื้นที่ loop หรือผลรวม $W_i$"
+    },
+    {
+      "title": "Isobaric + adiabatic",
+      "level": "Medium",
+      "tip": "แยกคำนวณแต่ละ leg",
+      "problem": "A: $2\\,L$, $0.8\\,atm$ → B: adiabatic ไป $0.4\\,atm$, $8\\,L$ หา $W_{AB}$ (isobaric)",
+      "steps": [
+        "$W_{AB}=P\\Delta V=0.8\\,atm\\times6\\,L=4.8\\,L\\cdot atm\\approx486\\,J$"
+      ],
+      "answer": "$W_{AB}\\approx486\\,J$"
+    }
+  ],
+  "practice": "วาด PV cycle แล้วเติมตาราง Q, $\\Delta U$, W สำหรับ isothermal expansion $n=1\\,mol$, $T=300\\,K$, $V:1\\to2\\,L$",
+  "graph": "energy"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ohm",
+  "title": "Ohm's Law and Resistance",
+  "source": "Serway Physics for Scientists and Engineers, Ch 27, p.795–810",
+  "chapterId": "circuits",
+  "concept": "กระแส $I=\\Delta Q/\\Delta t$ (ampere) ความต้านทาน $R=V/I$ (ohm) ความต้านทานขึ้นกับวัสดุ: $R=\\rho L/A$ ($\\rho$ = resistivity, $L$ = ความยาว, $A$ = พื้นที่หน้าตัด) กำลังไฟฟ้า: $P=VI=I^2R=V^2/R$",
+  "formula": "V=IR, \\quad P=IV=I^2R=\\frac{V^2}{R}",
+  "warning": "Ohm's law ใช้ได้กับ conductor ที่อุณหภูมิคงที่ — ความต้านทานเปลี่ยนเมื่อ $T$ เปลี่ยน",
+  "examples": [
+    {
+      "title": "Ohm's Law — กระแสและกำลังไฟฟ้า",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ตัวต้านทาน $R=50\\,\\Omega$ ต่อกับ $V=120\\,V$ หากระแสและกำลังไฟฟ้า",
+      "steps": [
+        "$I=V/R=120/50=2.4\\,A$",
+        "$P=I^2R=(2.4)^2(50)=288\\,W$",
+        "ตรวจ: $P=V^2/R=14400/50=288\\,W$ ✓"
+      ],
+      "answer": "ตรวจ: $P=V^2/R=14400/50=288\\,W$"
+    },
+    {
+      "title": "หลอดไฟ — หา $R$ และ $I$",
+      "level": "Medium",
+      "tip": "จาก $P=VI=V^2/R$ หา $R$ ก่อน แล้วใช้ $I=P/V$ ตรวจ",
+      "problem": "หลอดไฟ $60\\,W$ ต่อกับ $220\\,V$ หาความต้านทานและกระแส",
+      "steps": [
+        "$R=V^2/P=220^2/60=806.7\\,\\Omega$",
+        "$I=P/V=60/220=0.273\\,A$",
+        "ตรวจ: $P=I^2R=(0.273)^2(806.7)\\approx60\\,W$ ✓"
+      ],
+      "answer": "$R\\approx807\\,\\Omega$, $I=0.273\\,A$"
+    }
+  ],
+  "practice": "หลอดไฟ $60\\,W$ ต่อกับ $220\\,V$ หาความต้านทานและกระแส"
+}

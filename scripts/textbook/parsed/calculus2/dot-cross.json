@@ -1,0 +1,34 @@
+{
+  "id": "dot-cross",
+  "title": "The Dot and Cross Products",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 12.3–12.4, p.782–798",
+  "chapterId": "vectors-3d",
+  "concept": "Dot product: $\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta=a_1b_1+a_2b_2+a_3b_3$ ใช้หามุมและ projection Cross product: $\\mathbf{a}\\times\\mathbf{b}$ ได้เวกเตอร์ตั้งฉากทั้ง $\\mathbf{a},\\mathbf{b}$ ขนาด $=|\\mathbf{a}||\\mathbf{b}|\\sin\\theta$",
+  "formula": "\\mathbf{a}\\cdot\\mathbf{b}=a_1b_1+a_2b_2+a_3b_3, \\quad |\\mathbf{a}\\times\\mathbf{b}|=|\\mathbf{a}||\\mathbf{b}|\\sin\\theta",
+  "warning": "Cross product ไม่ commutative: $\\mathbf{a}\\times\\mathbf{b}=-\\mathbf{b}\\times\\mathbf{a}$",
+  "examples": [
+    {
+      "title": "Dot product และมุม",
+      "level": "Basic",
+      "tip": "$\\cos\\theta=\\dfrac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{a}||\\mathbf{b}|}$",
+      "problem": "หามุมระหว่าง $\\mathbf{a}=\\langle 1,0,0\\rangle$ กับ $\\mathbf{b}=\\langle 1,1,0\\rangle$",
+      "steps": [
+        "$\\mathbf{a}\\cdot\\mathbf{b}=1$",
+        "$\\cos\\theta=\\dfrac{1}{1\\cdot\\sqrt{2}}=\\dfrac{1}{\\sqrt{2}}$ → $\\theta=45^\\circ$"
+      ],
+      "answer": "$45^\\circ$"
+    },
+    {
+      "title": "Cross product",
+      "level": "Medium",
+      "tip": "ใช้ determinant หรือ formula",
+      "problem": "หา $\\mathbf{i}\\times\\mathbf{j}$",
+      "steps": [
+        "right-hand rule: $\\mathbf{i}\\times\\mathbf{j}=\\mathbf{k}$",
+        "ตรวจ: determinant ได้ $\\langle 0,0,1\\rangle$"
+      ],
+      "answer": "$\\mathbf{k}$"
+    }
+  ],
+  "practice": "หา projection ของ $\\mathbf{a}=\\langle 2,1,-1\\rangle$ บน $\\mathbf{b}=\\langle 1,2,2\\rangle$"
+}

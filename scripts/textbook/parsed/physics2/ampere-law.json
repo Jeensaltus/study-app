@@ -1,0 +1,36 @@
+{
+  "id": "ampere-law",
+  "title": "Ampère's Law",
+  "source": "Serway Physics for Scientists and Engineers, Ch 30, p.865–885",
+  "chapterId": "magnetism",
+  "concept": "Biot-Savart Law: $d\\vec B=\\frac{\\mu_0}{4\\pi}\\frac{Id\\vec l\\times\\hat r}{r^2}$ สนามจากสายตรง: $B=\\frac{\\mu_0 I}{2\\pi r}$ Ampere's Law: $\\oint\\vec B\\cdot d\\vec l=\\mu_0 I_{enc}$ ใช้กับสมมาตร เช่น solenoid: $B=\\mu_0 nI$ ($n$ = จำนวนรอบต่อเมตร)",
+  "formula": "B=\\frac{\\mu_0 I}{2\\pi r}, \\quad B_{solenoid}=\\mu_0 nI",
+  "warning": "Amère's law ใช้ได้เมื่อความเข้ม $B$ คงที่รอบ loop — เลือก Amperian loop ให้สมมาตร",
+  "examples": [
+    {
+      "title": "สนาม B จากสายตรงกระแสไฟฟ้า",
+      "level": "Basic",
+      "tip": "",
+      "problem": "สายตรงยาวมีกระแส $5\\,A$ หา B ที่ระยะ $0.1\\,m$",
+      "steps": [
+        "$B=\\frac{\\mu_0 I}{2\\pi r}$",
+        "$=\\frac{4\\pi\\times10^{-7}\\times5}{2\\pi\\times0.1}$",
+        "$=\\frac{2\\times10^{-6}}{0.1\\times2}=10^{-5}\\,T=10\\,\\mu T$"
+      ],
+      "answer": "$=\\frac{2\\times10^{-6}}{0.1\\times2}=10^{-5}\\,T=10\\,\\mu T$"
+    },
+    {
+      "title": "สนามแม่เหล็กใน solenoid",
+      "level": "Medium",
+      "tip": "$n=N/L$ คือจำนวนรอบต่อเมตร แล้ว $B=\\mu_0 nI$",
+      "problem": "Solenoid 200 รอบ ยาว $0.5\\,m$ มีกระแส $2\\,A$ หาสนามแม่เหล็กภายใน",
+      "steps": [
+        "$n=N/L=200/0.5=400\\,\\text{turns/m}$",
+        "$B=\\mu_0 nI=4\\pi\\times10^{-7}\\times400\\times2$",
+        "$B=1.0\\times10^{-3}\\,T=1.0\\,mT$"
+      ],
+      "answer": "$B=1.0\\,mT$"
+    }
+  ],
+  "practice": "Solenoid 200 รอบ ยาว $0.5\\,m$ มีกระแส $2\\,A$ หาสนามแม่เหล็กภายใน"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "manometer",
+  "title": "Manometer and Multi-Fluid Columns",
+  "source": "Serway Physics for Scientists and Engineers, Ch 14.2, p.360–370",
+  "chapterId": "fluids",
+  "concept": "Manometer / multi-fluid column: $P_{bottom}=P_{top}+\\rho gh$ (same horizontal level same pressure) เปรียบเทียบ $P_A$, $P_B$ จากความสูงคอลัมน์ของ fluid หลายชนิด",
+  "formula": "P=P_0+\\rho gh",
+  "warning": "จุดเดียวกันใน fluid continuous → ความดันเท่ากัน — ใช้ $\\rho$ ของ fluid ในแต่ละคอลัมน์",
+  "examples": [
+    {
+      "title": "U-tube manometer",
+      "level": "Medium",
+      "tip": "ความต่างระดับ → $\\Delta P=\\rho g\\Delta h$",
+      "problem": "U-tube ใส่น้ำ ($\\rho=1000\\,kg/m^3$) ด้านหนึ่งต่อ gas อีกด้านเปิดอากาศ ระดับต่าง $h=12\\,cm$ หา gauge pressure ของ gas",
+      "steps": [
+        "$P_{gas}=P_{atm}+\\rho gh=101325+1000(9.8)(0.12)\\approx102501\\,Pa$"
+      ],
+      "answer": "$P_{gas}\\approx102.5\\,kPa$"
+    },
+    {
+      "title": "สอง fluid ในท่อ U",
+      "level": "Hard",
+      "tip": "แต่ละ side ใช้ $\\rho$ ต่างกัน",
+      "problem": "ท่อ U มีน้ำ ($\\rho_w$) และน้ำมัน ($\\rho_o=800$) ความสูงคอลัมน์ oil $h_o=5\\,cm$ น้ำ $h_w=3\\,cm$ หา $P_{oil side}-P_{water side}$",
+      "steps": [
+        "ที่ interface: $P+\\rho_w g h_w = P'+\\rho_o g h_o$",
+        "แก้ตาม geometry ของโจทย์"
+      ],
+      "answer": "ใช้ hydrostatic balance"
+    }
+  ],
+  "practice": "Mercury manometer $\\Delta h=20\\,cm$ หา gauge pressure ($\\rho_{Hg}=13600\\,kg/m^3$)"
+}

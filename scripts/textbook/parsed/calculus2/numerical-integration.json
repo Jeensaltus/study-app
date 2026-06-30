@@ -1,0 +1,35 @@
+{
+  "id": "numerical-integration",
+  "title": "Numerical Integration",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 7.7, p.506–513",
+  "chapterId": "applications-integration",
+  "concept": "เมื่อหาอินทิกรัลยาก ใช้การประมาณ: Midpoint, Trapezoidal และ Simpson's rule Simpson ใช้ parabola ผ่าน 3 จุด มักแม่นที่สุด: $\\int_a^b f\\approx\\dfrac{\\Delta x}{3}[f(x_0)+4f(x_1)+f(x_2)+\\cdots]$",
+  "formula": "T_n=\\frac{\\Delta x}{2}[f(x_0)+2f(x_1)+\\cdots+f(x_n)], \\quad S_n=\\frac{\\Delta x}{3}[f(x_0)+4f(x_1)+2f(x_2)+\\cdots]",
+  "warning": "Simpson's rule ต้องการจำนวนช่วงย่อย $n$ เป็นเลขคู่ — ถ้า $n$ คี่ ต้องเพิ่มช่วง",
+  "examples": [
+    {
+      "title": "Trapezoidal rule",
+      "level": "Basic",
+      "tip": "$\\Delta x=\\dfrac{b-a}{n}$; น้ำหนัก endpoint 1, interior 2",
+      "problem": "ประมาณ $\\int_0^1 x^2\\,dx$ ด้วย trapezoidal $n=2$",
+      "steps": [
+        "$\\Delta x=0.5$; $x_0=0,x_1=0.5,x_2=1$",
+        "$T=\\dfrac{0.5}{2}[0+2(0.25)+1]=\\dfrac{0.5}{2}(1.5)=0.375$"
+      ],
+      "answer": "$0.375$ (exact $=1/3$)"
+    },
+    {
+      "title": "Simpson's rule",
+      "level": "Medium",
+      "tip": "pattern 1,4,2,4,...,1",
+      "problem": "ประมาณ $\\int_0^2 x^2\\,dx$ ด้วย Simpson $n=2$",
+      "steps": [
+        "$\\Delta x=1$; $x_0=0,x_1=1,x_2=2$",
+        "$S=\\dfrac{1}{3}[0+4(1)+4]=\\dfrac{8}{3}$"
+      ],
+      "answer": "$\\dfrac{8}{3}$ (exact $=8/3$)"
+    }
+  ],
+  "practice": "ใช้ Simpson's rule กับ $n=4$ ประมาณ $\\int_0^\\pi \\sin x\\,dx$",
+  "graph": "integral"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "equilibrium-constant",
+  "title": "Equilibrium Constant",
+  "source": "Chemistry: The Central Science 12th ed., Ch 15.1–15.3, p.580–600",
+  "chapterId": "equilibrium",
+  "concept": "ที่สมดุล $K_c=\\frac{[C]^c[D]^d}{[A]^a[B]^b}$ (ไม่รวมสาร pure solid/liquid) $K_p$ ใช้ความดันบางส่วนของก๊าซ: $K_p=K_c(RT)^{\\Delta n}$ ขนาด $K$: $K>>1$ → equilibrium เอนไปทาง products; $K<<1$ → เอนไปทาง reactants ค่า $K$ ขึ้นกับอุณหภูมิเท่านั้น",
+  "formula": "K_c=\\frac{[products]^{coeff}}{[reactants]^{coeff}}, \\quad K_p=K_c(RT)^{\\Delta n}",
+  "warning": "$K$ ไม่รวม pure solid/liquid — ใช้ activity ≈ concentration",
+  "examples": [
+    {
+      "title": "หา $K_c$ ของ H₂ + I₂ ⇌ 2HI",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ที่ equilibrium: $[H_2]=0.50\\,M$, $[I_2]=0.50\\,M$, $[HI]=2.0\\,M$ หา $K_c$ ของ $H_2+I_2\\rightleftharpoons2HI$",
+      "steps": [
+        "$K_c=\\frac{[HI]^2}{[H_2][I_2]}$",
+        "$=\\frac{(2.0)^2}{(0.50)(0.50)}$",
+        "$=\\frac{4.0}{0.25}=16$"
+      ],
+      "answer": "$=\\frac{4.0}{0.25}=16$"
+    },
+    {
+      "title": "หา $[HI]$ จาก $K_c$",
+      "level": "Medium",
+      "tip": "เขียน expression ของ $K$ แล้วแก้ — ตรวจว่า $K=[HI]^2/([H_2][I_2])$",
+      "problem": "ถ้า $K_c=49$ สำหรับ $H_2+I_2\\rightleftharpoons2HI$ และ $[H_2]=[I_2]=0.1\\,M$ หา $[HI]$ ที่ equilibrium",
+      "steps": [
+        "$K_c=[HI]^2/([H_2][I_2])=49$",
+        "$[HI]^2=49\\times0.1\\times0.1=0.49$",
+        "$[HI]=\\sqrt{0.49}=0.70\\,M$"
+      ],
+      "answer": "$[HI]=0.70\\,M$"
+    }
+  ],
+  "practice": "ถ้า $K_c=49$ สำหรับ $H_2+I_2\\rightleftharpoons2HI$ และ $[H_2]=[I_2]=0.1\\,M$ หา $[HI]$ ที่ equilibrium"
+}

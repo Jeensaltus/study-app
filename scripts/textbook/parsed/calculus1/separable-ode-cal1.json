@@ -1,0 +1,35 @@
+{
+  "id": "separable-ode-cal1",
+  "title": "Separable Equations",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 9.3, p.568–576",
+  "chapterId": "modeling-ode",
+  "concept": "Separable ODE มีรูป $\\dfrac{dy}{dx}=g(x)h(y)$ แยกตัวแปร: $\\dfrac{dy}{h(y)}=g(x)\\,dx$ แล้ว integrate ทั้งสองข้าง ใส่ constant จาก initial condition",
+  "formula": "\\frac{dy}{dx}=g(x)h(y) \\Rightarrow \\int\\frac{dy}{h(y)}=\\int g(x)\\,dx",
+  "warning": "เมื่อหารด้วย $h(y)$ อาจสูญ steady-state solutions ที่ $h(y_0)=0$ — ตรวจแยก",
+  "examples": [
+    {
+      "title": "Exponential growth",
+      "level": "Basic",
+      "tip": "แยก $y$ ไปซ้าย $x$ ไปขวา",
+      "problem": "แก้ $\\dfrac{dy}{dx}=ky$ ($k$ คงที่)",
+      "steps": [
+        "$\\dfrac{dy}{y}=k\\,dx$",
+        "$\\ln|y|=kx+C_1$ → $y=Ce^{kx}$"
+      ],
+      "answer": "$y=Ce^{kx}$"
+    },
+    {
+      "title": "Logistic-type separable",
+      "level": "Medium",
+      "tip": "ใช้ partial fractions หลัง integrate",
+      "problem": "แก้ $\\dfrac{dy}{dx}=y(1-y)$, $y(0)=1/2$",
+      "steps": [
+        "$\\dfrac{dy}{y(1-y)}=dx$ → partial fractions",
+        "$\\ln\\left|\\dfrac{y}{1-y}\\right|=x+C$",
+        "$y(0)=1/2$ → $C=0$ → $y=\\dfrac{e^x}{1+e^x}$"
+      ],
+      "answer": "$y=\\dfrac{e^x}{1+e^x}$"
+    }
+  ],
+  "practice": "แก้ $\\dfrac{dy}{dx}=\\dfrac{x}{y}$ โดย $y(1)=2$"
+}

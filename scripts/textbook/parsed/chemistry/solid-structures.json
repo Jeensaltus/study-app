@@ -1,0 +1,37 @@
+{
+  "id": "solid-structures",
+  "title": "Structures of Solids",
+  "source": "Chemistry: The Central Science 12th ed., Ch 11.7, p.440–455",
+  "chapterId": "solids-liquids",
+  "concept": "โครงสร้างผลึก: metallic (electron sea), ionic (ions ใน lattice), covalent network (diamond, SiO₂), molecular (ice, dry ice) แต่ละแบบมีคุณสมบัติต่างกัน — conductivity, hardness, melting point",
+  "formula": "\\text{coordination number} = \\text{จำนวน neighbors รอบอนุภาค}",
+  "warning": "อย่าสับสน molecular solid (intermolecular อ่อน) กับ covalent network (พันธะแข็งทั้ง crystal)",
+  "examples": [
+    {
+      "title": "จำแนกประเภทของ solid",
+      "level": "Basic",
+      "tip": "ดูว่าอนุภาค building block คืออะไร",
+      "problem": "จำแนก: NaCl, diamond, $I_2$, Fe",
+      "steps": [
+        "NaCl: ionic (Na⁺, Cl⁻ lattice)",
+        "diamond: covalent network (C-C tetrahedral)",
+        "$I_2$: molecular (London forces ระหว่าง $I_2$)",
+        "Fe: metallic (electron sea)"
+      ],
+      "answer": "ionic, covalent network, molecular, metallic"
+    },
+    {
+      "title": "Unit cell — จำนวน atom",
+      "level": "Medium",
+      "tip": "นับ atom ใน unit cell โดยใช้ fraction ที่อยู่ใน cell",
+      "problem": "FCC (face-centered cubic) มี atom ที่มุมและหน้า หาจำนวน atom ต่อ unit cell",
+      "steps": [
+        "8 มุม × 1/8 = 1 atom",
+        "6 หน้า × 1/2 = 3 atoms",
+        "รวม 4 atoms ต่อ unit cell"
+      ],
+      "answer": "4 atoms/unit cell (FCC)"
+    }
+  ],
+  "practice": "เปรียบเทียบ diamond กับ graphite: ทั้งคู่เป็น carbon แต่ทำไม diamond แข็งกว่ามาก"
+}

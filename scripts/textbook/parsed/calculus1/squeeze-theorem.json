@@ -1,0 +1,37 @@
+{
+  "id": "squeeze-theorem",
+  "title": "The Squeeze Theorem and Trigonometric Limits",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 2.4, p.107–118",
+  "chapterId": "limits",
+  "concept": "Squeeze Theorem: ถ้า $g(x)\\le f(x)\\le h(x)$ ใกล้ $a$ และ $\\lim g=\\lim h=L$ แล้ว $\\lim f=L$ ใช้พิสูจน์ลิมิตสำคัญ $\\lim_{x\\to 0}\\dfrac{\\sin x}{x}=1$ โดยบีบด้วย $\\cos x\\le\\dfrac{\\sin x}{x}\\le 1$",
+  "formula": "\\text{If } g(x)\\le f(x)\\le h(x) \\text{ and } \\lim g=\\lim h=L, \\text{ then } \\lim f=L",
+  "warning": "ต้องพิสูจน์ inequality จริงในช่วงใกล้ $a$ — ไม่ใช่แค่เดาว่าฟังก์ชันถูกบีบ",
+  "examples": [
+    {
+      "title": "ลิมิต $\\dfrac{\\sin x}{x}$ ที่ 0",
+      "level": "Basic",
+      "tip": "ใช้ Squeeze: $|\\sin x|\\le |x|$ สำหรับ $x$ ใกล้ 0",
+      "problem": "หา $\\lim_{x\\to 0}\\dfrac{\\sin x}{x}$",
+      "steps": [
+        "$-1\\le\\dfrac{\\sin x}{x}\\le 1$ เมื่อ $x\\to 0$ (จาก geometry หรือ $| \\sin x|\\le |x|$)",
+        "$\\lim_{x\\to 0}(-1)=-1$, $\\lim_{x\\to 0}1=1$ — ใช้ squeeze กับ $\\cos x\\le\\dfrac{\\sin x}{x}\\le 1$",
+        "ได้ $\\lim_{x\\to 0}\\dfrac{\\sin x}{x}=1$"
+      ],
+      "answer": "$1$"
+    },
+    {
+      "title": "ลิมิตที่มี $x^2\\sin(1/x)$",
+      "level": "Medium",
+      "tip": "$-1\\le\\sin(1/x)\\le 1$ → คูณด้วย $x^2$",
+      "problem": "หา $\\lim_{x\\to 0}x^2\\sin\\dfrac{1}{x}$",
+      "steps": [
+        "$-x^2\\le x^2\\sin(1/x)\\le x^2$",
+        "$\\lim_{x\\to 0}(-x^2)=0$, $\\lim_{x\\to 0}x^2=0$",
+        "Squeeze → ลิมิต $=0$"
+      ],
+      "answer": "$0$"
+    }
+  ],
+  "practice": "หา $\\lim_{x\\to 0}\\dfrac{1-\\cos x}{x^2}$ โดยใช้ $1-\\cos x=2\\sin^2(x/2)$ และ $\\lim\\dfrac{\\sin x}{x}=1$",
+  "graph": "limit"
+}

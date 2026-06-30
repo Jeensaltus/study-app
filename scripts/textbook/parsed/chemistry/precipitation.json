@@ -1,0 +1,35 @@
+{
+  "id": "precipitation",
+  "title": "Precipitation Reactions",
+  "source": "Chemistry: The Central Science 12th ed., Ch 4.2–4.3, p.115–125",
+  "chapterId": "aqueous-reactions",
+  "concept": "ปฏิกิริยาตกตะกอน: ไอons ในน้ำรวมกันแล้วสร้าง solid ที่ $K_{sp}$ ต่ำ ใช้ solubility rules ทำนาย precipitate (เช่น $AgCl$, $BaSO_4$) ionic equation แสดงเฉพาะ species ที่เปลี่ยน",
+  "formula": "\\text{solubility rules + }K_{sp}",
+  "warning": "ตรวจ charge balance ใน ionic equation — และ $K_{sp}$ ใช้กับ saturated solution ใน equilibrium",
+  "examples": [
+    {
+      "title": "ทำนาย precipitate",
+      "level": "Basic",
+      "tip": "ดู solubility rules",
+      "problem": "ผสม $AgNO_3$ กับ $NaCl$ สารใดตกตะกอน",
+      "steps": [
+        "$Ag^++Cl^-\\to AgCl(s)$",
+        "$AgCl$ ไม่ soluble → ตกตะกอนสีขาว",
+        "$Na^+$ และ $NO_3^-$ อยู่ใน solution (spectator)"
+      ],
+      "answer": "$AgCl(s)$ ตกตะกอน"
+    },
+    {
+      "title": "เขียน net ionic equation",
+      "level": "Medium",
+      "tip": "ตัด spectator ions",
+      "problem": "เขียน net ionic ของ $BaCl_2+Na_2SO_4$",
+      "steps": [
+        "Full: $Ba^{2+}+2Cl^-+2Na^++SO_4^{2-}\\to BaSO_4(s)+2Na^++2Cl^-$",
+        "Net: $Ba^{2+}+SO_4^{2-}\\to BaSO_4(s)$"
+      ],
+      "answer": "$Ba^{2+}+SO_4^{2-}\\to BaSO_4(s)$"
+    }
+  ],
+  "practice": "ผสม $Pb(NO_3)_2$ กับ $KI$ เขียน net ionic และระบุสี precipitate ($PbI_2$)"
+}

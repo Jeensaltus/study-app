@@ -1,0 +1,35 @@
+{
+  "id": "double-integrals-polar",
+  "title": "Double Integrals in Polar Coordinates",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 15.4, p.952–962",
+  "chapterId": "double-integrals",
+  "concept": "ใน polar coordinates: $x=r\\cos\\theta$, $y=r\\sin\\theta$, $dA=r\\,dr\\,d\\theta$ ใช้เมื่อ region หรือ integrand มี symmetry วงกลม/เส้นรอบวง",
+  "formula": "x=r\\cos\\theta,\\ y=r\\sin\\theta,\\ dA=r\\,dr\\,d\\theta",
+  "warning": "อย่าลืม factor $r$ ใน $dA$ — ถ้าไม่มีจะได้ area/volume ผิด",
+  "examples": [
+    {
+      "title": "Disk ใน polar",
+      "level": "Basic",
+      "tip": "$0\\le r\\le R$, $0\\le\\theta\\le 2\\pi$",
+      "problem": "หา area ของ disk รัศมี $R$ ด้วย polar",
+      "steps": [
+        "$A=\\int_0^{2\\pi}\\int_0^R r\\,dr\\,d\\theta$",
+        "$=\\int_0^{2\\pi}\\dfrac{R^2}{2}d\\theta=\\pi R^2$"
+      ],
+      "answer": "$\\pi R^2$"
+    },
+    {
+      "title": "Integrand มี $x^2+y^2$",
+      "level": "Medium",
+      "tip": "$x^2+y^2=r^2$ ทำให้ integrand ง่าย",
+      "problem": "หา $\\iint_D (x^2+y^2)\\,dA$ โดย $D: x^2+y^2\\le 4$",
+      "steps": [
+        "$\\int_0^{2\\pi}\\int_0^2 r^2\\cdot r\\,dr\\,d\\theta$",
+        "$=\\int_0^{2\\pi}\\dfrac{16}{4}d\\theta=8\\pi$"
+      ],
+      "answer": "$8\\pi$"
+    }
+  ],
+  "practice": "หา volume ใต้ $z=\\sqrt{x^2+y^2}$ บน $x^2+y^2\\le 1$ โดย polar coordinates",
+  "graph": "integral"
+}

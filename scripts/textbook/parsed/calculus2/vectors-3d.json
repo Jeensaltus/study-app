@@ -1,0 +1,33 @@
+{
+  "id": "vectors-3d",
+  "title": "Vectors in 3D",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 12.2, p.772–782",
+  "chapterId": "vectors-3d",
+  "concept": "เวกเตอร์ใน $\\mathbb{R}^3$ มี magnitude $|\\mathbf{v}|=\\sqrt{v_1^2+v_2^2+v_3^2}$ และทิศทาง การบวก component-wise: $\\mathbf{u}+\\mathbf{v}=(u_1+v_1,u_2+v_2,u_3+v_3)$ unit vector $\\hat{\\mathbf{v}}=\\mathbf{v}/|\\mathbf{v}|$",
+  "formula": "\\mathbf{v}=\\langle v_1,v_2,v_3\\rangle, \\quad |\\mathbf{v}|=\\sqrt{v_1^2+v_2^2+v_3^2}",
+  "warning": "เวกเตอร์ไม่มีตำแหน่ง — การเลื่อนไม่เปลี่ยนเวกเตอร์ แต่เปลี่ยน initial point",
+  "examples": [
+    {
+      "title": "Magnitude และ unit vector",
+      "level": "Basic",
+      "tip": "หา norm แล้วหาร",
+      "problem": "หา $|\\mathbf{v}|$ และ unit vector ของ $\\mathbf{v}=\\langle 1,-2,2\\rangle$",
+      "steps": [
+        "$|\\mathbf{v}|=\\sqrt{1+4+4}=3$",
+        "$\\hat{\\mathbf{v}}=\\langle 1/3,-2/3,2/3\\rangle$"
+      ],
+      "answer": "$|\\mathbf{v}|=3$, $\\hat{\\mathbf{v}}=\\langle\\tfrac{1}{3},-\\tfrac{2}{3},\\tfrac{2}{3}\\rangle$"
+    },
+    {
+      "title": "Standard basis vectors",
+      "level": "Basic",
+      "tip": "$\\mathbf{i},\\mathbf{j},\\mathbf{k}$ เป็น unit vectors ตามแกน",
+      "problem": "เขียน $\\mathbf{v}=\\langle 3,0,-2\\rangle$ ด้วย $\\mathbf{i},\\mathbf{j},\\mathbf{k}$",
+      "steps": [
+        "$\\mathbf{v}=3\\mathbf{i}-2\\mathbf{k}$"
+      ],
+      "answer": "$3\\mathbf{i}-2\\mathbf{k}$"
+    }
+  ],
+  "practice": "ถ้า $\\mathbf{a}=\\langle 1,1,0\\rangle$ และ $\\mathbf{b}=\\langle 0,1,1\\rangle$ หา $|\\mathbf{a}+\\mathbf{b}|$"
+}

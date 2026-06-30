@@ -1,0 +1,35 @@
+{
+  "id": "functions-several-vars",
+  "title": "Functions of Several Variables",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 14.1, p.850–860",
+  "chapterId": "multivariable",
+  "concept": "ฟังก์ชันหลายตัวแปร $f(x,y)$ หรือ $f(x,y,z)$ มี domain เป็น subset ของ $\\mathbb{R}^n$ level curves ของ $f(x,y)=k$ คือเส้น level บน xy-plane; level surfaces ใน 3D",
+  "formula": "f: \\mathbb{R}^n \\supset D \\to \\mathbb{R}; \\quad f(x,y)=k \\text{ (level curve)}",
+  "warning": "domain ของ $f(x,y)$ อาจถูกจำกัดโดย radical หรือ log — ตรวจทุกตัวแปร",
+  "examples": [
+    {
+      "title": "Domain ของ $f(x,y)$",
+      "level": "Basic",
+      "tip": "เศษส่วนและราก — รวมเงื่อนไข",
+      "problem": "หา domain ของ $f(x,y)=\\dfrac{\\ln y}{\\sqrt{4-x^2-y^2}}$",
+      "steps": [
+        "$\\ln y$: ต้องการ $y>0$",
+        "$\\sqrt{4-x^2-y^2}$: $x^2+y^2<4$ (inside disk)",
+        "domain: $\\{(x,y): x^2+y^2<4,\\ y>0\\}$"
+      ],
+      "answer": "$\\{(x,y): x^2+y^2<4,\\ y>0\\}$"
+    },
+    {
+      "title": "Level curves",
+      "level": "Medium",
+      "tip": "ตั้ง $f(x,y)=k$ แล้ว sketch",
+      "problem": "หา level curves ของ $f(x,y)=x^2+y^2$ ที่ $k=1,4$",
+      "steps": [
+        "$k=1$: $x^2+y^2=1$ (circle radius 1)",
+        "$k=4$: $x^2+y^2=4$ (circle radius 2)"
+      ],
+      "answer": "circles รัศมี $1$ และ $2$"
+    }
+  ],
+  "practice": "หาและ sketch level curves ของ $f(x,y)=xy$ ที่ $k=\\pm 1,0$"
+}

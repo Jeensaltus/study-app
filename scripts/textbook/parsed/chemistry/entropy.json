@@ -1,0 +1,36 @@
+{
+  "id": "entropy",
+  "title": "Entropy",
+  "source": "Chemistry: The Central Science 12th ed., Ch 19.2–19.3, p.780–795",
+  "chapterId": "thermochemistry",
+  "concept": "Entropy $S$ วัดความไม่เป็นระเบียบหรือจำนวน microstates ของระบบ Second Law: ในกระบวนการที่เกิดเองได้ entropy รวมของจักรวาลเพิ่มขึ้นเสมอ: $\\Delta S_{universe}=\\Delta S_{sys}+\\Delta S_{surr}>0$ $\\Delta S>0$ เมื่อ: ก๊าซเพิ่มขึ้น ความซับซ้อนเพิ่ม อุณหภูมิเพิ่ม มีการผสม",
+  "formula": "\\Delta S_{universe}=\\Delta S_{sys}+\\Delta S_{surr}>0",
+  "warning": "$\\Delta S>0$ เมื่อ disorder เพิ่ม — ก๊าซ > of liquid > solid",
+  "examples": [
+    {
+      "title": "ทำนาย ΔS — vaporization และ gas rxn",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ทำนาย $\\Delta S$ ของ: (a) $H_2O(l)\\to H_2O(g)$ (b) $2SO_2(g)+O_2(g)\\to2SO_3(g)$",
+      "steps": [
+        "(a) ของเหลวกลายเป็นก๊าซ จำนวน mol ก๊าซเพิ่ม → $\\Delta S>0$",
+        "(b) มี 3 mol ก๊าซ reactants → 2 mol ก๊าซ products",
+        "จำนวน mol ก๊าซลดลง ความไม่เป็นระเบียบลด → $\\Delta S<0$"
+      ],
+      "answer": "จำนวน mol ก๊าซลดลง ความไม่เป็นระเบียบลด → $\\Delta S<0$"
+    },
+    {
+      "title": "Sign ของ $\\Delta S$",
+      "level": "Medium",
+      "tip": "ก๊าซมี $S$ สูงกว่ of liquid/solid — ดู $\\Delta n_{gas}$ ของปฏิกิริยา",
+      "problem": "ทำนาย sign ของ $\\Delta S$ สำหรับ $N_2(g)+3H_2(g)\\to2NH_3(g)$",
+      "steps": [
+        "Reactants: 4 mol gas → Products: 2 mol gas",
+        "$\\Delta n_{gas}=2-4=-2$ (ลดลง)",
+        "ความ disorder ลด → $\\Delta S<0$"
+      ],
+      "answer": "$\\Delta S<0$"
+    }
+  ],
+  "practice": "ทำนาย sign ของ $\\Delta S$ สำหรับ $N_2(g)+3H_2(g)\\to2NH_3(g)$"
+}

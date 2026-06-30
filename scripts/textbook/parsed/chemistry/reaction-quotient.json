@@ -1,0 +1,36 @@
+{
+  "id": "reaction-quotient",
+  "title": "Reaction Quotient",
+  "source": "Chemistry: The Central Science 12th ed., Ch 15.4, p.600–610",
+  "chapterId": "equilibrium",
+  "concept": "Reaction quotient $Q$ คำนวณเหมือน $K$ แต่ใช้ความเข้มข้น ณ ขณะใดก็ได้ เปรียบเทียบ $Q$ กับ $K$: $Q<K$ → ปฏิกิริยาเดินไปข้างหน้า (สร้าง products); $Q>K$ → เดินย้อนกลับ; $Q=K$ → ที่ equilibrium",
+  "formula": "Q<K\\Rightarrow\\text{forward},\\quad Q>K\\Rightarrow\\text{reverse},\\quad Q=K\\Rightarrow\\text{equilibrium}",
+  "warning": "$Q>K$ → ไปทาง reactants; $Q<K$ → ไปทาง products",
+  "examples": [
+    {
+      "title": "Reaction Quotient Q vs K — ทิศสมดุล",
+      "level": "Basic",
+      "tip": "",
+      "problem": "$N_2+3H_2\\rightleftharpoons2NH_3$, $K_c=6.0\\times10^{-2}$ ถ้าเริ่มต้นมี $[N_2]=1.0$, $[H_2]=1.0$, $[NH_3]=1.0$ ทิศทางใด",
+      "steps": [
+        "$Q=\\frac{[NH_3]^2}{[N_2][H_2]^3}=\\frac{1}{1\\times1}=1$",
+        "$Q=1 > K=0.06$",
+        "ปฏิกิริยาเดินย้อนกลับ (สลาย $NH_3$)"
+      ],
+      "answer": "ปฏิกิริยาเดินย้อนกลับ"
+    },
+    {
+      "title": "เปรียบเทียบ $Q$ กับ $K$",
+      "level": "Medium",
+      "tip": "$Q>K$ → ไปทาง reactants; $Q<K$ → ไปทาง products",
+      "problem": "สำหรับ $2NO_2\\rightleftharpoons N_2O_4$, $K_c=0.20$ ถ้า $[NO_2]=0.5$, $[N_2O_4]=0.2$ หาทิศทาง",
+      "steps": [
+        "$Q=[N_2O_4]/[NO_2]^2=0.2/(0.5)^2=0.2/0.25=0.80$",
+        "$Q=0.80>K=0.20$",
+        "ปฏิกิริยาไปทางซ้าย (สร้าง $NO_2$ มากขึ้น, ลด $N_2O_4$)"
+      ],
+      "answer": "$Q>K$ → ไปทาง reactants"
+    }
+  ],
+  "practice": "สำหรับ $2NO_2\\rightleftharpoons N_2O_4$, $K_c=0.20$ ถ้า $[NO_2]=0.5$, $[N_2O_4]=0.2$ หาทิศทาง"
+}

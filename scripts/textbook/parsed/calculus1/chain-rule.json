@@ -1,0 +1,36 @@
+{
+  "id": "chain-rule",
+  "title": "The Chain Rule",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 3.5, p.169–176",
+  "chapterId": "derivatives",
+  "concept": "Chain Rule: ถ้า $y=f(g(x))$ แล้ว $\\dfrac{dy}{dx}=f'(g(x))\\cdot g'(x)$ หรือ $\\dfrac{dy}{dx}=\\dfrac{dy}{du}\\cdot\\dfrac{du}{dx}$ เมื่อ $u=g(x)$ ใช้เมื่อฟังก์ชันซ้อนกันหลายชั้น เช่น $\\sin(x^2)$, $e^{3x+1}$, $\\ln(\\cos x)$",
+  "formula": "\\frac{d}{dx}[f(g(x))]=f'(g(x))\\cdot g'(x)",
+  "warning": "อย่าลืมคูณด้วยอนุพันธ์ของฟังก์ชันข้างใน — ข้อผิดพลาดที่พบบ่อยคือลืม $g'(x)$",
+  "examples": [
+    {
+      "title": "Chain Rule พื้นฐาน",
+      "level": "Basic",
+      "tip": "ระบุ outer และ inner function ให้ชัด",
+      "problem": "หา $\\dfrac{d}{dx}\\sin(3x^2+1)$",
+      "steps": [
+        "outer: $\\sin u$, inner: $u=3x^2+1$",
+        "$\\dfrac{d}{dx}\\sin(3x^2+1)=\\cos(3x^2+1)\\cdot 6x$"
+      ],
+      "answer": "$6x\\cos(3x^2+1)$"
+    },
+    {
+      "title": "Chain Rule หลายชั้น",
+      "level": "Medium",
+      "tip": "ทำทีละชั้นจากนอกเข้าใน",
+      "problem": "หา $\\dfrac{d}{dx}e^{\\sin(2x)}$",
+      "steps": [
+        "$\\dfrac{d}{dx}e^u=e^u\\cdot u'$ โดย $u=\\sin(2x)$",
+        "$u'=\\cos(2x)\\cdot 2$",
+        "ได้ $2\\cos(2x)\\,e^{\\sin(2x)}$"
+      ],
+      "answer": "$2\\cos(2x)\\,e^{\\sin(2x)}$"
+    }
+  ],
+  "practice": "หา $\\dfrac{d}{dx}\\ln(\\sec x+\\tan x)$ โดยใช้ chain rule และ $\\sec x+\\tan x>0$",
+  "graph": "derivative"
+}

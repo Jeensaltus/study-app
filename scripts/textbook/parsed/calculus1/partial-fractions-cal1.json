@@ -1,0 +1,36 @@
+{
+  "id": "partial-fractions-cal1",
+  "title": "Partial Fractions",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 7.4, p.415–424",
+  "chapterId": "integration-techniques",
+  "concept": "Partial fractions แยก rational function ที่ $\\deg(\\text{numerator})<\\deg(\\text{denominator})$ เป็นผลรวมของเศษส่วนง่าย แล้ว integrate ทีละส่วน กรณี linear factor ซ้ำใช้ $(Ax+B)/(x-a)^k$",
+  "formula": "\\frac{P(x)}{(x-a)(x-b)}=\\frac{A}{x-a}+\\frac{B}{x-b}",
+  "warning": "ถ้า $\\deg P\\ge\\deg Q$ ต้อง polynomial long division ก่อน",
+  "examples": [
+    {
+      "title": "Distinct linear factors",
+      "level": "Medium",
+      "tip": "cover-up method หา $A, B$",
+      "problem": "หา $\\int\\dfrac{1}{x^2-1}\\,dx$",
+      "steps": [
+        "$\\dfrac{1}{(x-1)(x+1)}=\\dfrac{A}{x-1}+\\dfrac{B}{x+1}$",
+        "$A=1/2$, $B=-1/2$",
+        "$\\dfrac{1}{2}\\ln|x-1|-\\dfrac{1}{2}\\ln|x+1|+C$"
+      ],
+      "answer": "$\\dfrac{1}{2}\\ln\\left|\\dfrac{x-1}{x+1}\\right|+C$"
+    },
+    {
+      "title": "Repeated linear factor",
+      "level": "Hard",
+      "tip": "ต้องมี $\\dfrac{A}{x-1}+\\dfrac{B}{(x-1)^2}$",
+      "problem": "หา $\\int\\dfrac{x+1}{(x-1)^2}\\,dx$",
+      "steps": [
+        "แยก: $\\dfrac{1}{x-1}+\\dfrac{2}{(x-1)^2}$ (หลังจัด coefficients)",
+        "$\\ln|x-1|-\\dfrac{2}{x-1}+C$"
+      ],
+      "answer": "$\\ln|x-1|-\\dfrac{2}{x-1}+C$"
+    }
+  ],
+  "practice": "หา $\\int\\dfrac{2x+3}{x^2+x-2}\\,dx$ โดย partial fractions",
+  "graph": "integral"
+}

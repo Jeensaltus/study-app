@@ -1,0 +1,36 @@
+{
+  "id": "magnetic-force",
+  "title": "Magnetic Force on Moving Charges",
+  "source": "Serway Physics for Scientists and Engineers, Ch 29, p.845–865",
+  "chapterId": "magnetism",
+  "concept": "แรงแม่เหล็กบนประจุ: $\\vec F=q\\vec v\\times\\vec B$ ขนาด $F=qvB\\sin\\theta$ ทิศใช้ right-hand rule แรงบนตัวนำกระแส: $\\vec F=I\\vec L\\times\\vec B$ ขนาด $F=BIL\\sin\\theta$ ประจุในสนาม uniform เคลื่อนที่เป็นวงกลม: $r=mv/qB$",
+  "formula": "F=qvB\\sin\\theta, \\quad F=BIL\\sin\\theta",
+  "warning": "ใช้ right-hand rule สำหรับ $\\vec F=q\\vec v\\times\\vec B$ — มุมระหว่าง $v$ กับ $B$ สำคัญ",
+  "examples": [
+    {
+      "title": "แรงแม่เหล็กบนอิเล็กตรอน — รัศมีวง",
+      "level": "Basic",
+      "tip": "",
+      "problem": "อิเล็กตรอน ($q=1.6\\times10^{-19}\\,C$, $m=9.11\\times10^{-31}\\,kg$) เคลื่อนที่ $3\\times10^6\\,m/s$ ตั้งฉากกับ $B=0.5\\,T$ หารัศมีการเคลื่อนที่",
+      "steps": [
+        "$r=mv/qB$",
+        "$=\\frac{9.11\\times10^{-31}\\times3\\times10^6}{1.6\\times10^{-19}\\times0.5}$",
+        "$=\\frac{2.73\\times10^{-24}}{8\\times10^{-20}}=3.41\\times10^{-5}\\,m=0.034\\,mm$"
+      ],
+      "answer": "$=\\frac{2.73\\times10^{-24}}{8\\times10^{-20}}=3.41\\times10^{-5}\\,m=0.034\\,mm$"
+    },
+    {
+      "title": "แรงบนสายไฟในสนามแม่เหล็ก",
+      "level": "Medium",
+      "tip": "มุม $90°$ → $\\sin\\theta=1$ ใช้ $F=BIL$",
+      "problem": "สายไฟยาว $0.5\\,m$ มีกระแส $3\\,A$ ในสนาม $B=0.8\\,T$ ตั้งฉากกัน หาแรง",
+      "steps": [
+        "$F=BIL\\sin\\theta=0.8\\times3\\times0.5\\times1$",
+        "$F=1.2\\,N$",
+        "ทิศตาม right-hand rule: $I\\times B$"
+      ],
+      "answer": "$F=1.2\\,N$"
+    }
+  ],
+  "practice": "สายไฟยาว $0.5\\,m$ มีกระแส $3\\,A$ ในสนาม $B=0.8\\,T$ ตั้งฉากกัน หาแรง"
+}

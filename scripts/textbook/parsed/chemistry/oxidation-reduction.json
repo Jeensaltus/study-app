@@ -1,0 +1,35 @@
+{
+  "id": "oxidation-reduction",
+  "title": "Oxidation-Reduction Reactions",
+  "source": "Chemistry: The Central Science 12th ed., Ch 4.4–4.5, p.125–140",
+  "chapterId": "aqueous-reactions",
+  "concept": "Redox: oxidation คือเพิ่ม oxidation number (หรือสูญเสีย e⁻), reduction คือลด ON (ได้ e⁻) สมดุล half-reaction ด้วย e⁻ และ $H_2O$, $H^+$, $OH^-$ ตามสภาพ acidic/basic",
+  "formula": "\\text{ON}_{product}-\\text{ON}_{reactant}=\\Delta n_e",
+  "warning": "ใน basic solution ใช้ $OH^-$ แทน $H^+$ — บаланซ charge ก่อน แล้วค่อยบаланซ atom",
+  "examples": [
+    {
+      "title": "หา oxidation number",
+      "level": "Basic",
+      "tip": "ใช้กฎ: O มัก -2, H มัก +1, รวม ON = charge",
+      "problem": "หา ON ของ S ใน $H_2SO_4$",
+      "steps": [
+        "$2(+1)+ON+4(-2)=0$",
+        "$ON=+6$"
+      ],
+      "answer": "$ON(S)=+6$"
+    },
+    {
+      "title": "จำแนน oxidizing/reducing agent",
+      "level": "Medium",
+      "tip": "species ที่ถูก oxidize = reducing agent",
+      "problem": "ใน $Zn+Cu^{2+}\\to Zn^{2+}+Cu$ ใครเป็น reducing agent",
+      "steps": [
+        "$Zn$ เปลี่ยน $0\\to+2$ (oxidized)",
+        "$Zn$ ให้ e⁻ → reducing agent",
+        "$Cu^{2+}$ รับ e⁻ → oxidizing agent"
+      ],
+      "answer": "$Zn$ เป็น reducing agent"
+    }
+  ],
+  "practice": "Balance ใน acidic: $MnO_4^-+Fe^{2+}\\to Mn^{2+}+Fe^{3+}$"
+}

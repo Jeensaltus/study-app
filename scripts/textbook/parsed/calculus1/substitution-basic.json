@@ -1,0 +1,36 @@
+{
+  "id": "substitution-basic",
+  "title": "Substitution Rule",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 5.5, p.346–354",
+  "chapterId": "integrals",
+  "concept": "Substitution (u-sub): ถ้า $\\int f(g(x))g'(x)\\,dx$ ตั้ง $u=g(x)$ แล้ว $du=g'(x)dx$ ได้ $\\int f(u)\\,du$ เลือก $u$ ให้ส่วน $\\int f(u)du$ ง่ายกว่า",
+  "formula": "\\int f(g(x))g'(x)\\,dx = \\int f(u)\\,du, \\quad u=g(x)",
+  "warning": "อย่าลืมเปลี่ยนกลับเป็น $x$ หรือเปลี่ยนขอบ integration ถ้าเป็น definite integral",
+  "examples": [
+    {
+      "title": "u-sub พื้นฐาน",
+      "level": "Basic",
+      "tip": "มองหา function และ derivative ของมันใน integrand",
+      "problem": "หา $\\int 2x\\cos(x^2)\\,dx$",
+      "steps": [
+        "ตั้ง $u=x^2$, $du=2x\\,dx$",
+        "$\\int \\cos u\\,du=\\sin u+C$",
+        "$\\sin(x^2)+C$"
+      ],
+      "answer": "$\\sin(x^2)+C$"
+    },
+    {
+      "title": "Definite integral — เปลี่ยนขอบ",
+      "level": "Medium",
+      "tip": "เมื่อเปลี่ยน $u$ ต้องเปลี่ยนขอบด้วย",
+      "problem": "หา $\\int_0^1 3x^2\\sqrt{1+x^3}\\,dx$",
+      "steps": [
+        "$u=1+x^3$, $du=3x^2 dx$; $x=0\\Rightarrow u=1$, $x=1\\Rightarrow u=2$",
+        "$\\int_1^2 \\sqrt{u}\\,du=\\dfrac{2}{3}u^{3/2}\\Big|_1^2=\\dfrac{2}{3}(2\\sqrt{2}-1)$"
+      ],
+      "answer": "$\\dfrac{2}{3}(2\\sqrt{2}-1)$"
+    }
+  ],
+  "practice": "หา $\\int x e^{-x^2}\\,dx$ และ $\\int \\dfrac{\\ln x}{x}\\,dx$",
+  "graph": "integral"
+}

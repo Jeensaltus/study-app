@@ -1,0 +1,35 @@
+{
+  "id": "inverse-trig",
+  "title": "Inverse Trigonometric Functions",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 6.3, p.371–378",
+  "chapterId": "transcendental",
+  "concept": "อนุพันธ์ของ inverse trig: $\\dfrac{d}{dx}(\\arcsin x)=\\dfrac{1}{\\sqrt{1-x^2}}$, $\\dfrac{d}{dx}(\\arctan x)=\\dfrac{1}{1+x^2}$, $\\dfrac{d}{dx}(\\text{arcsec}\\,x)=\\dfrac{1}{|x|\\sqrt{x^2-1}}$ ใช้ chain rule เมื่อ argument ไม่ใช่ $x$",
+  "formula": "\\frac{d}{dx}(\\arcsin x)=\\frac{1}{\\sqrt{1-x^2}}, \\quad \\frac{d}{dx}(\\arctan x)=\\frac{1}{1+x^2}",
+  "warning": "domain ของ inverse trig จำกัด — $\\arcsin x$ ใช้ได้เมื่อ $-1\\le x\\le 1$",
+  "examples": [
+    {
+      "title": "Chain rule กับ arctan",
+      "level": "Basic",
+      "tip": "$(\\arctan u)'=\\dfrac{u'}{1+u^2}$",
+      "problem": "หา $\\dfrac{d}{dx}\\arctan(3x)$",
+      "steps": [
+        "$u=3x$, $u'=3$",
+        "$\\dfrac{d}{dx}\\arctan(3x)=\\dfrac{3}{1+9x^2}$"
+      ],
+      "answer": "$\\dfrac{3}{1+9x^2}$"
+    },
+    {
+      "title": "อนุพันธ์ที่ได้จาก implicit — arcsin",
+      "level": "Medium",
+      "tip": "จำสูตรหรือ derive จาก $\\sin y=x$",
+      "problem": "หา $\\dfrac{d}{dx}\\arcsin(x^2)$",
+      "steps": [
+        "$\\dfrac{1}{\\sqrt{1-(x^2)^2}}\\cdot 2x$",
+        "$=\\dfrac{2x}{\\sqrt{1-x^4}}$"
+      ],
+      "answer": "$\\dfrac{2x}{\\sqrt{1-x^4}}$"
+    }
+  ],
+  "practice": "หา $\\dfrac{d}{dx}[x\\,\\arctan x]$ โดย product rule",
+  "graph": "derivative"
+}

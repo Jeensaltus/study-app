@@ -1,0 +1,36 @@
+{
+  "id": "induction",
+  "title": "Principle of Mathematical Induction",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Appendix / Ch 9, p.700–705",
+  "chapterId": "mathematical-induction",
+  "concept": "หลักการอุปนัยเชิงคณิตศาสตร์ (Mathematical Induction) พิสูจน์ข้อความ $P(n)$ สำหรับ $n\\ge n_0$ โดย (1) พื้นฐาน: พิสูจน์ $P(n_0)$ (2) ขั้น inductive: สมมติ $P(k)$ จริง แล้วพิสูจน์ $P(k+1)$",
+  "formula": "P(n_0)\\text{ true and }[P(k)\\Rightarrow P(k+1)]\\Rightarrow P(n)\\text{ for all }n\\ge n_0",
+  "warning": "ขั้น inductive ต้องใช้สมมติฐาน $P(k)$ อย่างชัดเจน — ไม่ใช่แค่พิสูจน์ $P(k+1)$ โดยไม่สมมติ",
+  "examples": [
+    {
+      "title": "ผลรวม $1+2+\\cdots+n$",
+      "level": "Basic",
+      "tip": "พื้นฐาน $n=1$; inductive step บวก $k+1$ ทั้งสองข้าง",
+      "problem": "พิสูจน์ $1+2+\\cdots+n=\\dfrac{n(n+1)}{2}$",
+      "steps": [
+        "Base: $n=1$ → LHS $=1$, RHS $=1$ ✓",
+        "Assume $1+\\cdots+k=\\dfrac{k(k+1)}{2}$",
+        "LHS สำหรับ $k+1$: $\\dfrac{k(k+1)}{2}+(k+1)=\\dfrac{(k+1)(k+2)}{2}$ ✓"
+      ],
+      "answer": "พิสูจน์ได้โดย induction"
+    },
+    {
+      "title": "Divisibility — $3\\mid (4^n-1)$",
+      "level": "Medium",
+      "tip": "จัดรูป $4^{k+1}-1$ ให้มี $4^k-1$",
+      "problem": "พิสูจน์ $3$ หาร $4^n-1$ สำหรับ $n\\ge 1$",
+      "steps": [
+        "Base: $n=1$ → $4-1=3$ ✓",
+        "Assume $3\\mid(4^k-1)$ → $4^k-1=3m$",
+        "$4^{k+1}-1=4(4^k)-1=4(3m+1)-1=12m+3=3(4m+1)$ ✓"
+      ],
+      "answer": "$3\\mid(4^n-1)$ สำหรับทุก $n\\ge 1$"
+    }
+  ],
+  "practice": "พิสูจน์ $1^2+2^2+\\cdots+n^2=\\dfrac{n(n+1)(2n+1)}{6}$ โดย mathematical induction"
+}

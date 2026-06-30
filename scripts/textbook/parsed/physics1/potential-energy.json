@@ -1,0 +1,35 @@
+{
+  "id": "potential-energy",
+  "title": "Potential Energy and Conservation of Energy",
+  "source": "Serway Physics for Scientists and Engineers, Ch 8, p.176–195",
+  "chapterId": "energy",
+  "concept": "พลังงานศักย์ $U$ ขึ้นกับตำแหน่ง: โน้มถ่วง $U=mgh$, สปริง $U=\\frac{1}{2}kx^2$ กฎการอนุรักษ์พลังงานกลไก: $K_i+U_i=K_f+U_f$ เมื่อไม่มีแรง non-conservative ทำงาน งานของแรง conservative $W=-\\Delta U$",
+  "formula": "E_{mech}=K+U=\\text{const},\\quad W_{nc}=\\Delta E_{mech}",
+  "warning": "เลือก reference point ของ $U$ ให้สะดวก — มักตั้ง $U=0$ ที่พื้นหรือจุดสมดุงสปริง",
+  "examples": [
+    {
+      "title": "ลูกบอลตกจากความสูง",
+      "level": "Basic",
+      "tip": "ใช้ $mgh=\\frac{1}{2}mv^2$",
+      "problem": "ลูกบอล $2\\,kg$ ตกจาก $5\\,m$ หา $v$ ก่อนกระทบพื้น ($g=9.8\\,m/s^2$)",
+      "steps": [
+        "$mgh=\\frac{1}{2}mv^2$ → $v=\\sqrt{2gh}=\\sqrt{2(9.8)(5)}=\\sqrt{98}$",
+        "$v\\approx9.9\\,m/s$"
+      ],
+      "answer": "$v\\approx9.9\\,m/s$"
+    },
+    {
+      "title": "สปริง — ความเร็วที่จุดสมดุง",
+      "level": "Medium",
+      "tip": "ที่ $x=0$: $U=0$, พลังงานทั้งหมดเป็น $K$",
+      "problem": "สปริง $k=400\\,N/m$ ยืด $0.10\\,m$ แล้วปล่อย $m=0.50\\,kg$ หา $v$ ที่จุดสมดุง",
+      "steps": [
+        "$E=\\frac{1}{2}kA^2=\\frac{1}{2}(400)(0.01)=2\\,J$",
+        "$\\frac{1}{2}mv^2=2$ → $v=\\sqrt{8}=2.83\\,m/s$"
+      ],
+      "answer": "$v\\approx2.8\\,m/s$"
+    }
+  ],
+  "practice": "รถไฟราง $m=1000\\,kg$ ที่ $v=10\\,m/s$ ขึ้นเนิน $h=5\\,m$ หา $v$ บนยอดเนิน (ไม่มี friction)",
+  "graph": "energy"
+}

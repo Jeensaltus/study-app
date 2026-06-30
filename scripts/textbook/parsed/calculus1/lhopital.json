@@ -1,0 +1,36 @@
+{
+  "id": "lhopital",
+  "title": "Indeterminate Forms and L'Hôpital's Rule",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 4.4, p.231–239",
+  "chapterId": "applications",
+  "concept": "L'Hôpital's Rule: ถ้า $\\lim\\dfrac{f(x)}{g(x)}$ เป็นรูป $\\dfrac{0}{0}$ หรือ $\\dfrac{\\infty}{\\infty}$ และ derivative ของเศษ/ส่วนมีลิมิต แล้ว $\\lim\\dfrac{f}{g}=\\lim\\dfrac{f'}{g'}$ ใช้ซ้ำได้จนไม่เป็น indeterminate",
+  "formula": "\\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\lim_{x\\to a}\\frac{f'(x)}{g'(x)} \\quad (\\frac{0}{0}\\text{ or }\\frac{\\infty}{\\infty})",
+  "warning": "ใช้ได้เฉพาะรูป $0/0$ หรือ $\\infty/\\infty$ — รูป $0\\cdot\\infty$, $\\infty-\\infty$ ต้องจัดรูปก่อน",
+  "examples": [
+    {
+      "title": "รูป $0/0$ — ลิมิต trig",
+      "level": "Basic",
+      "tip": "ตรวจรูป indeterminate ก่อนใช้ L'Hôpital",
+      "problem": "หา $\\lim_{x\\to 0}\\dfrac{e^x-1-x}{x^2}$",
+      "steps": [
+        "แทน $x=0$: $\\dfrac{0}{0}$",
+        "L'Hôpital: $\\dfrac{e^x-1}{2x}$ → แทนอีก: $\\dfrac{0}{0}$",
+        "อีกครั้ง: $\\dfrac{e^x}{2}\\to\\dfrac{1}{2}$"
+      ],
+      "answer": "$\\dfrac{1}{2}$"
+    },
+    {
+      "title": "รูป $\\infty/\\infty$",
+      "level": "Medium",
+      "tip": "ใช้ L'Hôpital กับ $\\ln x$ และ $x$",
+      "problem": "หา $\\lim_{x\\to\\infty}\\dfrac{\\ln x}{x}$",
+      "steps": [
+        "$x\\to\\infty$: $\\dfrac{\\infty}{\\infty}$",
+        "L'Hôpital: $\\dfrac{1/x}{1}=\\dfrac{1}{x}\\to 0$"
+      ],
+      "answer": "$0$"
+    }
+  ],
+  "practice": "หา $\\lim_{x\\to 0^+}x^x$ โดยตั้ง $y=x^x$ แล้วใช้ $\\ln y=x\\ln x$ และ L'Hôpital",
+  "graph": "limit"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "lenses-mirrors",
+  "title": "Mirrors and Lenses",
+  "source": "Serway Physics for Scientists and Engineers, Ch 36, p.985–1005",
+  "chapterId": "optics",
+  "concept": "สมการเลนส์และกระจก: $1/d_o+1/d_i=1/f$ และกำลังขยาย $M=-d_i/d_o$. เลนส์นูนเป็น converging, เลนส์เว้าเป็น diverging. ภาพจริงมี $d_i>0$ ภาพเสมือน $d_i<0$.",
+  "formula": "\\frac{1}{d_o}+\\frac{1}{d_i}=\\frac{1}{f}, \\quad M=-\\frac{d_i}{d_o}",
+  "warning": "sign convention: ระยะวัตถุ/ภาพ บวก/ลบตาม convention ของตำรา — ตรวจก่อนคำนวณ",
+  "examples": [
+    {
+      "title": "Lens equation — เลนส์นูน",
+      "level": "Basic",
+      "tip": "ถ้าภาพอยู่ด้านตรงข้ามของเลนส์ $d_i$ เป็นบวก",
+      "problem": "วัตถุอยู่ห่าง $10\\,cm$ จากเลนส์นูนที่มี $f=15\\,cm$ จงหาตำแหน่งภาพและขนาดภาพ",
+      "steps": [
+        "$1/d_i = 1/15 - 1/10 = -1/30$",
+        "$d_i = -30\\,cm$",
+        "$M = -(-30)/10 = 3$"
+      ],
+      "answer": "ภาพเสมือนอยู่ด้านวัตถุห่าง 30 cm ขยาย 3 เท่า"
+    },
+    {
+      "title": "กระจกเว้า — ภาพเสมือน",
+      "level": "Medium",
+      "tip": "กระจกเว้า $f<0$ ใน convention Serway; วัตถุจริง $d_o>0$",
+      "problem": "วัตถุอยู่ $15\\,cm$ หน้ากระจกเว้า $f=-10\\,cm$ จงหา $d_i$ และลักษณะภาพ",
+      "steps": [
+        "$1/d_i=1/f-1/d_o=1/(-10)-1/15=-1/10-1/15$",
+        "$1/d_i=-5/30=-1/6 \\Rightarrow d_i=-6\\,cm$",
+        "$M=-d_i/d_o=-(-6)/15=0.4$ — ภาพเสมือน ตรง ย่อ"
+      ],
+      "answer": "$d_i=-6\\,cm$ ภาพเสมือนย่อ 0.4 เท่า"
+    }
+  ],
+  "practice": "วัตถุอยู่ $15\\,cm$ หน้ากระจกเว้า $f=10\\,cm$ จงหา $d_i$ และลักษณะภาพ"
+}

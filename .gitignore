@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+.env.local
+*.log
+scripts/vocab/cache/eng2thai.json
+scripts/vocab/cache/definitions.json
+scripts/vocab/cache/thai-mt.json

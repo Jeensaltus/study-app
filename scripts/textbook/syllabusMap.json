@@ -1,0 +1,498 @@
+{
+  "calculus1": {
+    "courseCodes": { "engineering": "2301107", "science": "2301113" },
+    "courseCode": "2301107",
+    "textbook": "Stewart Calculus Early Transcendentals 9th ed.",
+    "pdfKey": "calculus1",
+    "chapters": [
+      {
+        "id": "functions",
+        "title": "Functions and Models",
+        "description": "ทบทวนฟังก์ชัน กราฟ และการจำลองเบื้องต้น (Chula 2301113 บท 1)",
+        "sections": [
+          { "id": "function-basics", "title": "Functions and Representations", "textbookRef": { "section": "Ch 1.1–1.2", "pages": [10, 28] }, "chulaTopic": "precalc", "priority": 10 },
+          { "id": "exp-log-review", "title": "Exponential and Logarithmic Functions", "textbookRef": { "section": "Ch 1.5–1.6", "pages": [52, 62] }, "chulaTopic": "precalc", "priority": 11 }
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "Limits and Continuity",
+        "description": "ลิมิต ความต่อเนื่อง และพฤติกรรมปลายกราฟ",
+        "sections": [
+          { "id": "limit-idea", "title": "The Idea of a Limit", "textbookRef": { "section": "Ch 2.2", "pages": [88, 95] }, "chulaTopic": "limits", "priority": 1 },
+          { "id": "one-sided-limits", "title": "One-Sided Limits", "textbookRef": { "section": "Ch 2.2", "pages": [93, 98] }, "chulaTopic": "limits", "priority": 2 },
+          { "id": "limit-laws", "title": "Calculating Limits Using Limit Laws", "textbookRef": { "section": "Ch 2.3", "pages": [96, 106] }, "chulaTopic": "limits", "priority": 3 },
+          { "id": "continuity", "title": "Continuity", "textbookRef": { "section": "Ch 2.5", "pages": [119, 128] }, "chulaTopic": "continuity", "priority": 4 },
+          { "id": "limits-at-infinity", "title": "Limits at Infinity and Horizontal Asymptotes", "textbookRef": { "section": "Ch 2.6", "pages": [140, 150] }, "chulaTopic": "limits", "priority": 5 },
+          { "id": "squeeze-theorem", "title": "The Squeeze Theorem and Trigonometric Limits", "textbookRef": { "section": "Ch 2.4", "pages": [107, 118] }, "chulaTopic": "limits", "priority": 6 }
+        ]
+      },
+      {
+        "id": "derivatives",
+        "title": "Derivatives",
+        "description": "นิยามอนุพันธ์ กฎการหาอนุพันธ์ และอนุพันธ์ของฟังก์ชันประกอบ",
+        "sections": [
+          { "id": "definition", "title": "Definition of the Derivative", "textbookRef": { "section": "Ch 2.7–2.8", "pages": [128, 139] }, "chulaTopic": "derivatives", "priority": 1 },
+          { "id": "diff-rules", "title": "Differentiation Rules", "textbookRef": { "section": "Ch 3.1–3.4", "pages": [144, 168] }, "chulaTopic": "derivatives", "priority": 2 },
+          { "id": "chain-rule", "title": "The Chain Rule", "textbookRef": { "section": "Ch 3.5", "pages": [169, 176] }, "chulaTopic": "derivatives", "priority": 3 },
+          { "id": "implicit-differentiation", "title": "Implicit Differentiation", "textbookRef": { "section": "Ch 3.6", "pages": [177, 184] }, "chulaTopic": "derivatives", "priority": 4 },
+          { "id": "higher-derivatives", "title": "Higher Derivatives and Motion", "textbookRef": { "section": "Ch 3.7", "pages": [185, 192] }, "chulaTopic": "derivatives", "priority": 5 }
+        ]
+      },
+      {
+        "id": "applications",
+        "title": "Applications of Derivatives",
+        "description": "Related rates, optimization, และทฤษฎีบทค่ามัชฌิม",
+        "sections": [
+          { "id": "related-rates", "title": "Related Rates", "textbookRef": { "section": "Ch 3.9", "pages": [199, 206] }, "chulaTopic": "applications", "priority": 1 },
+          { "id": "optimization", "title": "Maximum and Minimum Values", "textbookRef": { "section": "Ch 4.1–4.3", "pages": [211, 230] }, "chulaTopic": "applications", "priority": 2 },
+          { "id": "mvt", "title": "Mean Value Theorem", "textbookRef": { "section": "Ch 4.2", "pages": [220, 228] }, "chulaTopic": "applications", "priority": 3 },
+          { "id": "curve-sketching", "title": "Curve Sketching", "textbookRef": { "section": "Ch 4.5", "pages": [240, 250] }, "chulaTopic": "applications", "priority": 4 },
+          { "id": "lhopital", "title": "Indeterminate Forms and L'Hôpital's Rule", "textbookRef": { "section": "Ch 4.4", "pages": [231, 239] }, "chulaTopic": "applications", "priority": 5 }
+        ]
+      },
+      {
+        "id": "integrals",
+        "title": "Integrals",
+        "description": "อินทิกรัลไม่จำกัด อินทิกรัลจำกัดเขต และ FTC",
+        "sections": [
+          { "id": "antiderivatives", "title": "Antiderivatives and Indefinite Integrals", "textbookRef": { "section": "Ch 4.9", "pages": [307, 314] }, "chulaTopic": "integrals", "priority": 1 },
+          { "id": "riemann-sums", "title": "Areas and Distances; Riemann Sums", "textbookRef": { "section": "Ch 5.1–5.2", "pages": [315, 330] }, "chulaTopic": "integrals", "priority": 2 },
+          { "id": "ftc", "title": "The Fundamental Theorem of Calculus", "textbookRef": { "section": "Ch 5.3–5.4", "pages": [331, 345] }, "chulaTopic": "integrals", "priority": 3 },
+          { "id": "substitution-basic", "title": "Substitution Rule", "textbookRef": { "section": "Ch 5.5", "pages": [346, 354] }, "chulaTopic": "integrals", "priority": 4 },
+          { "id": "net-change", "title": "Net Change Theorem and Applications", "textbookRef": { "section": "Ch 5.4", "pages": [338, 345] }, "chulaTopic": "integrals", "priority": 5 }
+        ]
+      },
+      {
+        "id": "transcendental",
+        "title": "Transcendental Functions",
+        "description": "ลอการิทึม เอกซ์โพเนนเชียล และอนุพันธ์/อินทิกรัลของฟังก์ชัน transcendental",
+        "sections": [
+          { "id": "log-diff", "title": "Derivatives of Log and Exp Functions", "textbookRef": { "section": "Ch 6.1–6.2", "pages": [355, 370] }, "chulaTopic": "integrals", "priority": 1 },
+          { "id": "inverse-trig", "title": "Inverse Trigonometric Functions", "textbookRef": { "section": "Ch 6.3", "pages": [371, 378] }, "chulaTopic": "derivatives", "priority": 2 },
+          { "id": "exp-log-integrals", "title": "Integrals of Exponential and Logarithmic Functions", "textbookRef": { "section": "Ch 6.4", "pages": [379, 386] }, "chulaTopic": "integrals", "priority": 3 }
+        ]
+      },
+      {
+        "id": "integration-techniques",
+        "title": "Techniques of Integration",
+        "description": "Integration by parts, trig integrals, partial fractions, improper integrals",
+        "sections": [
+          { "id": "integration-by-parts", "title": "Integration by Parts", "textbookRef": { "section": "Ch 7.1", "pages": [387, 396] }, "chulaTopic": "integrals", "priority": 1 },
+          { "id": "trig-integrals-cal1", "title": "Trigonometric Integrals", "textbookRef": { "section": "Ch 7.2", "pages": [397, 406] }, "chulaTopic": "integrals", "priority": 2 },
+          { "id": "partial-fractions-cal1", "title": "Partial Fractions", "textbookRef": { "section": "Ch 7.4", "pages": [415, 424] }, "chulaTopic": "integrals", "priority": 3 },
+          { "id": "improper-integrals", "title": "Improper Integrals", "textbookRef": { "section": "Ch 7.8", "pages": [458, 468] }, "chulaTopic": "integrals", "priority": 4 }
+        ]
+      },
+      {
+        "id": "modeling-ode",
+        "title": "Modeling and Differential Equations",
+        "description": "แนะนำสมการเชิงอนุพันธ์และการจำลอง (Chula 2301113 บท 10)",
+        "sections": [
+          { "id": "intro-ode-cal1", "title": "Introduction to Differential Equations", "textbookRef": { "section": "Ch 9.1", "pages": [549, 558] }, "chulaTopic": "applications", "priority": 1 },
+          { "id": "separable-ode-cal1", "title": "Separable Equations", "textbookRef": { "section": "Ch 9.3", "pages": [568, 576] }, "chulaTopic": "applications", "priority": 2 }
+        ]
+      }
+    ]
+  },
+  "calculus2": {
+    "courseCodes": { "engineering": "2301108", "science": "2301114" },
+    "courseCode": "2301108",
+    "textbook": "Stewart Calculus Early Transcendentals 9th ed.",
+    "pdfKey": "calculus2",
+    "chapters": [
+      {
+        "id": "mathematical-induction",
+        "title": "Mathematical Induction",
+        "description": "อุปนัยเชิงคณิตศาสตร์ (Chula Cal2)",
+        "sections": [
+          { "id": "induction", "title": "Principle of Mathematical Induction", "textbookRef": { "section": "Appendix / Ch 9", "pages": [700, 705] }, "chulaTopic": "series", "priority": 1 }
+        ]
+      },
+      {
+        "id": "integration-techniques",
+        "title": "Integration Techniques",
+        "sections": [
+          { "id": "parts", "title": "Integration by Parts", "textbookRef": { "section": "Ch 7.1", "pages": [457, 466] }, "chulaTopic": "integral", "priority": 1 },
+          { "id": "trig-integrals", "title": "Trigonometric Integrals", "textbookRef": { "section": "Ch 7.2", "pages": [466, 474] }, "chulaTopic": "integral", "priority": 2 },
+          { "id": "trig-substitution", "title": "Trigonometric Substitution", "textbookRef": { "section": "Ch 7.3", "pages": [474, 482] }, "chulaTopic": "integral", "priority": 3 },
+          { "id": "partial-fractions", "title": "Partial Fractions", "textbookRef": { "section": "Ch 7.4", "pages": [482, 490] }, "chulaTopic": "integral", "priority": 4 },
+          { "id": "improper-integrals", "title": "Improper Integrals", "textbookRef": { "section": "Ch 7.8", "pages": [514, 522] }, "chulaTopic": "integral", "priority": 5 }
+        ]
+      },
+      {
+        "id": "applications-integration",
+        "title": "Applications of Integration",
+        "sections": [
+          { "id": "volumes-revolution", "title": "Volumes of Revolution", "textbookRef": { "section": "Ch 6.2–6.3", "pages": [441, 456] }, "chulaTopic": "application", "priority": 1 },
+          { "id": "arc-length", "title": "Arc Length", "textbookRef": { "section": "Ch 8.1", "pages": [490, 498] }, "chulaTopic": "application", "priority": 2 },
+          { "id": "work-energy", "title": "Work and Energy", "textbookRef": { "section": "Ch 6.4", "pages": [452, 461] }, "chulaTopic": "application", "priority": 3 },
+          { "id": "numerical-integration", "title": "Numerical Integration", "textbookRef": { "section": "Ch 7.7", "pages": [506, 513] }, "chulaTopic": "application", "priority": 4 }
+        ]
+      },
+      {
+        "id": "sequences-series",
+        "title": "Sequences and Series",
+        "sections": [
+          { "id": "sequences", "title": "Sequences", "textbookRef": { "section": "Ch 11.1", "pages": [687, 697] }, "chulaTopic": "sequence", "priority": 1 },
+          { "id": "series", "title": "Series", "textbookRef": { "section": "Ch 11.2", "pages": [697, 705] }, "chulaTopic": "series", "priority": 2 },
+          { "id": "convergence-tests", "title": "Convergence Tests", "textbookRef": { "section": "Ch 11.3–11.6", "pages": [705, 737] }, "chulaTopic": "series", "priority": 3 },
+          { "id": "power-series", "title": "Power Series", "textbookRef": { "section": "Ch 11.8", "pages": [737, 749] }, "chulaTopic": "power_series", "priority": 4 },
+          { "id": "taylor-series", "title": "Taylor and Maclaurin Series", "textbookRef": { "section": "Ch 11.10", "pages": [749, 762] }, "chulaTopic": "series", "priority": 5 }
+        ]
+      },
+      {
+        "id": "parametric-polar",
+        "title": "Parametric and Polar Coordinates",
+        "sections": [
+          { "id": "parametric", "title": "Parametric Equations", "textbookRef": { "section": "Ch 10.1–10.2", "pages": [631, 643] }, "chulaTopic": "curve", "priority": 1 },
+          { "id": "polar", "title": "Polar Coordinates", "textbookRef": { "section": "Ch 10.3–10.4", "pages": [643, 658] }, "chulaTopic": "curve", "priority": 2 }
+        ]
+      },
+      {
+        "id": "vectors-3d",
+        "title": "Vectors and 3D Geometry",
+        "description": "พิกัดสามมิติ เวกเตอร์ เส้นและระนาบ (Chula Cal2 — สอบ Mid หนัก)",
+        "sections": [
+          { "id": "coords-3d", "title": "Three-Dimensional Coordinate Systems", "textbookRef": { "section": "Ch 12.1", "pages": [763, 772] }, "chulaTopic": "vector", "priority": 1 },
+          { "id": "vectors-3d", "title": "Vectors in 3D", "textbookRef": { "section": "Ch 12.2", "pages": [772, 782] }, "chulaTopic": "vector", "priority": 2 },
+          { "id": "dot-cross", "title": "The Dot and Cross Products", "textbookRef": { "section": "Ch 12.3–12.4", "pages": [782, 798] }, "chulaTopic": "vector", "priority": 3 },
+          { "id": "lines-planes", "title": "Equations of Lines and Planes", "textbookRef": { "section": "Ch 12.5", "pages": [798, 808] }, "chulaTopic": "line_plane", "priority": 4 },
+          { "id": "quadric-surfaces", "title": "Cylinders and Quadric Surfaces", "textbookRef": { "section": "Ch 12.6", "pages": [808, 818] }, "chulaTopic": "vector", "priority": 5 }
+        ]
+      },
+      {
+        "id": "multivariable",
+        "title": "Multivariable Calculus",
+        "description": "ฟังก์ชันหลายตัวแปร อนุพันธ์ย่อย (Chula Final ~58%)",
+        "sections": [
+          { "id": "functions-several-vars", "title": "Functions of Several Variables", "textbookRef": { "section": "Ch 14.1", "pages": [850, 860] }, "chulaTopic": "multivariable", "priority": 1 },
+          { "id": "partial-derivatives", "title": "Partial Derivatives", "textbookRef": { "section": "Ch 14.3", "pages": [870, 880] }, "chulaTopic": "multivariable", "priority": 2 },
+          { "id": "chain-rule-multivariable", "title": "The Chain Rule for Multivariable Functions", "textbookRef": { "section": "Ch 14.5", "pages": [890, 898] }, "chulaTopic": "multivariable", "priority": 3 },
+          { "id": "directional-gradient", "title": "Directional Derivatives and Gradient", "textbookRef": { "section": "Ch 14.6", "pages": [898, 908] }, "chulaTopic": "multivariable", "priority": 4 },
+          { "id": "max-min-multivariable", "title": "Maximum and Minimum Values", "textbookRef": { "section": "Ch 14.7", "pages": [908, 918] }, "chulaTopic": "multivariable", "priority": 5 },
+          { "id": "lagrange-multipliers", "title": "Lagrange Multipliers", "textbookRef": { "section": "Ch 14.8", "pages": [918, 926] }, "chulaTopic": "multivariable", "priority": 6 }
+        ]
+      },
+      {
+        "id": "double-integrals",
+        "title": "Multiple Integrals",
+        "sections": [
+          { "id": "double-integrals-rect", "title": "Double Integrals over Rectangles", "textbookRef": { "section": "Ch 15.1–15.2", "pages": [928, 942] }, "chulaTopic": "double_integral", "priority": 1 },
+          { "id": "double-integrals-general", "title": "Double Integrals over General Regions", "textbookRef": { "section": "Ch 15.2–15.3", "pages": [938, 952] }, "chulaTopic": "double_integral", "priority": 2 },
+          { "id": "double-integrals-polar", "title": "Double Integrals in Polar Coordinates", "textbookRef": { "section": "Ch 15.4", "pages": [952, 962] }, "chulaTopic": "double_integral", "priority": 3 }
+        ]
+      },
+      {
+        "id": "differential-equations",
+        "title": "Introduction to Differential Equations",
+        "sections": [
+          { "id": "intro-ode", "title": "Introduction to Differential Equations", "textbookRef": { "section": "Ch 9.1", "pages": [549, 558] }, "chulaTopic": "ode", "priority": 1 },
+          { "id": "separable-equations", "title": "Separable Equations", "textbookRef": { "section": "Ch 9.3", "pages": [568, 576] }, "chulaTopic": "ode", "priority": 2 },
+          { "id": "linear-first-order", "title": "Linear First-Order Equations", "textbookRef": { "section": "Ch 9.5", "pages": [591, 600] }, "chulaTopic": "ode", "priority": 3 }
+        ]
+      }
+    ]
+  },
+  "physics1": {
+    "courseCode": "2304103",
+    "textbook": "Serway Physics for Scientists and Engineers",
+    "pdfKey": "physics1",
+    "chapters": [
+      {
+        "id": "math-physics",
+        "title": "Physics and Measurement",
+        "description": "หน่วย SI เวกเตอร์ และการวิเคราะห์มิติ",
+        "sections": [
+          { "id": "units-vectors", "title": "Units, Vectors, and Scalars", "textbookRef": { "section": "Ch 1–2", "pages": [1, 40] }, "chulaTopic": "measurement", "priority": 1 },
+          { "id": "dimensional-analysis", "title": "Dimensional Analysis", "textbookRef": { "section": "Ch 1", "pages": [10, 18] }, "chulaTopic": "measurement", "priority": 2 }
+        ]
+      },
+      {
+        "id": "kinematics",
+        "title": "Kinematics",
+        "sections": [
+          { "id": "motion-1d", "title": "Motion in 1D — SUVAT", "textbookRef": { "section": "Ch 2", "pages": [30, 55] }, "chulaTopic": "kinematics", "priority": 1 },
+          { "id": "free-fall", "title": "Free Fall", "textbookRef": { "section": "Ch 2", "pages": [48, 55] }, "chulaTopic": "kinematics", "priority": 2 },
+          { "id": "projectile", "title": "Projectile Motion", "textbookRef": { "section": "Ch 4", "pages": [90, 105] }, "chulaTopic": "kinematics", "priority": 3 }
+        ]
+      },
+      {
+        "id": "newton",
+        "title": "Newton's Laws",
+        "sections": [
+          { "id": "newtons-laws", "title": "Newton's Laws of Motion", "textbookRef": { "section": "Ch 5", "pages": [106, 130] }, "chulaTopic": "forces", "priority": 1 },
+          { "id": "friction", "title": "Friction", "textbookRef": { "section": "Ch 6", "pages": [131, 145] }, "chulaTopic": "forces", "priority": 2 },
+          { "id": "circular-motion", "title": "Circular Motion", "textbookRef": { "section": "Ch 6", "pages": [140, 155] }, "chulaTopic": "forces", "priority": 3 }
+        ]
+      },
+      {
+        "id": "energy",
+        "title": "Work, Energy, and Power",
+        "sections": [
+          { "id": "work-energy-theorem", "title": "Work-Energy Theorem", "textbookRef": { "section": "Ch 7", "pages": [156, 175] }, "chulaTopic": "energy", "priority": 1 },
+          { "id": "potential-energy", "title": "Potential Energy and Conservation of Energy", "textbookRef": { "section": "Ch 8", "pages": [176, 195] }, "chulaTopic": "energy", "priority": 2 },
+          { "id": "power", "title": "Power", "textbookRef": { "section": "Ch 8", "pages": [195, 200] }, "chulaTopic": "energy", "priority": 3 }
+        ]
+      },
+      {
+        "id": "momentum",
+        "title": "Momentum and Collisions",
+        "sections": [
+          { "id": "conservation-momentum", "title": "Conservation of Momentum", "textbookRef": { "section": "Ch 9", "pages": [200, 220] }, "chulaTopic": "momentum", "priority": 1 }
+        ]
+      },
+      {
+        "id": "rotation",
+        "title": "Rotation and Angular Motion",
+        "sections": [
+          { "id": "rotational-kinematics", "title": "Rotational Kinematics", "textbookRef": { "section": "Ch 10", "pages": [221, 235] }, "chulaTopic": "rotation", "priority": 1 },
+          { "id": "torque-and-inertia", "title": "Torque and Moment of Inertia", "textbookRef": { "section": "Ch 10", "pages": [235, 255] }, "chulaTopic": "rotation", "priority": 2 },
+          { "id": "rolling-and-angular-momentum", "title": "Rolling and Angular Momentum", "textbookRef": { "section": "Ch 11", "pages": [256, 280] }, "chulaTopic": "rotation", "priority": 3 }
+        ]
+      },
+      {
+        "id": "fluids",
+        "title": "Fluid Mechanics",
+        "sections": [
+          { "id": "pressure-buoyancy", "title": "Pressure and Buoyancy", "textbookRef": { "section": "Ch 14", "pages": [350, 370] }, "chulaTopic": "fluids", "priority": 1 },
+          { "id": "manometer", "title": "Manometer and Multi-Fluid Columns", "textbookRef": { "section": "Ch 14.2", "pages": [360, 370] }, "chulaTopic": "fluids", "priority": 2 },
+          { "id": "fluid-dynamics", "title": "Fluid Dynamics and Bernoulli", "textbookRef": { "section": "Ch 14", "pages": [370, 390] }, "chulaTopic": "fluids", "priority": 3 }
+        ]
+      },
+      {
+        "id": "oscillations-waves",
+        "title": "Oscillations and Waves",
+        "sections": [
+          { "id": "simple-harmonic-motion", "title": "Simple Harmonic Motion", "textbookRef": { "section": "Ch 15", "pages": [390, 410] }, "chulaTopic": "waves", "priority": 1 },
+          { "id": "collision-spring-shm", "title": "Collision and Spring Oscillations", "textbookRef": { "section": "Ch 15", "pages": [400, 410] }, "chulaTopic": "waves", "priority": 2 },
+          { "id": "mechanical-waves", "title": "Mechanical Waves", "textbookRef": { "section": "Ch 16", "pages": [410, 435] }, "chulaTopic": "waves", "priority": 3 },
+          { "id": "doppler-effect", "title": "Doppler Effect", "textbookRef": { "section": "Ch 17", "pages": [435, 455] }, "chulaTopic": "waves", "priority": 4 }
+        ]
+      },
+      {
+        "id": "thermodynamics",
+        "title": "Thermodynamics and Kinetic Theory",
+        "sections": [
+          { "id": "temperature-heat", "title": "Temperature and Heat", "textbookRef": { "section": "Ch 19", "pages": [480, 500] }, "chulaTopic": "thermo", "priority": 1 },
+          { "id": "first-law-thermo", "title": "First Law of Thermodynamics", "textbookRef": { "section": "Ch 20", "pages": [500, 520] }, "chulaTopic": "thermo", "priority": 2 },
+          { "id": "pv-thermo-cycle", "title": "PV Diagrams and Thermodynamic Cycles", "textbookRef": { "section": "Ch 20.5", "pages": [510, 520] }, "chulaTopic": "thermo", "priority": 3 },
+          { "id": "kinetic-theory", "title": "Kinetic Theory of Gases", "textbookRef": { "section": "Ch 19", "pages": [490, 510] }, "chulaTopic": "thermo", "priority": 4 },
+          { "id": "maxwell-mean-free-path", "title": "Maxwell Distribution and Mean Free Path", "textbookRef": { "section": "Ch 19.5", "pages": [500, 510] }, "chulaTopic": "thermo", "priority": 5 },
+          { "id": "second-law-heat", "title": "Second Law and Heat Engines", "textbookRef": { "section": "Ch 22", "pages": [540, 560] }, "chulaTopic": "thermo", "priority": 6 },
+          { "id": "heat-transfer", "title": "Heat Transfer", "textbookRef": { "section": "Ch 20", "pages": [515, 530] }, "chulaTopic": "thermo", "priority": 7 }
+        ]
+      },
+      {
+        "id": "gravitation",
+        "title": "Universal Gravitation",
+        "description": "ก฻์แรงโน้มถ่วงสากล วงโคจร และพลังงานศักย์โน้มถ่วง",
+        "sections": [
+          { "id": "universal-gravitation", "title": "Newton's Law of Universal Gravitation", "textbookRef": { "section": "Ch 13", "pages": [320, 340] }, "chulaTopic": "gravitation", "priority": 1 },
+          { "id": "orbits-satellites", "title": "Orbits and Satellites", "textbookRef": { "section": "Ch 13", "pages": [340, 360] }, "chulaTopic": "gravitation", "priority": 2 }
+        ]
+      },
+      {
+        "id": "statics-elasticity",
+        "title": "Statics and Elasticity",
+        "description": "สมดุลของวัตถuแข็งและความยืดหยุ่น",
+        "sections": [
+          { "id": "equilibrium-conditions", "title": "Conditions for Equilibrium", "textbookRef": { "section": "Ch 12", "pages": [300, 320] }, "chulaTopic": "statics", "priority": 1 },
+          { "id": "elasticity", "title": "Stress, Strain, and Young's Modulus", "textbookRef": { "section": "Ch 12", "pages": [320, 335] }, "chulaTopic": "statics", "priority": 2 }
+        ]
+      }
+    ]
+  },
+  "physics2": {
+    "courseCode": "2304104",
+    "textbook": "Serway Physics for Scientists and Engineers",
+    "pdfKey": "physics2",
+    "chapters": [
+      {
+        "id": "electric-field",
+        "title": "Electric Charge and Field",
+        "sections": [
+          { "id": "coulomb", "title": "Coulomb's Law", "textbookRef": { "section": "Ch 23", "pages": [711, 725] }, "chulaTopic": "electricity", "priority": 1 },
+          { "id": "electric-field-def", "title": "Electric Field", "textbookRef": { "section": "Ch 23", "pages": [725, 740] }, "chulaTopic": "electricity", "priority": 2 },
+          { "id": "gauss-law", "title": "Gauss's Law", "textbookRef": { "section": "Ch 24", "pages": [740, 760] }, "chulaTopic": "electricity", "priority": 3 },
+          { "id": "electric-potential", "title": "Electric Potential", "textbookRef": { "section": "Ch 25", "pages": [760, 780] }, "chulaTopic": "electricity", "priority": 4 }
+        ]
+      },
+      {
+        "id": "capacitance",
+        "title": "Capacitance",
+        "sections": [
+          { "id": "capacitance-def", "title": "Capacitance and Energy Storage", "textbookRef": { "section": "Ch 26", "pages": [780, 795] }, "chulaTopic": "electricity", "priority": 1 }
+        ]
+      },
+      {
+        "id": "circuits",
+        "title": "Electric Circuits",
+        "sections": [
+          { "id": "ohm", "title": "Ohm's Law and Resistance", "textbookRef": { "section": "Ch 27", "pages": [795, 810] }, "chulaTopic": "circuits", "priority": 1 },
+          { "id": "kirchhoff", "title": "Kirchhoff's Rules", "textbookRef": { "section": "Ch 28", "pages": [810, 830] }, "chulaTopic": "circuits", "priority": 2 },
+          { "id": "rc-circuit", "title": "RC Circuits", "textbookRef": { "section": "Ch 28", "pages": [830, 845] }, "chulaTopic": "circuits", "priority": 3 },
+          { "id": "rl-dc-circuit", "title": "RL Circuits (DC)", "textbookRef": { "section": "Ch 32", "pages": [905, 915] }, "chulaTopic": "circuits", "priority": 4 },
+          { "id": "ac-circuits", "title": "Alternating Current Circuits", "textbookRef": { "section": "Ch 33", "pages": [920, 945] }, "chulaTopic": "circuits", "priority": 5 },
+          { "id": "rlc-series", "title": "Series RLC Circuits", "textbookRef": { "section": "Ch 33", "pages": [930, 945] }, "chulaTopic": "circuits", "priority": 6 }
+        ]
+      },
+      {
+        "id": "magnetism",
+        "title": "Magnetism",
+        "sections": [
+          { "id": "magnetic-force", "title": "Magnetic Force on Moving Charges", "textbookRef": { "section": "Ch 29", "pages": [845, 865] }, "chulaTopic": "magnetism", "priority": 1 },
+          { "id": "ampere-law", "title": "Ampère's Law", "textbookRef": { "section": "Ch 30", "pages": [865, 885] }, "chulaTopic": "magnetism", "priority": 2 },
+          { "id": "faraday", "title": "Faraday's Law and Induction", "textbookRef": { "section": "Ch 31", "pages": [885, 905] }, "chulaTopic": "magnetism", "priority": 3 },
+          { "id": "motional-emf", "title": "Motional EMF and Induced Current", "textbookRef": { "section": "Ch 31.3", "pages": [895, 905] }, "chulaTopic": "magnetism", "priority": 4 },
+          { "id": "magnetic-materials", "title": "Magnetic Materials", "textbookRef": { "section": "Ch 32", "pages": [905, 920] }, "chulaTopic": "magnetism", "priority": 5 }
+        ]
+      },
+      {
+        "id": "wave-optics",
+        "title": "Wave Optics",
+        "description": "การแทรกสอด การแทรกแสง และการเลี้ยวเฟส",
+        "sections": [
+          { "id": "interference", "title": "Interference and Young's Double Slit", "textbookRef": { "section": "Ch 37", "pages": [1005, 1025] }, "chulaTopic": "optics", "priority": 1 },
+          { "id": "thin-film", "title": "Thin Film Interference", "textbookRef": { "section": "Ch 37.5", "pages": [1015, 1025] }, "chulaTopic": "optics", "priority": 2 },
+          { "id": "diffraction", "title": "Diffraction", "textbookRef": { "section": "Ch 38", "pages": [1025, 1045] }, "chulaTopic": "optics", "priority": 3 },
+          { "id": "brewster-angle", "title": "Brewster's Angle and Polarization", "textbookRef": { "section": "Ch 38.5", "pages": [1035, 1045] }, "chulaTopic": "optics", "priority": 4 }
+        ]
+      },
+      {
+        "id": "waves-optics",
+        "title": "Waves and Electromagnetism",
+        "sections": [
+          { "id": "wave-basics", "title": "Wave Properties", "textbookRef": { "section": "Ch 16", "pages": [410, 435] }, "chulaTopic": "waves", "priority": 1 },
+          { "id": "sound-doppler", "title": "Sound and Doppler Effect", "textbookRef": { "section": "Ch 17", "pages": [435, 455] }, "chulaTopic": "waves", "priority": 2 },
+          { "id": "em-waves", "title": "Electromagnetic Waves", "textbookRef": { "section": "Ch 34", "pages": [945, 965] }, "chulaTopic": "waves", "priority": 3 },
+          { "id": "poynting-vector", "title": "Poynting Vector and EM Energy Flow", "textbookRef": { "section": "Ch 34.4", "pages": [955, 965] }, "chulaTopic": "waves", "priority": 4 }
+        ]
+      },
+      {
+        "id": "optics",
+        "title": "Geometric Optics",
+        "sections": [
+          { "id": "reflection-refraction", "title": "Reflection and Refraction", "textbookRef": { "section": "Ch 35", "pages": [965, 985] }, "chulaTopic": "optics", "priority": 1 },
+          { "id": "lenses-mirrors", "title": "Mirrors and Lenses", "textbookRef": { "section": "Ch 36", "pages": [985, 1005] }, "chulaTopic": "optics", "priority": 2 }
+        ]
+      },
+      {
+        "id": "modern-physics",
+        "title": "Modern Physics",
+        "sections": [
+          { "id": "photoelectric", "title": "Photoelectric Effect", "textbookRef": { "section": "Ch 40", "pages": [1050, 1065] }, "chulaTopic": "modern", "priority": 1 },
+          { "id": "atomic-spectra", "title": "Atomic Structure and Spectra", "textbookRef": { "section": "Ch 41", "pages": [1065, 1085] }, "chulaTopic": "modern", "priority": 2 },
+          { "id": "particle-in-box", "title": "Particle in a Box", "textbookRef": { "section": "Ch 41.2", "pages": [1070, 1080] }, "chulaTopic": "modern", "priority": 3 },
+          { "id": "nuclear-physics", "title": "Nuclear Physics", "textbookRef": { "section": "Ch 44", "pages": [1120, 1140] }, "chulaTopic": "modern", "priority": 4 },
+          { "id": "nuclear-decay-q", "title": "Nuclear Decay and Q-Values", "textbookRef": { "section": "Ch 44.5", "pages": [1130, 1140] }, "chulaTopic": "modern", "priority": 5 },
+          { "id": "special-relativity", "title": "Special Relativity", "textbookRef": { "section": "Ch 39", "pages": [1030, 1050] }, "chulaTopic": "modern", "priority": 6 }
+        ]
+      }
+    ]
+  },
+  "chemistry": {
+    "courseCode": "2302111",
+    "textbook": "Chemistry: The Central Science 12th ed.",
+    "pdfKey": "chemistry",
+    "chapters": [
+      {
+        "id": "atomic-structure",
+        "title": "Atomic Structure",
+        "sections": [
+          { "id": "atomic-model", "title": "Models of the Atom", "textbookRef": { "section": "Ch 6.1–6.3", "pages": [219, 240] }, "chulaTopic": "atomic", "priority": 1 },
+          { "id": "orbitals", "title": "Quantum Numbers and Orbitals", "textbookRef": { "section": "Ch 6.5–6.6", "pages": [240, 260] }, "chulaTopic": "atomic", "priority": 2 },
+          { "id": "electron-config", "title": "Electron Configurations", "textbookRef": { "section": "Ch 6.8–6.9", "pages": [260, 275] }, "chulaTopic": "atomic", "priority": 3 },
+          { "id": "periodic-trends", "title": "Periodic Trends", "textbookRef": { "section": "Ch 7", "pages": [275, 295] }, "chulaTopic": "atomic", "priority": 4 }
+        ]
+      },
+      {
+        "id": "aqueous-reactions",
+        "title": "Aqueous Reactions",
+        "description": "ปฏิกิริยาในน้ำ การตกตะกอน และ redox",
+        "sections": [
+          { "id": "precipitation", "title": "Precipitation Reactions", "textbookRef": { "section": "Ch 4.2–4.3", "pages": [115, 125] }, "chulaTopic": "aqueous", "priority": 1 },
+          { "id": "oxidation-reduction", "title": "Oxidation-Reduction Reactions", "textbookRef": { "section": "Ch 4.4–4.5", "pages": [125, 140] }, "chulaTopic": "aqueous", "priority": 2 }
+        ]
+      },
+      {
+        "id": "stoichiometry",
+        "title": "Stoichiometry",
+        "sections": [
+          { "id": "mole-concept", "title": "The Mole and Molar Mass", "textbookRef": { "section": "Ch 3.1–3.4", "pages": [80, 100] }, "chulaTopic": "stoichiometry", "priority": 1 },
+          { "id": "chemical-equations", "title": "Chemical Equations and Yield", "textbookRef": { "section": "Ch 3.5–3.7", "pages": [100, 120] }, "chulaTopic": "stoichiometry", "priority": 2 },
+          { "id": "solutions", "title": "Solutions and Molarity", "textbookRef": { "section": "Ch 4.5", "pages": [130, 145] }, "chulaTopic": "stoichiometry", "priority": 3 }
+        ]
+      },
+      {
+        "id": "bonding",
+        "title": "Chemical Bonding",
+        "sections": [
+          { "id": "ionic-covalent", "title": "Ionic and Covalent Bonding", "textbookRef": { "section": "Ch 8.1–8.3", "pages": [295, 315] }, "chulaTopic": "bonding", "priority": 1 },
+          { "id": "lewis-structures", "title": "Lewis Structures", "textbookRef": { "section": "Ch 8.5–8.6", "pages": [315, 335] }, "chulaTopic": "bonding", "priority": 2 },
+          { "id": "vsepr", "title": "VSEPR and Molecular Geometry", "textbookRef": { "section": "Ch 9.1–9.3", "pages": [335, 355] }, "chulaTopic": "bonding", "priority": 3 },
+          { "id": "hybridization", "title": "Hybridization", "textbookRef": { "section": "Ch 9.4–9.5", "pages": [355, 370] }, "chulaTopic": "bonding", "priority": 4 }
+        ]
+      },
+      {
+        "id": "gases",
+        "title": "Gases",
+        "sections": [
+          { "id": "ideal-gas-law", "title": "The Ideal Gas Law", "textbookRef": { "section": "Ch 10.1–10.4", "pages": [370, 395] }, "chulaTopic": "gases", "priority": 1 },
+          { "id": "gas-kinetic-theory", "title": "Kinetic-Molecular Theory", "textbookRef": { "section": "Ch 10.7–10.8", "pages": [395, 410] }, "chulaTopic": "gases", "priority": 2 }
+        ]
+      },
+      {
+        "id": "solids-liquids",
+        "title": "Intermolecular Forces, Liquids, and Solids",
+        "sections": [
+          { "id": "intermolecular-forces", "title": "Intermolecular Forces", "textbookRef": { "section": "Ch 11.1–11.2", "pages": [410, 425] }, "chulaTopic": "states", "priority": 1 },
+          { "id": "solid-structures", "title": "Structures of Solids", "textbookRef": { "section": "Ch 11.7", "pages": [440, 455] }, "chulaTopic": "states", "priority": 2 }
+        ]
+      },
+      {
+        "id": "thermochemistry",
+        "title": "Thermochemistry",
+        "sections": [
+          { "id": "heat-enthalpy", "title": "Heat and Enthalpy", "textbookRef": { "section": "Ch 5.1–5.4", "pages": [170, 195] }, "chulaTopic": "thermo", "priority": 1 },
+          { "id": "entropy", "title": "Entropy", "textbookRef": { "section": "Ch 19.2–19.3", "pages": [780, 795] }, "chulaTopic": "thermo", "priority": 2 },
+          { "id": "gibbs", "title": "Gibbs Free Energy", "textbookRef": { "section": "Ch 19.5", "pages": [795, 810] }, "chulaTopic": "thermo", "priority": 3 }
+        ]
+      },
+      {
+        "id": "kinetics",
+        "title": "Chemical Kinetics",
+        "sections": [
+          { "id": "rate-laws", "title": "Rate Laws and Reaction Order", "textbookRef": { "section": "Ch 14.1–14.3", "pages": [530, 550] }, "chulaTopic": "kinetics", "priority": 1 },
+          { "id": "activation-energy", "title": "Activation Energy and Arrhenius Equation", "textbookRef": { "section": "Ch 14.5–14.6", "pages": [550, 565] }, "chulaTopic": "kinetics", "priority": 2 }
+        ]
+      },
+      {
+        "id": "equilibrium",
+        "title": "Chemical Equilibrium",
+        "sections": [
+          { "id": "equilibrium-constant", "title": "Equilibrium Constant", "textbookRef": { "section": "Ch 15.1–15.3", "pages": [580, 600] }, "chulaTopic": "equilibrium", "priority": 1, "level": "advanced" },
+          { "id": "reaction-quotient", "title": "Reaction Quotient", "textbookRef": { "section": "Ch 15.4", "pages": [600, 610] }, "chulaTopic": "equilibrium", "priority": 2, "level": "advanced" },
+          { "id": "le-chatelier", "title": "Le Chatelier's Principle", "textbookRef": { "section": "Ch 15.5", "pages": [610, 625] }, "chulaTopic": "equilibrium", "priority": 3, "level": "advanced" },
+          { "id": "acid-base", "title": "Acid-Base Equilibrium", "textbookRef": { "section": "Ch 16.1–16.4", "pages": [625, 655] }, "chulaTopic": "equilibrium", "priority": 4, "level": "advanced" }
+        ]
+      },
+      {
+        "id": "acid-base-ph",
+        "title": "Acids, Bases, and pH",
+        "description": "pH, Ka/Kb, และสารละลายบัฟเฟอร์",
+        "sections": [
+          { "id": "ph-scale", "title": "The pH Scale and Strong Acids/Bases", "textbookRef": { "section": "Ch 16.5–16.6", "pages": [655, 675] }, "chulaTopic": "acid_base", "priority": 1 },
+          { "id": "buffer-solutions", "title": "Buffer Solutions", "textbookRef": { "section": "Ch 17.1–17.2", "pages": [680, 700] }, "chulaTopic": "acid_base", "priority": 2, "level": "advanced" }
+        ]
+      },
+      {
+        "id": "nuclear-chemistry",
+        "title": "Nuclear Chemistry",
+        "sections": [
+          { "id": "nuclear-basics", "title": "Radioactivity and Nuclear Reactions", "textbookRef": { "section": "Ch 21.1–21.3", "pages": [850, 875] }, "chulaTopic": "nuclear", "priority": 1 }
+        ]
+      }
+    ]
+  }
+}

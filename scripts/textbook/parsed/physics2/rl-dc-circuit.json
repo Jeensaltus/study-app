@@ -1,0 +1,34 @@
+{
+  "id": "rl-dc-circuit",
+  "title": "RL Circuits (DC)",
+  "source": "Serway Physics for Scientists and Engineers, Ch 32, p.905–915",
+  "chapterId": "circuits",
+  "concept": "วงจร RL ต่ออนุกรม DC: เมื่อ $t=0$ สวิตช์ปิด กระแสเริ่มจากศูนย์และเพิ่มตาม $I(t)=\\frac{\\varepsilon}{R}(1-e^{-t/\\tau})$ โดย $\\tau=L/R$ แรงดันบนตัวเหนี่ยวนำ $V_L=L\\,dI/dt$ ลดลงเมื่อกระแสนิ่ง $I=\\varepsilon/R$",
+  "formula": "I(t)=\\frac{\\varepsilon}{R}(1-e^{-t/\\tau}),\\quad \\tau=\\frac{L}{R}",
+  "warning": "ที่ $t=0$ inductor เป็น open circuit ($I=0$) — อย่าใช้ $V=IR$ ทันที; ที่ $t\\to\\infty$ inductor เป็น short ($V_L=0$)",
+  "examples": [
+    {
+      "title": "RL — หา I หลัง 1 ms",
+      "level": "Basic",
+      "tip": "หา $\\tau=L/R$ แล้วแทน $t$",
+      "problem": "วงจร $V=18\\,V$, $R=6\\,k\\Omega$, $L=0.5\\,H$ ปิดสวิตช์ที่ $t=0$ หา $I$ ที่ $t=1\\,ms$",
+      "steps": [
+        "$\\tau=L/R=0.5/(6\\times10^3)=8.33\\times10^{-5}\\,s$",
+        "$I=\\dfrac{18}{6000}(1-e^{-0.001/8.33\\times10^{-5}})=0.003(1-e^{-12})\\approx3.0\\,mA$"
+      ],
+      "answer": "$I\\approx3.0\\,mA$ (เกือบนิ่ง)"
+    },
+    {
+      "title": "RL — แรงดันบน L ที่ $t=0$",
+      "level": "Medium",
+      "tip": "ที่ $t=0$: $V_L=V_{source}$ เพราะ $I=0$",
+      "problem": "จากข้อก่อน หา $V_L$ ที่ $t=0$ และ $I$ ใน steady state",
+      "steps": [
+        "$t=0$: $V_L=18\\,V$",
+        "Steady: $I=V/R=18/6000=3\\,mA$, $V_L=0$"
+      ],
+      "answer": "$V_L(0)=18\\,V$, $I_{ss}=3\\,mA$"
+    }
+  ],
+  "practice": "RL: $V=12\\,V$, $R=4\\,k\\Omega$, $L=2\\,H$ หา $\\tau$ และ $I$ ที่ $t=\\tau$"
+}

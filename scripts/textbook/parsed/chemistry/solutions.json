@@ -1,0 +1,37 @@
+{
+  "id": "solutions",
+  "title": "Solutions and Molarity",
+  "source": "Chemistry: The Central Science 12th ed., Ch 4.5, p.130–145",
+  "chapterId": "stoichiometry",
+  "concept": "Molarity $M=n_{solute}/V_{solution}$ (mol/L) ใช้บ่อยที่สุดในห้องแล็บ Dilution: $M_1V_1=M_2V_2$ (moles ของ solute คงที่เมื่อเจือจาง) Mass percent: $\\%(w/w)=\\frac{m_{solute}}{m_{solution}}\\times100$ Molality $m=n_{solute}/kg_{solvent}$ (ไม่ขึ้นกับอุณหภูมิ)",
+  "formula": "M=\\frac{n}{V}, \\quad M_1V_1=M_2V_2",
+  "warning": "Molarity เปลี่ยนเมื่อ dilute — ใช้ $M_1V_1=M_2V_2$",
+  "examples": [
+    {
+      "title": "เตรียม $H_2SO_4$ 0.5 M จาก stock",
+      "level": "Basic",
+      "tip": "",
+      "problem": "เตรียม $H_2SO_4$ 0.5 M จาก stock $18\\,M$ ปริมาตร $250\\,mL$ ต้องใช้ stock กี่ mL",
+      "steps": [
+        "$M_1V_1=M_2V_2$",
+        "$18V_1=0.5\\times250$",
+        "$V_1=125/18\\approx6.94\\,mL$",
+        "ดูด $H_2SO_4$ 6.94 mL แล้วเติมน้ำจนครบ 250 mL"
+      ],
+      "answer": "ดูด $H_2SO_4$ 6.94 mL แล้วเติมน้ำจนครบ 250 mL"
+    },
+    {
+      "title": "Molarity จากมวลและปริมาตร",
+      "level": "Medium",
+      "tip": "$M=n/V$ — แปลง mL เป็น L ก่อนหาร",
+      "problem": "NaOH 2 g ละลายในน้ำครบ $500\\,mL$ หา molarity (M NaOH = 40)",
+      "steps": [
+        "$n=2/40=0.050\\,mol$",
+        "$V=0.500\\,L$",
+        "$M=0.050/0.500=0.10\\,M$"
+      ],
+      "answer": "$M=0.10\\,M$"
+    }
+  ],
+  "practice": "NaOH 2 g ละลายในน้ำครบ $500\\,mL$ หา molarity (M NaOH = 40)"
+}

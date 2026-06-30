@@ -1,0 +1,35 @@
+{
+  "id": "gas-kinetic-theory",
+  "title": "Kinetic-Molecular Theory",
+  "source": "Chemistry: The Central Science 12th ed., Ch 10.7–10.8, p.395–410",
+  "chapterId": "gases",
+  "concept": "ทฤษฎีจลน์โมเลกุล: อนุภาคก๊าซเคลื่อนที่สุ่ม สร้างความดันจากการชนผนัง ความเร็ว RMS $v_{rms}=\\sqrt{3RT/M}$ กฎ Graham: อัตราการแพร่ $\\propto 1/\\sqrt{M}$ ก๊าซเบา diffuses เร็วกว่า",
+  "formula": "v_{rms}=\\sqrt{\\frac{3RT}{M}},\\quad \\frac{r_1}{r_2}=\\sqrt{\\frac{M_2}{M_1}}",
+  "warning": "M ต้องเป็น molar mass ในหน่วย kg/mol เมื่อใช้ $R=8.314$ — หรือ g/mol กับ $R=8.314\\times10^3\\,J/kmol\\cdot K$",
+  "examples": [
+    {
+      "title": "ความเร็ว RMS ของ H₂",
+      "level": "Basic",
+      "tip": "ใช้ $v_{rms}=\\sqrt{3RT/M}$",
+      "problem": "หา $v_{rms}$ ของ $H_2$ ($M=2.0\\,g/mol$) ที่ $300\\,K$",
+      "steps": [
+        "$M=0.0020\\,kg/mol$",
+        "$v_{rms}=\\sqrt{3(8.314)(300)/0.0020}=\\sqrt{3.74\\times10^6}$",
+        "$v_{rms}\\approx1930\\,m/s$"
+      ],
+      "answer": "$v_{rms}\\approx1900\\,m/s$"
+    },
+    {
+      "title": "Graham's law — เปรียบเทียบ diffusion",
+      "level": "Medium",
+      "tip": "ก๊าซเบากว่า → แพร่เร็วกว่า",
+      "problem": "$CH_4$ ($M=16$) กับ $O_2$ ($M=32$) ก๊าซใด diffuse เร็วกว่า และเร็วกว่ากี่เท่า",
+      "steps": [
+        "$r_{CH_4}/r_{O_2}=\\sqrt{M_{O_2}/M_{CH_4}}=\\sqrt{32/16}=\\sqrt{2}$",
+        "$CH_4$ เร็วกว่า $\\sqrt{2}\\approx1.41$ เท่า"
+      ],
+      "answer": "$CH_4$ เร็วกว่า $\\sqrt{2}$ เท่า"
+    }
+  ],
+  "practice": "หา $v_{rms}$ ของ $N_2$ ($M=28\\,g/mol$) ที่ $400\\,K$ และเปรียบเทียบกับ $He$ ($M=4\\,g/mol$) ที่ $T$ เดียวกัน"
+}

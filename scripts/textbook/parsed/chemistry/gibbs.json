@@ -1,0 +1,37 @@
+{
+  "id": "gibbs",
+  "title": "Gibbs Free Energy",
+  "source": "Chemistry: The Central Science 12th ed., Ch 19.5, p.795–810",
+  "chapterId": "thermochemistry",
+  "concept": "Gibbs free energy $G=H-TS$ เป็น criterion สำหรับ spontaneity ที่ $T,P$ คงที่: $\\Delta G=\\Delta H-T\\Delta S$ ถ้า $\\Delta G<0$ → spontaneous ถ้า $\\Delta G>0$ → nonspontaneous ถ้า $\\Delta G=0$ → equilibrium ความสัมพันธ์กับ $K$: $\\Delta G°=-RT\\ln K$",
+  "formula": "\\Delta G=\\Delta H-T\\Delta S, \\quad \\Delta G°=-RT\\ln K",
+  "warning": "$\\Delta G=\\Delta H-T\\Delta S$ — ที่ equilibrium $\\Delta G=0$",
+  "examples": [
+    {
+      "title": "Gibbs — T ที่ทำให้ ΔG < 0",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ปฏิกิริยามี $\\Delta H=-80\\,kJ$ และ $\\Delta S=-200\\,J/K$ ที่อุณหภูมิใดจะ spontaneous",
+      "steps": [
+        "Spontaneous เมื่อ $\\Delta G=\\Delta H-T\\Delta S<0$",
+        "$-80000-T(-200)<0$",
+        "$-80000+200T<0$",
+        "$T<400\\,K$ (spontaneous ที่ต่ำกว่า 400 K)"
+      ],
+      "answer": "$T<400\\,K$"
+    },
+    {
+      "title": "$\\Delta G°$ จาก $K$",
+      "level": "Medium",
+      "tip": "$\\Delta G°=-RT\\ln K$ — $K<1$ ทำให้ $\\Delta G°>0$",
+      "problem": "ถ้า $K=1.0\\times10^{-5}$ ที่ $298\\,K$ หา $\\Delta G°$ ($R=8.314\\,J/mol\\cdot K$)",
+      "steps": [
+        "$\\Delta G°=-RT\\ln K=-(8.314)(298)\\ln(10^{-5})$",
+        "$\\ln(10^{-5})=-11.51$",
+        "$\\Delta G°=+28.5\\,kJ/mol$ (ปฏิกิริยาไม่ spontaneous ที่ standard conditions)"
+      ],
+      "answer": "$\\Delta G°=+28.5\\,kJ/mol$"
+    }
+  ],
+  "practice": "ถ้า $K=1.0\\times10^{-5}$ ที่ $298\\,K$ หา $\\Delta G°$ ($R=8.314\\,J/mol\\cdot K$)"
+}

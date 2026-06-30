@@ -1,0 +1,37 @@
+{
+  "id": "le-chatelier",
+  "title": "Le Chatelier's Principle",
+  "source": "Chemistry: The Central Science 12th ed., Ch 15.5, p.610–625",
+  "chapterId": "equilibrium",
+  "concept": "เมื่อระบบสมดุลถูกรบกวน จะปรับตัวเพื่อลดผลของการรบกวนนั้น: เพิ่ม reactant → shift right; เพิ่ม product → shift left; เพิ่มความดัน → shift ไปทาง mol ก๊าซน้อยกว่า; เพิ่ม $T$ → shift ไปทาง endothermic; ลด $T$ → shift ไปทาง exothermic ตัวเร่งปฏิกิริยาไม่เปลี่ยน $K$ หรือตำแหน่ง equilibrium",
+  "formula": "\\text{Stress} \\to \\text{system shifts to reduce stress}",
+  "warning": "Le Chatelier ทำนายทิศทาง ไม่ใช่ขนาดของ $K$",
+  "examples": [
+    {
+      "title": "Le Chatelier — N₂+H₂⇌NH₃",
+      "level": "Basic",
+      "tip": "",
+      "problem": "$N_2(g)+3H_2(g)\\rightleftharpoons2NH_3(g)$, $\\Delta H=-92\\,kJ$ ทิศใดเมื่อ: (a) เพิ่ม $N_2$ (b) เพิ่ม $T$ (c) เพิ่มความดัน",
+      "steps": [
+        "(a) เพิ่ม reactant → shift right (สร้างมาก $NH_3$)",
+        "(b) เพิ่ม $T$ → shift ไป endothermic = reverse (ลด $NH_3$)",
+        "(c) เพิ่มความดัน → shift ไปทาง mol ก๊าซน้อย = right (1+3>2)"
+      ],
+      "answer": "(c) เพิ่มความดัน → shift ไปทาง mol ก๊าซน้อย = right"
+    },
+    {
+      "title": "Haber process — ทำไมใช้ $P$ สูง",
+      "level": "Medium",
+      "tip": "Le Chatelier ทำนายทิศทาง ไม่เปลี่ยนค่า $K$ — ดู $\\Delta n_{gas}$",
+      "problem": "Haber process: ทำไมจึงใช้ความดันสูงและ $T$ ปานกลาง ($400-500°C$) แทนที่จะต่ำ",
+      "steps": [
+        "$N_2+3H_2\\rightleftharpoons2NH_3$ — $\\Delta n_{gas}=-2$",
+        "ความดันสูง → ดันไปทาง products (mol gas น้อยลง)",
+        "$T$ ต่ำ → $\\Delta G<0$ ดี แต่ $k$ ช้า; $T$ สูง → เร็ว แต่ $K$ ลด",
+        "จึงใช้ $T$ ปานกลาง + catalyst + ความดันสูง (~200 atm)"
+      ],
+      "answer": "P สูง → yield สูง; T ปานกลาง → สมดุล rate กับ yield"
+    }
+  ],
+  "practice": "Haber process: ทำไมจึงใช้ความดันสูงและ $T$ ปานกลาง ($400-500°C$) แทนที่จะต่ำ"
+}

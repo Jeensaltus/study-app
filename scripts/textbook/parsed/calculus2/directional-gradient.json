@@ -1,0 +1,36 @@
+{
+  "id": "directional-gradient",
+  "title": "Directional Derivatives and Gradient",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 14.6, p.898–908",
+  "chapterId": "multivariable",
+  "concept": "Directional derivative $D_{\\mathbf{u}}f=\\nabla f\\cdot\\mathbf{u}$ โดย $\\mathbf{u}$ เป็น unit vector Gradient $\\nabla f=\\langle f_x,f_y\\rangle$ ชี้ทิศทางที่ $f$ เพิ่มเร็วที่สุด; $|\\nabla f|$ คืออัตราเพิ่มสูงสุด",
+  "formula": "D_{\\mathbf{u}}f=\\nabla f\\cdot\\mathbf{u}, \\quad \\nabla f=\\langle f_x,f_y,f_z\\rangle",
+  "warning": "direction vector ต้อง normalize ก่อน — ถ้าไม่ใช่ unit vector สูตรไม่ตรง",
+  "examples": [
+    {
+      "title": "Gradient vector",
+      "level": "Basic",
+      "tip": "รวม partial derivatives",
+      "problem": "ถ้า $f(x,y)=x^2-y^2$ หา $\\nabla f$ ที่ $(1,2)$",
+      "steps": [
+        "$\\nabla f=\\langle 2x,-2y\\rangle$",
+        "ที่ $(1,2)$: $\\nabla f=\\langle 2,-4\\rangle$"
+      ],
+      "answer": "$\\langle 2,-4\\rangle$"
+    },
+    {
+      "title": "Directional derivative",
+      "level": "Medium",
+      "tip": "$D_{\\mathbf{u}}f=\\nabla f\\cdot\\hat{\\mathbf{u}}$",
+      "problem": "หา $D_{\\mathbf{u}}f$ ของ $f(x,y)=xy$ ที่ $(2,1)$ ทิศ $\\mathbf{u}=\\langle 1,1\\rangle$",
+      "steps": [
+        "$\\nabla f=\\langle y,x\\rangle$ → ที่ $(2,1)$: $\\langle 1,2\\rangle$",
+        "$\\hat{\\mathbf{u}}=\\dfrac{1}{\\sqrt{2}}\\langle 1,1\\rangle$",
+        "$D_{\\mathbf{u}}f=\\dfrac{1+2}{\\sqrt{2}}=\\dfrac{3}{\\sqrt{2}}$"
+      ],
+      "answer": "$\\dfrac{3}{\\sqrt{2}}$"
+    }
+  ],
+  "practice": "หาทิศทางที่ $f(x,y)=x^2+xy+y^2$ เพิ่มเร็วที่สุดที่ $(1,1)$",
+  "graph": "derivative"
+}

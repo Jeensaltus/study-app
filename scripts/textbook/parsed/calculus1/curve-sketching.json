@@ -1,0 +1,37 @@
+{
+  "id": "curve-sketching",
+  "title": "Curve Sketching",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 4.5, p.240–250",
+  "chapterId": "applications",
+  "concept": "ขั้นตอน sketch กราฟ: (1) domain (2) intercepts (3) symmetry (4) asymptotes (5) $f'$ หาจุด critical และ monotonicity (6) $f''$ หา concavity และ inflection (7) รวมข้อมูลวาดกราห์",
+  "formula": "f'(x)=0 \\text{ or undefined} \\Rightarrow \\text{critical points}; \\quad f''(x)=0 \\Rightarrow \\text{possible inflection}",
+  "warning": "จุดที่ $f''=0$ ไม่จำเป็นต้องเป็น inflection — ต้องตรวจ concavity เปลี่ยนฝั่ง",
+  "examples": [
+    {
+      "title": "วิเคราะห์ $f(x)=x^3-3x$",
+      "level": "Medium",
+      "tip": "หา critical points จาก $f'=0$",
+      "problem": "sketch $f(x)=x^3-3x$",
+      "steps": [
+        "$f'(x)=3x^2-3=3(x-1)(x+1)=0$ → $x=\\pm1$",
+        "$f''(x)=6x$: concave down บน $(-\\infty,0)$, up บน $(0,\\infty)$; inflection ที่ $x=0$",
+        "local max $(-1,2)$, local min $(1,-2)$; ขึ้นบน $(-\\infty,-1)$, ลง $(-1,1)$, ขึ้น $(1,\\infty)$"
+      ],
+      "answer": "critical: $x=\\pm1$; local max $(-1,2)$, min $(1,-2)$"
+    },
+    {
+      "title": "Rational function — asymptotes",
+      "level": "Medium",
+      "tip": "vertical: ส่วน $=0$; oblique/horizontal: จากลิมิต $x\\to\\pm\\infty$",
+      "problem": "วิเคราะห์ $f(x)=\\dfrac{x^2+1}{x-1}$",
+      "steps": [
+        "vertical asymptote: $x=1$",
+        "long division: $f(x)=x+1+\\dfrac{2}{x-1}$ → oblique asymptote $y=x+1$",
+        "$f'(x)=\\dfrac{x^2-2x-1}{(x-1)^2}=0$ → $x=1\\pm\\sqrt{2}$"
+      ],
+      "answer": "VA: $x=1$; oblique asymptote $y=x+1$"
+    }
+  ],
+  "practice": "วิเคราะห์และ sketch $f(x)=\\dfrac{x}{x^2-4}$ รวม asymptotes, intervals ของ increase/decrease",
+  "graph": "derivative"
+}

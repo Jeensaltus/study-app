@@ -1,0 +1,36 @@
+{
+  "id": "double-integrals-general",
+  "title": "Double Integrals over General Regions",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 15.2–15.3, p.938–952",
+  "chapterId": "double-integrals",
+  "concept": "Region ทั่วไป Type I: $D=\\{(x,y): a\\le x\\le b, g_1(x)\\le y\\le g_2(x)\\}$ Type II: สลับบทบาท $x,y$ เลือก type ที่ทำให้ limits ง่าย",
+  "formula": "D=\\{(x,y): a\\le x\\le b,\\ g_1(x)\\le y\\le g_2(x)\\}",
+  "warning": "วาด region ก่อนตั้ง limits — ข้อผิดพลาดที่พบบ่อยคือ limits ของ $y$ ผิด",
+  "examples": [
+    {
+      "title": "Type I region",
+      "level": "Medium",
+      "tip": "fix $x$ แล้ว integrate $y$ จาก lower ถึง upper curve",
+      "problem": "หา $\\iint_D xy\\,dA$ โดย $D$ อยู่ใต้ $y=x$ และเหนือ $y=x^2$ สำหรับ $0\\le x\\le 1$",
+      "steps": [
+        "$D: 0\\le x\\le 1, x^2\\le y\\le x$",
+        "$\\int_0^1\\int_{x^2}^x xy\\,dy\\,dx$",
+        "inner: $\\dfrac{x}{2}(x^2-x^4)$ → $\\int_0^1\\dfrac{x^3-x^5}{2}dx=\\dfrac{1}{24}$"
+      ],
+      "answer": "$\\dfrac{1}{24}$"
+    },
+    {
+      "title": "Type II — เปลี่ยนลำดับ",
+      "level": "Hard",
+      "tip": "บาง region ง่ายกว่าเมื่อ integrate $x$ ก่อน",
+      "problem": "หา area ของ $D: 0\\le y\\le 1, y\\le x\\le 1$",
+      "steps": [
+        "Type II: $\\int_0^1\\int_y^1 1\\,dx\\,dy$",
+        "$=\\int_0^1(1-y)\\,dy=\\dfrac{1}{2}$"
+      ],
+      "answer": "$\\dfrac{1}{2}$"
+    }
+  ],
+  "practice": "หา $\\iint_D e^x\\,dA$ โดย $D$ เป็น triangle ด้วย vertices $(0,0),(1,0),(1,1)$",
+  "graph": "integral"
+}

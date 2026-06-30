@@ -1,0 +1,38 @@
+{
+  "id": "lagrange-multipliers",
+  "title": "Lagrange Multipliers",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 14.8, p.918–926",
+  "chapterId": "multivariable",
+  "concept": "Lagrange multipliers หา extrema ของ $f(x,y)$ บน constraint $g(x,y)=0$: แก้ $\\nabla f=\\lambda\\nabla g$ และ $g=0$ ใช้เมื่อ extrema อยู่บนขอบ constraint ที่กำหนดโดย $g=0$",
+  "formula": "\\nabla f=\\lambda\\nabla g, \\quad g(x,y)=0",
+  "warning": "ต้องตรวจว่าได้ max หรือ min จริง — Lagrange ให้ candidate points เท่านั้น",
+  "examples": [
+    {
+      "title": "Extremum บนวงกลม",
+      "level": "Medium",
+      "tip": "constraint $x^2+y^2=1$",
+      "problem": "หา max/min ของ $f(x,y)=x+y$ บน $x^2+y^2=1$",
+      "steps": [
+        "$\\nabla f=\\langle 1,1\\rangle$, $\\nabla g=\\langle 2x,2y\\rangle$",
+        "$1=2\\lambda x$, $1=2\\lambda y$ → $x=y$",
+        "$2x^2=1$ → $x=\\pm\\dfrac{1}{\\sqrt{2}}$",
+        "max $=\\sqrt{2}$, min $=-\\sqrt{2}$"
+      ],
+      "answer": "max $\\sqrt{2}$, min $-\\sqrt{2}$"
+    },
+    {
+      "title": "Rectangular box ปริมาตรคงที่",
+      "level": "Hard",
+      "tip": "minimize surface area",
+      "problem": "หากล่องสี่เหลี่ยมปริมาตร $V=32$ ที่มีพื้นผิวน้อยที่สุด",
+      "steps": [
+        "minimize $S=2(xy+yz+zx)$ s.t. $xyz=32$",
+        "symmetry → $x=y=z=2$",
+        "minimum surface $=24$"
+      ],
+      "answer": "$x=y=z=2$, min surface area $24$"
+    }
+  ],
+  "practice": "หา max ของ $f(x,y)=xy$ บน $\\dfrac{x^2}{4}+y^2=1$ โดย Lagrange multipliers",
+  "graph": "derivative"
+}

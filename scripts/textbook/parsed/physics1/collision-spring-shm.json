@@ -1,0 +1,33 @@
+{
+  "id": "collision-spring-shm",
+  "title": "Collision and Spring Oscillations",
+  "source": "Serway Physics for Scientists and Engineers, Ch 15, p.400–410",
+  "chapterId": "oscillations-waves",
+  "concept": "Composite: collision แล้วติด spring → SHM — ใช้ momentum conservation หา $v$ หลังชน แล้ว $E=\\frac12 kA^2=\\frac12 mv^2$ หรือ $T=2\\pi\\sqrt{m/k}$",
+  "formula": "p_i=p_f,\\quad \\frac12 mv^2=\\frac12 kA^2,\\quad T=2\\pi\\sqrt{m/k}",
+  "warning": "",
+  "examples": [
+    {
+      "title": "ชนแล้ว oscillate",
+      "level": "Hard",
+      "tip": "momentum → energy → amplitude",
+      "problem": "$m_1=2\\,kg$ วิ่ง $1\\,m/s$ ชน $m_2=3\\,kg$ นิ่ง ติด spring $k=25\\,N/m$ หา $A$ สูงสุด (stick together)",
+      "steps": [
+        "$v_f=(2)(1)/(2+3)=0.4\\,m/s$",
+        "$A=v_f\\sqrt{m/k}=0.4\\sqrt{5/25}=0.4\\times0.447\\approx0.18\\,m$"
+      ],
+      "answer": "$A\\approx18\\,cm$"
+    },
+    {
+      "title": "Period หลังชน",
+      "level": "Medium",
+      "tip": "$T=2\\pi\\sqrt{M_{tot}/k}$",
+      "problem": "หลังชนติดกัน $M=5\\,kg$, $k=25\\,N/m$ หา $T$",
+      "steps": [
+        "$T=2\\pi\\sqrt{5/25}=2\\pi\\sqrt{0.2}\\approx2.8\\,s$"
+      ],
+      "answer": "$T\\approx2.8\\,s$"
+    }
+  ],
+  "practice": "$m=1\\,kg$ ชน spring $k=100\\,N/m$ ด้วย $v=2\\,m/s$ (inelastic stick) หา $x_{max}$"
+}

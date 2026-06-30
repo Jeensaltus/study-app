@@ -1,0 +1,32 @@
+{
+  "id": "brewster-angle",
+  "title": "Brewster's Angle and Polarization",
+  "source": "Serway Physics for Scientists and Engineers, Ch 38.5, p.1035–1045",
+  "chapterId": "wave-optics",
+  "concept": "มุม Brewster $\\theta_B=\\arctan(n_2/n_1)$ ที่แสงสะท้อเป็น s-polarized ตั้งฉากกับระนาบ — ใช้กับ anti-glare และ polarizer",
+  "formula": "\\tan\\theta_B=\\frac{n_2}{n_1}",
+  "warning": "",
+  "examples": [
+    {
+      "title": "Brewster — อากาศเข้าแก้ว",
+      "level": "Basic",
+      "tip": "$\\theta_B=\\arctan(n)$",
+      "problem": "แสงจากอากาศ ($n=1$) ตกแก้ว $n=1.52$ หา $\\theta_B$",
+      "steps": [
+        "$\\theta_B=\\arctan(1.52)\\approx56.7°$"
+      ],
+      "answer": "$\\theta_B\\approx56.7°$"
+    },
+    {
+      "title": "Brewster สองชั้น",
+      "level": "Hard",
+      "tip": "แสงตก $n=1.5$ แล้วสะท้อที่ $45°$ ไปชั้น $n=1.7$ — ตรวจ Brewster",
+      "problem": [
+        "$\\theta_B(1.5)=\\arctan(1.5)\\approx56.3°$ — 45° ไม่ใช่ Brewster สำหรับชั้นแรก",
+        "ใช้ Snell หา $\\theta_2$ แล้วตรวจ polarization ตามโจทย์"
+      ],
+      "steps": "45° ≠ $\\theta_B$ สำหรับ $n=1.5$"
+    }
+  ],
+  "practice": "หา $\\theta_B$ ของน้ำ $n=1.33$ ต่ออากาศ"
+}

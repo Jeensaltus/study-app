@@ -1,0 +1,35 @@
+{
+  "id": "rlc-series",
+  "title": "Series RLC Circuits",
+  "source": "Serway Physics for Scientists and Engineers, Ch 33, p.930–945",
+  "chapterId": "circuits",
+  "concept": "วงจร RLC ต่ออนุกรม: ใช้ phasor diagram รวม $V_R$, $V_L$, $V_C$ อิมพีแดนซ์ $Z=\\sqrt{R^2+(X_L-X_C)^2}$ โดย $X_L=\\omega L$, $X_C=1/(\\omega C)$ มุมเฟส $\\phi=\\arctan[(X_L-X_C)/R]$",
+  "formula": "Z=\\sqrt{R^2+(X_L-X_C)^2},\\quad I_{rms}=V_{rms}/Z",
+  "warning": "ห้ามบวก $V_R+V_L+V_C$ แบบตัวเลข — ต้องบวกแบบ phasor เสมอ",
+  "examples": [
+    {
+      "title": "หา Z และ I_rms",
+      "level": "Basic",
+      "tip": "คำนวณ $X_L-X_C$ ก่อน",
+      "problem": "R=30 Ω, $X_L=60$ Ω, $X_C=20$ Ω, $V_{rms}=100$ V หา Z และ $I_{rms}$",
+      "steps": [
+        "$Z=\\sqrt{30^2+40^2}=50\\,\\Omega$",
+        "$I_{rms}=100/50=2\\,A$"
+      ],
+      "answer": "$Z=50\\,\\Omega$, $I_{rms}=2\\,A$"
+    },
+    {
+      "title": "แรงดัน $V_L$ และมุมเฟส",
+      "level": "Medium",
+      "tip": "$V_L=I_{rms}X_L$",
+      "problem": "จากข้อก่อน หา $V_L$ และ $\\phi$",
+      "steps": [
+        "$V_L=2(60)=120\\,V$",
+        "$\\phi=\\arctan(40/30)\\approx53.1°$"
+      ],
+      "answer": "$V_L=120\\,V$, $\\phi\\approx53°$"
+    }
+  ],
+  "practice": "RLC: R=40 Ω, L=0.20 H, C=50 μF, V=120 V ที่ f=50 Hz หา Z",
+  "derivation": "Phasor: $V_R$ อยู่เฟสเดียวกับ I, $V_L$ นำ 90°, $V_C$ ช้า 90° → $V=\\sqrt{V_R^2+(V_L-V_C)^2}$, หาร I ได้ Z"
+}

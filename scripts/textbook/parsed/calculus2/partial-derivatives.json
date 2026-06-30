@@ -1,0 +1,35 @@
+{
+  "id": "partial-derivatives",
+  "title": "Partial Derivatives",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 14.3, p.870–880",
+  "chapterId": "multivariable",
+  "concept": "อนุพันธ์ย่อย $\\dfrac{\\partial f}{\\partial x}$ หาโดย derive $f$ สัมพันธ์ $x$ โดย treat $y$ (และตัวแปรอื่น) เป็นค่าคงที่ สัญลักษณ์: $f_x, f_y$ หรือ $\\dfrac{\\partial f}{\\partial x}$",
+  "formula": "f_x=\\frac{\\partial f}{\\partial x}=\\lim_{h\\to 0}\\frac{f(x+h,y)-f(x,y)}{h}",
+  "warning": "Clairaut's theorem: $f_{xy}=f_{yx}$ เมื่อ continuous — อย่าสลับลำดับโดยไม่ตรวจ",
+  "examples": [
+    {
+      "title": "Partial derivatives พื้นฐาน",
+      "level": "Basic",
+      "tip": "treat ตัวแปรอื่นเป็น constant",
+      "problem": "ถ้า $f(x,y)=x^2y+3xy^2$ หา $f_x, f_y$",
+      "steps": [
+        "$f_x=2xy+3y^2$",
+        "$f_y=x^2+6xy$"
+      ],
+      "answer": "$f_x=2xy+3y^2$, $f_y=x^2+6xy$"
+    },
+    {
+      "title": "Second partials",
+      "level": "Medium",
+      "tip": "derive อนุพันธ์ย่อยอีกครั้ง",
+      "problem": "ถ้า $f(x,y)=e^{xy}$ หา $f_{xy}$",
+      "steps": [
+        "$f_x=ye^{xy}$",
+        "$f_{xy}=\\dfrac{\\partial}{\\partial y}(ye^{xy})=e^{xy}+xye^{xy}=(1+xy)e^{xy}$"
+      ],
+      "answer": "$(1+xy)e^{xy}$"
+    }
+  ],
+  "practice": "ถ้า $f(x,y,z)=xyz$ หา $\\dfrac{\\partial f}{\\partial z}$ และ $f_{xz}$",
+  "graph": "derivative"
+}

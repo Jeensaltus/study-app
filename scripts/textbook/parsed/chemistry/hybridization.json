@@ -1,0 +1,36 @@
+{
+  "id": "hybridization",
+  "title": "Hybridization",
+  "source": "Chemistry: The Central Science 12th ed., Ch 9.4–9.5, p.355–370",
+  "chapterId": "bonding",
+  "concept": "Hybridization อธิบายรูปร่าง: $sp$ (linear), $sp^2$ (trigonal planar), $sp^3$ (tetrahedral), $sp^3d$ (trigonal bipyramidal), $sp^3d^2$ (octahedral) พันธะ sigma ($\\sigma$): orbital overlap ตรงแนวพันธะ (ใน hybrid orbital) พันธะ pi ($\\pi$): lateral overlap ของ p orbital (เพิ่มใน double/triple bond)",
+  "formula": "sp:\\text{linear},\\; sp^2:\\text{trigonal},\\; sp^3:\\text{tetrahedral}",
+  "warning": "จำนวน hybrid orbital = จำนวน bond + lone pair ที่ central atom",
+  "examples": [
+    {
+      "title": "Hybridization — CH₄, C₂H₄, C₂H₂",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ระบุ hybridization ของ C ใน $CH_4$, $C_2H_4$, $C_2H_2$",
+      "steps": [
+        "$CH_4$: C มีพันธะ 4 เดี่ยว → $sp^3$",
+        "$C_2H_4$: C มีพันธะคู่ (1 sigma + 1 pi) → $sp^2$",
+        "$C_2H_2$: C มีพันธะสาม (1 sigma + 2 pi) → $sp$"
+      ],
+      "answer": "$C_2H_2$: C มีพันธะสาม"
+    },
+    {
+      "title": "Hybridization ของ N",
+      "level": "Medium",
+      "tip": "hybrid orbitals = bonds + lone pairs ที่ central atom",
+      "problem": "ระบุ hybridization ของ N ใน $NH_3$, $NO_3^-$, และ $N_2$",
+      "steps": [
+        "$NH_3$: 3 bonds + 1 LP = 4 domains → $sp^3$",
+        "$NO_3^-$: 3 bonds, 0 LP on N = 3 domains → $sp^2$",
+        "$N_2$: 1 $\\sigma$ + 2 $\\pi$ → $sp$ (linear)"
+      ],
+      "answer": "$sp^3$, $sp^2$, $sp$"
+    }
+  ],
+  "practice": "ระบุ hybridization ของ N ใน $NH_3$, $NO_3^-$, และ $N_2$"
+}

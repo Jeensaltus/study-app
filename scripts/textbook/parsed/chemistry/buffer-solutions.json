@@ -1,0 +1,35 @@
+{
+  "id": "buffer-solutions",
+  "title": "Buffer Solutions",
+  "source": "Chemistry: The Central Science 12th ed., Ch 17.1–17.2, p.680–700",
+  "chapterId": "acid-base-ph",
+  "concept": "บัฟเฟอร์: กรดอ่อน + เกลือ (conjugate base) หรือเบสอ่อน + เกลือ Henderson-Hasselbalch: $pH=pK_a+\\log([A^-]/[HA])$ ต resist การเปลี่ยน pH เมื่อเติม acid/base เล็กน้อย",
+  "formula": "pH=pK_a+\\log\\frac{[A^-]}{[HA]}",
+  "warning": "อย่าใช้สูตรบัฟเฟอร์กับ strong acid + strong base — ต้องเป็น weak/conjugate pair",
+  "examples": [
+    {
+      "title": "pH บัฟเฟอร์ equimolar",
+      "level": "Basic",
+      "tip": "เมื่อ $[A^-]=[HA]$ → $pH=pK_a$",
+      "problem": "$CH_3COOH$ 0.10 M + $CH_3COONa$ 0.10 M ($pK_a=4.74$) หา pH",
+      "steps": [
+        "$[A^-]/[HA]=1$ → $\\log(1)=0$",
+        "$pH=pK_a=4.74$"
+      ],
+      "answer": "$pH=4.74$"
+    },
+    {
+      "title": "เติม strong base ลงบัฟเฟอร์",
+      "level": "Medium",
+      "tip": "OH⁻ ทำปฏิกิริยากับ HA → ลด [HA] เพิ่ม [A⁻]",
+      "problem": "บัฟเฟอร์ 1 L (0.10 M HA, 0.10 M A⁻) เติม NaOH 0.020 mol หา pH ใหม่ ($pK_a=4.74$)",
+      "steps": [
+        "$[HA]=0.08$, $[A^-]=0.12$",
+        "$pH=4.74+\\log(0.12/0.08)=4.74+0.176=4.92$"
+      ],
+      "answer": "$pH\\approx4.92$"
+    }
+  ],
+  "practice": "บัฟเฟอร์ $NH_3$/$NH_4^+$ ($pK_a=9.25$) $[base]=0.20$, $[acid]=0.10$ หา pH",
+  "derivation": "จาก $K_a=[H^+][A^-]/[HA]$ จัด log ได้ Henderson-Hasselbalch"
+}

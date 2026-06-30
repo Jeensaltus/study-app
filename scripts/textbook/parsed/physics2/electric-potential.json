@@ -1,0 +1,36 @@
+{
+  "id": "electric-potential",
+  "title": "Electric Potential",
+  "source": "Serway Physics for Scientists and Engineers, Ch 25, p.760–780",
+  "chapterId": "electric-field",
+  "concept": "ศักย์ไฟฟ้า $V=\\frac{U}{q_0}=k\\frac{q}{r}$ เป็น scalar บอกพลังงานศักย์ต่อหนึ่งหน่วยประจุ ความสัมพันธ์กับสนาม: $\\vec E=-\\nabla V$ (E ชี้จาก V สูงไป V ต่ำ) งานในการเคลื่อนประจุ: $W=q(V_A-V_B)$ equi-potential surface ตั้งฉากกับเส้นสนามไฟฟ้าเสมอ",
+  "formula": "V=k\\frac{q}{r}, \\quad W=q\\Delta V",
+  "warning": "ศักย์เป็นสเกลาร์ — บวกแรงดันไฟฟ้า อย่าบวกเวกเตอร์ $V$ แบบ component โดยไม่จำเป็น",
+  "examples": [
+    {
+      "title": "ศักย์ไฟฟ้าจากสองประจุ",
+      "level": "Basic",
+      "tip": "",
+      "problem": "หาศักย์ไฟฟ้าที่จุดกึ่งกลางระหว่างประจุ $+3\\,\\mu C$ และ $+3\\,\\mu C$ ห่างกัน $0.4\\,m$",
+      "steps": [
+        "จุดกึ่งกลางห่างจากแต่ละประจุ $0.2\\,m$",
+        "$V_1=k\\frac{q}{r}=8.99\\times10^9\\times\\frac{3\\times10^{-6}}{0.2}=1.35\\times10^5\\,V$",
+        "ศักย์รวม $=V_1+V_2=2(1.35\\times10^5)=2.70\\times10^5\\,V$ (scalar sum)"
+      ],
+      "answer": "ศักย์รวม $=V_1+V_2=2"
+    },
+    {
+      "title": "งานในการเคลื่อนประจุในสนามศักย์",
+      "level": "Medium",
+      "tip": "งาน $W=q\\Delta V$ — ประจุบวกเคลื่อนจาก $V$ ต่ำไปสูง ต้องใส่พลังงานจากภายนอก",
+      "problem": "งานที่ต้องทำเพื่อเคลื่อนประจุ $+2\\,\\mu C$ จากจุด A ($V=100\\,V$) ไป B ($V=400\\,V$)",
+      "steps": [
+        "$W=q(V_B-V_A)=2\\times10^{-6}(400-100)$",
+        "$W=2\\times10^{-6}\\times300=6.0\\times10^{-4}\\,J$",
+        "$W=0.60\\,mJ$"
+      ],
+      "answer": "$W=0.60\\,mJ$"
+    }
+  ],
+  "practice": "งานที่ต้องทำเพื่อเคลื่อนประจุ $+2\\,\\mu C$ จากจุด A ($V=100\\,V$) ไป B ($V=400\\,V$)"
+}

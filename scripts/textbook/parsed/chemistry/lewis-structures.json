@@ -1,0 +1,38 @@
+{
+  "id": "lewis-structures",
+  "title": "Lewis Structures",
+  "source": "Chemistry: The Central Science 12th ed., Ch 8.5–8.6, p.315–335",
+  "chapterId": "bonding",
+  "concept": "ขั้นตอนเขียน Lewis structure: (1) นับ valence $e^-$ ทั้งหมด (2) เชื่อม atoms ด้วยพันธะเดี่ยว (3) เติม octet ให้ธาตุรอบนอก (4) เติมที่ธาตุกลาง (5) ถ้าไม่ครบ octet ทำพันธะคู่หรือสาม Formal charge: $FC=V-(N_e+\\frac12B_e)$ โครงสร้างที่ดีมี FC ใกล้ศูนย์",
+  "formula": "FC=V-N_e-\\frac{1}{2}B_e",
+  "warning": "นับ valence electron ให้ครบ — formal charge ช่วยเลือกโครงสร้าง",
+  "examples": [
+    {
+      "title": "Lewis Structure ของ SO₂",
+      "level": "Basic",
+      "tip": "",
+      "problem": "เขียน Lewis structure ของ $SO_2$ และหา formal charge",
+      "steps": [
+        "Valence $e^-$: S=6, O=6 รวม $6+6+6=18$",
+        "โครงสร้าง: S เป็นตัวกลาง เชื่อมกับ O สองตัว",
+        "Lewis: O=S-O (พันธะคู่+เดี่ยว+lone pairs)",
+        "FC บน S: $6-2-\\frac12(6)=1$ (ยังมี resonance structures)"
+      ],
+      "answer": "FC บน S: $6-2-\\frac12"
+    },
+    {
+      "title": "Lewis structure ของ $CO_3^{2-}$",
+      "level": "Medium",
+      "tip": "นับ valence e⁻ รวม charge; ใช้ formal charge เลือกโครงสร้าง resonance",
+      "problem": "เขียน Lewis structure ของ $CO_3^{2-}$ และวาด resonance structures ทั้งหมด",
+      "steps": [
+        "Valence e⁻: C(4) + 3O(18) + 2 charge = 24 e⁻",
+        "C เป็น central atom, สร้าง 3 C–O bonds",
+        "มี 3 resonance structures — แต่ละ C=O double bond สลับตำแหน่ง",
+        "Formal charge ของ C = 0 ในโครงสร้างที่ดีที่สุด"
+      ],
+      "answer": "3 resonance structures (trigonal planar)"
+    }
+  ],
+  "practice": "เขียน Lewis structure ของ $CO_3^{2-}$ และวาด resonance structures ทั้งหมด"
+}

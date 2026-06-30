@@ -1,0 +1,37 @@
+{
+  "id": "electron-config",
+  "title": "Electron Configurations",
+  "source": "Chemistry: The Central Science 12th ed., Ch 6.8–6.9, p.260–275",
+  "chapterId": "atomic-structure",
+  "concept": "การจัดเรียงอิเล็กตรอนตามหลัก Aufbau (เติมจากพลังงานต่ำไปสูง): $1s,2s,2p,3s,3p,4s,3d,4p,\\ldots$ Hund's Rule: อิเล็กตรอนในออร์บิทัลเดียวกันจะอยู่คนละออร์บิทัลก่อน และ spin เดียวกัน Valence electrons คืออิเล็กตรอนในระดับ $n$ สูงสุด กำหนดสมบัติเคมี",
+  "formula": "\\text{Aufbau: }1s^22s^22p^63s^23p^64s^23d^{10}4p^6\\ldots",
+  "warning": "Aufbau มีข้อยกเว้น (Cr, Cu) — ตรวจ d-block",
+  "examples": [
+    {
+      "title": "Electron Config ของ Fe และ Fe³⁺",
+      "level": "Basic",
+      "tip": "",
+      "problem": "เขียน electron configuration ของ Fe ($Z=26$) และ $Fe^{3+}$",
+      "steps": [
+        "Fe: $1s^22s^22p^63s^23p^64s^23d^6$",
+        "ย่อ: $[Ar]4s^23d^6$",
+        "$Fe^{3+}$: เอาอิเล็กตรอนออก 3 ตัว (จาก 4s ก่อน แล้ว 3d)",
+        "$[Ar]3d^5$ (half-filled d shell)"
+      ],
+      "answer": "$[Ar]3d^5$"
+    },
+    {
+      "title": "Cu — ข้อยกเว้น Aufbau",
+      "level": "Medium",
+      "tip": "Cr/Cu promote half-filled/full d subshell — ย้าย 1 e⁻ จาก 4s ไป 3d",
+      "problem": "เขียน electron configuration ของ Cu ($Z=29$) และอธิบายว่าทำไมไม่เป็น $[Ar]4s^23d^9$",
+      "steps": [
+        "ถ้าเติมตามลำดับ: $[Ar]4s^23d^9$",
+        "แต่ $[Ar]4s^13d^{10}$ มี 3d เต็ม — เสถียรกว่า",
+        "Cu: $[Ar]4s^13d^{10}$ (ข้อยกเว้น d-block)"
+      ],
+      "answer": "Cu = $[Ar]4s^13d^{10}$"
+    }
+  ],
+  "practice": "เขียน electron configuration ของ Cu ($Z=29$) และอธิบายว่าทำไมไม่เป็น $[Ar]4s^23d^9$"
+}

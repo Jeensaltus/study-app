@@ -1,0 +1,37 @@
+{
+  "id": "max-min-multivariable",
+  "title": "Maximum and Minimum Values",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 14.7, p.908–918",
+  "chapterId": "multivariable",
+  "concept": "หาค่า max/min ของ $f(x,y)$ บน domain: (1) หา critical points จาก $f_x=0, f_y=0$ (2) second derivative test: $D=f_{xx}f_{yy}-f_{xy}^2$ — $D>0$ และ $f_{xx}>0$ → local min (3) ตรวจขอบ domain",
+  "formula": "D=f_{xx}f_{yy}-f_{xy}^2; \\quad D>0,\\ f_{xx}>0 \\Rightarrow \\text{local min}",
+  "warning": "Second derivative test ไม่สรุปได้เมื่อ $D=0$ — ต้องใช้วิธีอื่น",
+  "examples": [
+    {
+      "title": "Second derivative test",
+      "level": "Medium",
+      "tip": "หา critical points แล้วทดสอบ $D$",
+      "problem": "หา local extrema ของ $f(x,y)=x^2+y^2-2x-4y+5$",
+      "steps": [
+        "$f_x=2x-2=0$, $f_y=2y-4=0$ → critical $(1,2)$",
+        "$f_{xx}=2, f_{yy}=2, f_{xy}=0$ → $D=4>0$, $f_{xx}>0$",
+        "local minimum ที่ $(1,2)$, $f(1,2)=0$"
+      ],
+      "answer": "local min $(1,2)$, value $0$"
+    },
+    {
+      "title": "Saddle point",
+      "level": "Medium",
+      "tip": "$D<0$ → saddle",
+      "problem": "วิเคราะห์ $f(x,y)=x^2-y^2$ ที่ $(0,0)$",
+      "steps": [
+        "critical ที่ $(0,0)$",
+        "$f_{xx}=2, f_{yy}=-2, f_{xy}=0$ → $D=-4<0$",
+        "saddle point ที่ $(0,0)$"
+      ],
+      "answer": "saddle point ที่ origin"
+    }
+  ],
+  "practice": "หาและจำแนก critical points ของ $f(x,y)=x^3+y^3-3xy$",
+  "graph": "derivative"
+}

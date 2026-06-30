@@ -1,0 +1,36 @@
+{
+  "id": "first-law-thermo",
+  "title": "First Law of Thermodynamics",
+  "source": "Serway Physics for Scientists and Engineers, Ch 20, p.500–520",
+  "chapterId": "thermodynamics",
+  "concept": "กฎข้อที่ 1 ของอุณหมู่นิยม: $\\Delta U=Q-W$ โดย $Q$ คือความร้อนเข้าระบบ (บวก) และ $W$ คืองานที่ระบบทำ (บวกเมื่อขยาย) $\\Delta U$ ขึ้นกับสถานะเท่านั้น สำหรับ ideal gas ที่ $T$ คงที่ $\\Delta U=0$",
+  "formula": "\\Delta U=Q-W",
+  "warning": "สัญญาณของ $W$: ระบบขยาย → $W>0$ (ระบบทำงานออก) ระบบถูกบีบ → $W<0$ — ตรวจ convention ของตำรา",
+  "examples": [
+    {
+      "title": "isobaric expansion",
+      "level": "Basic",
+      "tip": "งาน $W=P\\Delta V$ ที่ความดันคงที่",
+      "problem": "ก๊าซขยายที่ $P=2\\times10^5\\,Pa$ จาก $V_1=0.010\\,m^3$ เป็น $V_2=0.015\\,m^3$ รับ $Q=1200\\,J$ หา $\\Delta U$",
+      "steps": [
+        "$W=P\\Delta V=2\\times10^5(0.005)=1000\\,J$",
+        "$\\Delta U=Q-W=1200-1000=200\\,J$"
+      ],
+      "answer": "$\\Delta U=200\\,J$"
+    },
+    {
+      "title": "isothermal process — ideal gas",
+      "level": "Medium",
+      "tip": "อุณหภูมิคงที่ → $\\Delta U=0$",
+      "problem": "ideal gas $n=2\\,mol$ ขยาย isothermal ที่ $300\\,K$ ทำงาน $500\\,J$ หา $Q$",
+      "steps": [
+        "Isothermal ideal gas: $\\Delta U=0$",
+        "$Q=W=500\\,J$",
+        "ระบบรับความร้อน $500\\,J$"
+      ],
+      "answer": "$Q=500\\,J$"
+    }
+  ],
+  "practice": "ก๊าซถูกบีบ adiabatic ($Q=0$) งาน $-300\\,J$ เข้าระบบ หา $\\Delta U$",
+  "graph": "energy"
+}

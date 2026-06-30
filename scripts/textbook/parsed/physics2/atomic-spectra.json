@@ -1,0 +1,35 @@
+{
+  "id": "atomic-spectra",
+  "title": "Atomic Structure and Spectra",
+  "source": "Serway Physics for Scientists and Engineers, Ch 41, p.1065–1085",
+  "chapterId": "modern-physics",
+  "concept": "อะตอมปล่อยหรือดูดซับพลังงานเป็นเส้นสเปกตรัม เมื่ออิเล็กตรอนกระโดดระดับ พลังงานของโฟตอนคือ $\\Delta E=hf$. สำหรับไฮโดรเจน $E_n=-13.6\\,eV/n^2$.",
+  "formula": "\\Delta E=hf, \\quad E_n=-\\frac{13.6\\,eV}{n^2}",
+  "warning": "Balmer/Rydberg ใช้ $n$ เป็นจำนวนเต็ม — แปลง $\\lambda$ เป็น m ก่อนแทน $R$",
+  "examples": [
+    {
+      "title": "Hydrogen — $n=3\\to2$",
+      "level": "Medium",
+      "tip": "หา energy difference ระหว่างระดับ",
+      "problem": "อิเล็กตรอนจาก $n=3$ ไป $n=2$ ในไฮโดรเจน จงหาความยาวคลื่นของแสงที่ปล่อยออกมา",
+      "steps": [
+        "$\\Delta E=1.89\\,eV = 3.02\\times10^{-19}\\,J$",
+        "$\\lambda=hc/E\\approx658\\,nm$"
+      ],
+      "answer": "$\\lambda\\approx658\\,nm$"
+    },
+    {
+      "title": "Hydrogen — $n=4\\to2$ (Balmer)",
+      "level": "Medium",
+      "tip": "$\\Delta E=13.6(1/n_f^2-1/n_i^2)\\,eV$ แล้ว $E=hf$",
+      "problem": "อิเล็กตรอนจาก $n=4$ ไป $n=2$ ในไฮโดรเจน จงหาพลังงานโฟตอน",
+      "steps": [
+        "$\\Delta E=13.6\\left(\\frac{1}{4}-\\frac{1}{16}\\right)=13.6\\times\\frac{3}{16}$",
+        "$\\Delta E=2.55\\,eV=4.08\\times10^{-19}\\,J$",
+        "$\\lambda=hc/E\\approx486\\,nm$ (เส้น Balmer สีฟ้า-เขียว)"
+      ],
+      "answer": "$\\Delta E=2.55\\,eV$, $\\lambda\\approx486\\,nm$"
+    }
+  ],
+  "practice": "อิเล็กตรอนจาก $n=4$ ไป $n=2$ ในไฮโดรเจน จงหาพลังงานโฟตอน"
+}

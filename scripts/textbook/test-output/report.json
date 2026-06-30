@@ -1,0 +1,166 @@
+[
+  {
+    "book": "stewart",
+    "sample": "ch2-section-exercises",
+    "status": "ok",
+    "pages": [
+      158,
+      159
+    ],
+    "pdfPages": 1421,
+    "scores": {
+      "len": 5563,
+      "words": 1153,
+      "weirdChars": 41,
+      "fragmentedTriples": 13,
+      "numberedItems": 22
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\stewart-ch2-section-exercises.txt"
+  },
+  {
+    "book": "stewart",
+    "sample": "ch2-review",
+    "status": "ok",
+    "pages": [
+      202,
+      203,
+      204
+    ],
+    "pdfPages": 1421,
+    "scores": {
+      "len": 11086,
+      "words": 2546,
+      "weirdChars": 76,
+      "fragmentedTriples": 74,
+      "numberedItems": 3
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\stewart-ch2-review.txt"
+  },
+  {
+    "book": "stewart",
+    "sample": "ch2-answers-odd",
+    "status": "ok",
+    "pages": [
+      1317,
+      1318
+    ],
+    "pdfPages": 1421,
+    "scores": {
+      "len": 4101,
+      "words": 941,
+      "weirdChars": 44,
+      "fragmentedTriples": 12,
+      "numberedItems": 37
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\stewart-ch2-answers-odd.txt"
+  },
+  {
+    "book": "serway",
+    "sample": "ch2-objective-questions",
+    "status": "ok",
+    "pages": [
+      85,
+      86
+    ],
+    "pdfPages": 1622,
+    "scores": {
+      "len": 9547,
+      "words": 1773,
+      "weirdChars": 4,
+      "fragmentedTriples": 1,
+      "numberedItems": 34
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\serway-ch2-objective-questions.txt"
+  },
+  {
+    "book": "serway",
+    "sample": "ch2-problems",
+    "status": "ok",
+    "pages": [
+      87,
+      88
+    ],
+    "pdfPages": 1622,
+    "scores": {
+      "len": 9264,
+      "words": 1775,
+      "weirdChars": 16,
+      "fragmentedTriples": 1,
+      "numberedItems": 81
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\serway-ch2-problems.txt"
+  },
+  {
+    "book": "serway",
+    "sample": "ch2-answers-odd",
+    "status": "ok",
+    "pages": [
+      1550,
+      1551
+    ],
+    "pdfPages": 1622,
+    "scores": {
+      "len": 7802,
+      "words": 1441,
+      "weirdChars": 6,
+      "fragmentedTriples": 0,
+      "numberedItems": 104
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\serway-ch2-answers-odd.txt"
+  },
+  {
+    "book": "central-science",
+    "sample": "ch3-exercises",
+    "status": "ok",
+    "pages": [
+      148,
+      149,
+      150
+    ],
+    "pdfPages": 1195,
+    "scores": {
+      "len": 12394,
+      "words": 2175,
+      "weirdChars": 34,
+      "fragmentedTriples": 7,
+      "numberedItems": 79
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\central-science-ch3-exercises.txt"
+  },
+  {
+    "book": "central-science",
+    "sample": "ch3-additional",
+    "status": "ok",
+    "pages": [
+      154,
+      155
+    ],
+    "pdfPages": 1195,
+    "scores": {
+      "len": 10692,
+      "words": 1909,
+      "weirdChars": 15,
+      "fragmentedTriples": 0,
+      "numberedItems": 101
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\central-science-ch3-additional.txt"
+  },
+  {
+    "book": "central-science",
+    "sample": "ch3-answers-selected",
+    "status": "ok",
+    "pages": [
+      1110,
+      1111
+    ],
+    "pdfPages": 1195,
+    "scores": {
+      "len": 17858,
+      "words": 3740,
+      "weirdChars": 90,
+      "fragmentedTriples": 0,
+      "numberedItems": 260
+    },
+    "outFile": "C:\\Users\\jeens\\Desktop\\Freshman\\study-app\\scripts\\textbook\\test-output\\central-science-ch3-answers-selected.txt"
+  }
+]

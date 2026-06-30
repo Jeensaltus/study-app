@@ -1,0 +1,34 @@
+{
+  "id": "orbits-satellites",
+  "title": "Orbits and Satellites",
+  "source": "Serway Physics for Scientists and Engineers, Ch 13, p.340–360",
+  "chapterId": "gravitation",
+  "concept": "วงโคจรวงกลม: แรงโน้มถ่วงให้ centripetal acceleration $G\\frac{Mm}{r^2}=\\frac{mv^2}{r}$ ความเร็วโคจร $v=\\sqrt{GM/r}$ คาบ $T=2\\pi\\sqrt{r^3/(GM)}$ (Kepler's third law) ดาวเทียม geosynchronous: $T=24\\,h$",
+  "formula": "v=\\sqrt{\\frac{GM}{r}},\\quad T=2\\pi\\sqrt{\\frac{r^3}{GM}}",
+  "warning": "$r$ วัดจากศูนย์โลก ไม่ใช่จากพื้น — สำหรับ LEO ต้องบวก $R_{Earth}$",
+  "examples": [
+    {
+      "title": "ความเร็วโคจร ISS",
+      "level": "Basic",
+      "tip": "ใช้ $v=\\sqrt{GM/r}$",
+      "problem": "สถานีอวกาศ $r=6.77\\times10^6\\,m$ ($h\\approx400\\,km$) หา $v$ ($GM=3.98\\times10^{14}$)",
+      "steps": [
+        "$v=\\sqrt{3.98\\times10^{14}/6.77\\times10^6}$",
+        "$v=\\sqrt{5.88\\times10^7}\\approx7660\\,m/s$"
+      ],
+      "answer": "$v\\approx7.7\\,km/s$"
+    },
+    {
+      "title": "คาบโคจร",
+      "level": "Medium",
+      "tip": "ใช้ Kepler $T^2\\propto r^3$",
+      "problem": "ดาวเทียม $r=4.22\\times10^7\\,m$ หา $T$ ($GM=3.98\\times10^{14}$)",
+      "steps": [
+        "$T=2\\pi\\sqrt{r^3/(GM)}=2\\pi\\sqrt{(4.22\\times10^7)^3/(3.98\\times10^{14})}$",
+        "$T\\approx86400\\,s=24\\,h$ (geosynchronous)"
+      ],
+      "answer": "$T\\approx24\\,h$"
+    }
+  ],
+  "practice": "หา $r$ ของดาวเทียมที่ $T=90\\,min$ รอบโลก"
+}

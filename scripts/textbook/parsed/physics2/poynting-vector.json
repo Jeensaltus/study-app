@@ -1,0 +1,33 @@
+{
+  "id": "poynting-vector",
+  "title": "Poynting Vector and EM Energy Flow",
+  "source": "Serway Physics for Scientists and Engineers, Ch 34.4, p.955–965",
+  "chapterId": "waves-optics",
+  "concept": "เวกเตอร์ Poynting $\\vec S=\\frac{1}{\\mu_0}\\vec E\\times\\vec B$ บอกการไหลของพลังงาน EM (W/m²) ค่าเฉลี่ย $S_{avg}=\\frac{1}{2\\mu_0}E_0B_0=\\frac{E_0^2}{2\\mu_0 c}$ สำหรับคลื่นเดินหน้า",
+  "formula": "S_{avg}=\\frac{E_0^2}{2\\mu_0 c},\\quad I=S_{avg}",
+  "warning": "$E$, $B$ ต้องเป็น amplitude ของคลื่น — ใช้ RMS ต้องแปลง $E_{rms}=E_0/\\sqrt{2}$",
+  "examples": [
+    {
+      "title": "จาก E หา B และ Savg",
+      "level": "Medium",
+      "tip": "$B_0=E_0/c$ แล้วใช้ $S_{avg}=E_0^2/(2\\mu_0 c)$",
+      "problem": "คลื่น EM $E_0=150\\,V/m$ ในสุญญากาศ หา $B_0$ และ $S_{avg}$ ($c=3\\times10^8\\,m/s$, $\\mu_0=4\\pi\\times10^{-7}$)",
+      "steps": [
+        "$B_0=E_0/c=150/(3\\times10^8)=5\\times10^{-7}\\,T$",
+        "$S_{avg}=E_0^2/(2\\mu_0 c)=150^2/(2\\cdot4\\pi\\times10^{-7}\\cdot3\\times10^8)\\approx29.8\\,W/m^2$"
+      ],
+      "answer": "$B_0=5\\times10^{-7}\\,T$, $S_{avg}\\approx30\\,W/m^2$"
+    },
+    {
+      "title": "กำลังจาก intensity",
+      "level": "Basic",
+      "tip": "$P=S_{avg}\\cdot A$",
+      "problem": "แสง $S=8\\times10^4\\,W/m^2$ ตกพื้นที่ $A=2\\,mm^2$ หา $P$",
+      "steps": [
+        "$P=SA=8\\times10^4(2\\times10^{-6})=0.16\\,W$"
+      ],
+      "answer": "$P=0.16\\,W$"
+    }
+  ],
+  "practice": "ส่งเสริม $100\\,MHz$ กำลัง $100\\,W$ ผ่านท่อ $r=1\\,cm$ หา $S_{avg}$ เฉลี่ยบนพื้นที่หน้าตัด"
+}

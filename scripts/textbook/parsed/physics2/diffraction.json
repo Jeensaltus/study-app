@@ -1,0 +1,35 @@
+{
+  "id": "diffraction",
+  "title": "Diffraction",
+  "source": "Serway Physics for Scientists and Engineers, Ch 38, p.1025–1045",
+  "chapterId": "wave-optics",
+  "concept": "การแทรกแสง: single slit minima $a\\sin\\theta=m\\lambda$ ($m\\neq0$) diffraction grating $d\\sin\\theta=m\\lambda$ ให้ maxima แหลมกว่า double slit ความละเอียดเชิงมุม $\\theta\\approx\\lambda/a$",
+  "formula": "a\\sin\\theta=m\\lambda,\\quad d\\sin\\theta=m\\lambda",
+  "warning": "Single slit central maximum กว้างเป็นสองเท่า secondary max — อย่าใช้ $m\\lambda$ ที่ center",
+  "examples": [
+    {
+      "title": "Single slit — มุม first minimum",
+      "level": "Basic",
+      "tip": "ใช้ $a\\sin\\theta=\\lambda$",
+      "problem": "slit width $a=0.10\\,mm$, $\\lambda=500\\,nm$ หา $\\theta$ ของ first minimum",
+      "steps": [
+        "$\\sin\\theta=\\lambda/a=500\\times10^{-9}/10^{-4}=0.005$",
+        "$\\theta\\approx0.005\\,rad\\approx0.29°$"
+      ],
+      "answer": "$\\theta\\approx0.29°$"
+    },
+    {
+      "title": "Diffraction grating — หลาย order",
+      "level": "Medium",
+      "tip": "ใช้ $d\\sin\\theta=m\\lambda$",
+      "problem": "grating 600 lines/mm, $\\lambda=589\\,nm$ หา $\\theta$ ของ $m=1$",
+      "steps": [
+        "$d=1/600\\,mm=1.67\\,\\mu m$",
+        "$\\sin\\theta=589\\times10^{-9}/1.67\\times10^{-6}=0.353$",
+        "$\\theta\\approx20.7°$"
+      ],
+      "answer": "$\\theta\\approx21°$"
+    }
+  ],
+  "practice": "Two stars แยก $0.5\\,arcsec$ ใช้ telescope $D=2\\,m$, $\\lambda=550\\,nm$ แยกได้หรือไม่ (Rayleigh: $\\theta\\approx1.22\\lambda/D$)"
+}

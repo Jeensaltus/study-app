@@ -1,0 +1,51 @@
+{
+  "name": "freshman-study-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/prebuild.mjs",
+    "build": "vite build",
+    "build:analyze": "vite build --mode analyze",
+    "preview": "vite preview",
+    "start": "node scripts/serve-production.mjs",
+    "start:prod": "npm run build && npm start",
+    "generate:problems": "node scripts/generate-problems.mjs",
+    "audit:problems": "node scripts/audit-problems.mjs",
+    "extract:textbook": "node scripts/textbook/extract-section.mjs",
+    "structure:slides": "node scripts/textbook/structure-slides.mjs",
+    "seed:slides": "node scripts/textbook/seed-parsed.mjs",
+    "seed:from-base": "node scripts/textbook/seed/build-from-base.mjs",
+    "build:slides": "node scripts/textbook/build-slide-data.mjs",
+    "build:flashcards": "node scripts/build-flashcards.mjs",
+    "vocab:build": "node scripts/vocab/build-cefr-vocab.mjs",
+    "vocab:build:domains": "node scripts/vocab/build-domain-vocab.mjs",
+    "vocab:build:all": "node scripts/vocab/build-cefr-vocab.mjs && node scripts/vocab/build-domain-vocab.mjs",
+    "vocab:build:full": "node scripts/vocab/build-cefr-vocab.mjs --with-definitions",
+    "qa:slides": "node scripts/textbook/qa-slides.mjs",
+    "audit:slides": "node scripts/textbook/audit-slides.mjs",
+    "kb:build": "node scripts/knowledge-base/build-manifest.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^2.8.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "katex": "^0.16.22",
+    "lucide-react": "^0.468.0",
+    "postcss": "^8.5.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-katex": "^3.0.1",
+    "react-router-dom": "^7.0.0",
+    "recharts": "^3.0.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.0.0"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^6.0.227",
+    "rollup-plugin-visualizer": "^7.0.1"
+  }
+}

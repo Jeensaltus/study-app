@@ -1,0 +1,37 @@
+{
+  "id": "simple-harmonic-motion",
+  "title": "Simple Harmonic Motion",
+  "source": "Serway Physics for Scientists and Engineers, Ch 15, p.390–410",
+  "chapterId": "oscillations-waves",
+  "concept": "การเคลื่อนที่แบบ SHM มีแรงคืนสู่สมดุล $F=-kx$ ทำให้ $x(t)=A\\cos(\\omega t+\\phi)$ โดย $\\omega=\\sqrt{k/m}$ และคาบ $T=2\\pi\\sqrt{m/k}$ พลังงานรวม $E=\\frac{1}{2}kA^2$ คงที่ เปลี่ยนระหว่างพลังงานจลน์และพลังงานศักย์",
+  "formula": "x=A\\cos(\\omega t+\\phi),\\quad \\omega=\\sqrt{k/m},\\quad T=2\\pi\\sqrt{m/k}",
+  "warning": "SHM ต้องมีแรงสัดส่วนกับการกระจัดและทิศเข้าสู่จุดสมดุล — อย่าใช้สูตร $T=2\\pi\\sqrt{m/k}$ กับ pendulum โดยไม่แทน $k_{eff}=mg/L$",
+  "examples": [
+    {
+      "title": "คาบของ mass-spring",
+      "level": "Basic",
+      "tip": "ใช้ $T=2\\pi\\sqrt{m/k}$ โดยตรง",
+      "problem": "มวล $0.5\\,kg$ ติดสปริง $k=200\\,N/m$ หาคาบและความถี่",
+      "steps": [
+        "$T=2\\pi\\sqrt{0.5/200}=2\\pi\\sqrt{0.0025}=2\\pi(0.05)$",
+        "$T=0.314\\,s$",
+        "$f=1/T\\approx3.18\\,Hz$"
+      ],
+      "answer": "$T\\approx0.31\\,s$, $f\\approx3.2\\,Hz$"
+    },
+    {
+      "title": "พลังงานใน SHM",
+      "level": "Medium",
+      "tip": "พลังงานรวมไม่ขึ้นกับตำแหน่ง",
+      "problem": "สปริง $k=100\\,N/m$ กระจัด $A=0.10\\,m$ หา $E_{total}$ และ $v_{max}$ ของ $m=0.25\\,kg$",
+      "steps": [
+        "$E=\\frac{1}{2}kA^2=\\frac{1}{2}(100)(0.01)=0.5\\,J$",
+        "ที่ $x=0$: $E=\\frac{1}{2}mv_{max}^2$",
+        "$v_{max}=\\sqrt{2E/m}=\\sqrt{4}=2\\,m/s$"
+      ],
+      "answer": "$E=0.5\\,J$, $v_{max}=2\\,m/s$"
+    }
+  ],
+  "practice": "ลูกตุ้มความยาว $1.0\\,m$ หาคาบ ($g=9.8\\,m/s^2$) ใช้ $T=2\\pi\\sqrt{L/g}$",
+  "graph": "motion"
+}

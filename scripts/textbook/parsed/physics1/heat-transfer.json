@@ -1,0 +1,34 @@
+{
+  "id": "heat-transfer",
+  "title": "Heat Transfer",
+  "source": "Serway Physics for Scientists and Engineers, Ch 20, p.515–530",
+  "chapterId": "thermodynamics",
+  "concept": "การถ่ายเทความร้อน 3 วิธี: (1) นำ heat — $P=kA\\Delta T/L$ (2) หลอด — $P=hA\\Delta T$ (3) แผ่รังสี — $P=\\sigma A T^4$ (Stefan-Boltzmann) ใน steady state อัตราการไหลของความร้อนคงที่ทุกชั้น",
+  "formula": "P_{cond}=\\frac{kA\\Delta T}{L},\\quad P_{rad}=\\sigma A T^4",
+  "warning": "Conduction ใช้ $\\Delta T$ ข้ามความหนา $L$ — สำหรับ radiation อุณหภูมิต้องเป็น Kelvin",
+  "examples": [
+    {
+      "title": "Conduction — กำแพง",
+      "level": "Basic",
+      "tip": "ใช้ $P=kA\\Delta T/L$",
+      "problem": "กำแพง $L=0.20\\,m$, $A=10\\,m^2$, $k=0.8\\,W/m\\cdot K$, $\\Delta T=20\\,K$ หา $P$",
+      "steps": [
+        "$P=0.8(10)(20)/0.20=800\\,W$"
+      ],
+      "answer": "$P=800\\,W$"
+    },
+    {
+      "title": "Stefan-Boltzmann radiation",
+      "level": "Medium",
+      "tip": "ใช้ $\\sigma=5.67\\times10^{-8}\\,W/m^2\\cdot K^4$",
+      "problem": "วัตถุ $A=0.50\\,m^2$ ที่ $T=500\\,K$ (emissivity $e=1$) หา $P$",
+      "steps": [
+        "$P=\\sigma AT^4=5.67\\times10^{-8}(0.50)(500^4)$",
+        "$P=5.67\\times10^{-8}(0.50)(6.25\\times10^{10})$",
+        "$P\\approx1770\\,W$"
+      ],
+      "answer": "$P\\approx1.8\\,kW$"
+    }
+  ],
+  "practice": "หน้าต่างกระจกสองชั้น $A=2\\,m^2$ ภายใน $22°C$ ภายนอก $-5°C$ ถ้า $U=2.5\\,W/m^2\\cdot K$ หา heat loss"
+}

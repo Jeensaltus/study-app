@@ -1,0 +1,35 @@
+{
+  "id": "net-change",
+  "title": "Net Change Theorem and Applications",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 5.4, p.338–345",
+  "chapterId": "integrals",
+  "concept": "Net Change Theorem: ถ้า $F'(x)=f(x)$ แล้วการเปลี่ยนแปลงสะสมของ $f$ บน $[a,b]$ คือ $F(b)-F(a)=\\int_a^b f(x)\\,dx$ ใช้หาปริมาณสะสม เช่น displacement และปริมาณไหลสุทธิ",
+  "formula": "F(b)-F(a)=\\int_a^b F'(x)\\,dx = \\int_a^b f(x)\\,dx",
+  "warning": "ระยะทางรวม $\\neq$ net displacement — ระยะทางใช้ $\\int |v(t)|\\,dt$",
+  "examples": [
+    {
+      "title": "Displacement จากความเร็ว",
+      "level": "Basic",
+      "tip": "net change ของตำแหน่ง = integral ของความเร็ว",
+      "problem": "ถ้า $v(t)=3t^2-6t$ m/s หา displacement บน $[0,3]$ s",
+      "steps": [
+        "$\\Delta s=\\int_0^3 (3t^2-6t)\\,dt=[t^3-3t^2]_0^3$",
+        "$=27-27=0$ m"
+      ],
+      "answer": "$0$ m (กลับมาจุดเริ่ม)"
+    },
+    {
+      "title": "ปริมาณไหลสุทธิ",
+      "level": "Medium",
+      "tip": "inflow บวก, outflow ลบ — integral ให้ net rate",
+      "problem": "ถ้า $r(t)=50-10t$ L/min เป็นอัตราไหลเข้าถัง ($0\\le t\\le 5$) หาปริมาณสุทธิ",
+      "steps": [
+        "Net change $=\\int_0^5 (50-10t)\\,dt$",
+        "$=[50t-5t^2]_0^5=250-125=125$ L"
+      ],
+      "answer": "$125$ L"
+    }
+  ],
+  "practice": "ถ้า $v(t)=\\sin t$ m/s บน $[0,2\\pi]$ หา displacement และ total distance",
+  "graph": "integral"
+}

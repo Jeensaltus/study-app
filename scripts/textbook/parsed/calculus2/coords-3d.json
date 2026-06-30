@@ -1,0 +1,34 @@
+{
+  "id": "coords-3d",
+  "title": "Three-Dimensional Coordinate Systems",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 12.1, p.763–772",
+  "chapterId": "vectors-3d",
+  "concept": "ระบบพิกัดสามมิติ $(x,y,z)$ ใช้แกน $x,y,z$ ตั้งฉากกัน ระยะระหว่าง $P(x_1,y_1,z_1)$ กับ $Q(x_2,y_2,z_2)$ คือ $d=\\sqrt{(\\Delta x)^2+(\\Delta y)^2+(\\Delta z)^2}$ สูตร midpoint และ sphere $(x-h)^2+(y-k)^2+(z-l)^2=r^2$",
+  "formula": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}",
+  "warning": "อย่าสับสน 2D กับ 3D — สูตร sphere มีพจน์ $(z-l)^2$ เพิ่มจาก circle",
+  "examples": [
+    {
+      "title": "ระยะระหว่างสองจุด",
+      "level": "Basic",
+      "tip": "ใช้ distance formula 3D",
+      "problem": "หาระยะระหว่าง $(1,2,3)$ กับ $(4,6,3)$",
+      "steps": [
+        "$d=\\sqrt{(4-1)^2+(6-2)^2+(3-3)^2}$",
+        "$=\\sqrt{9+16+0}=5$"
+      ],
+      "answer": "$5$"
+    },
+    {
+      "title": "สมการทรงกลม",
+      "level": "Medium",
+      "tip": "center-radius form",
+      "problem": "หา center และ radius ของ $x^2+y^2+z^2-4x+6z-3=0$",
+      "steps": [
+        "complete square: $(x-2)^2+y^2+(z+3)^2=4+9+3=16$",
+        "center $(2,0,-3)$, radius $r=4$"
+      ],
+      "answer": "center $(2,0,-3)$, $r=4$"
+    }
+  ],
+  "practice": "หาระยะจากจุด $(0,0,0)$ ถึง plane $2x-y+2z=6$"
+}

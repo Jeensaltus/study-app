@@ -1,0 +1,36 @@
+{
+  "id": "chain-rule-multivariable",
+  "title": "The Chain Rule for Multivariable Functions",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 14.5, p.890–898",
+  "chapterId": "multivariable",
+  "concept": "Chain rule หลายตัวแปร: ถ้า $z=f(x,y)$ และ $x,y$ เป็นฟังก์ชันของ $t$ แล้ว $\\dfrac{dz}{dt}=\\dfrac{\\partial f}{\\partial x}\\dfrac{dx}{dt}+\\dfrac{\\partial f}{\\partial y}\\dfrac{dy}{dt}$ กรณี implicit: $F(x,y,z)=0$ ใช้ $F_x+F_y y'+F_z z'=0$",
+  "formula": "\\frac{dz}{dt}=\\frac{\\partial f}{\\partial x}\\frac{dx}{dt}+\\frac{\\partial f}{\\partial y}\\frac{dy}{dt}",
+  "warning": "วาด tree diagram ช่วยไม่ให้พลาด path — ทุก path จาก $t$ ไป $z$ ต้องรวม",
+  "examples": [
+    {
+      "title": "Chain rule กับ $t$",
+      "level": "Medium",
+      "tip": "หา partials แล้วคูณ derivative ของ inner",
+      "problem": "ถ้า $z=x^2+y^2$, $x=\\cos t$, $y=\\sin t$ หา $\\dfrac{dz}{dt}$",
+      "steps": [
+        "$\\dfrac{\\partial z}{\\partial x}=2x$, $\\dfrac{\\partial z}{\\partial y}=2y$",
+        "$\\dfrac{dx}{dt}=-\\sin t$, $\\dfrac{dy}{dt}=\\cos t$",
+        "$\\dfrac{dz}{dt}=2\\cos t(-\\sin t)+2\\sin t(\\cos t)=0$"
+      ],
+      "answer": "$0$"
+    },
+    {
+      "title": "Implicit differentiation 3D",
+      "level": "Hard",
+      "tip": "$F_x+F_y y'+F_z z'=0$",
+      "problem": "ถ้า $x^2+y^2+z^2=1$ หา $\\dfrac{\\partial z}{\\partial x}$ ($z>0$)",
+      "steps": [
+        "$2x+2y\\dfrac{\\partial y}{\\partial x}+2z\\dfrac{\\partial z}{\\partial x}=0$ (treat $y$ const w.r.t. $x$)",
+        "$\\dfrac{\\partial z}{\\partial x}=-\\dfrac{x}{z}$"
+      ],
+      "answer": "$-\\dfrac{x}{z}$"
+    }
+  ],
+  "practice": "ถ้า $w=xy+yz+zx$ และ $x=t, y=t^2$ หา $\\dfrac{dw}{dt}$",
+  "graph": "derivative"
+}

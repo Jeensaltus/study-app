@@ -1,0 +1,34 @@
+{
+  "id": "maxwell-mean-free-path",
+  "title": "Maxwell Distribution and Mean Free Path",
+  "source": "Serway Physics for Scientists and Engineers, Ch 19.5, p.500–510",
+  "chapterId": "thermodynamics",
+  "concept": "Maxwell-Boltzmann distribution $f(v)\\propto v^2 e^{-mv^2/(2k_BT)}$ — $v_{rms}$, $v_{avg}$, most probable speed $v_p=\\sqrt{2k_BT/m}$ mean free path $\\lambda=1/(\\sqrt2\\,\\pi d^2 n/V)$",
+  "formula": "v_{rms}=\\sqrt{3k_BT/m},\\quad \\lambda=\\frac{1}{\\sqrt2\\,\\pi d^2 n/V}",
+  "warning": "ใช้ $n/V$ = number density (m⁻³) ไม่ใช่ moles — diameter $d$ ของ molecule",
+  "examples": [
+    {
+      "title": "Mean free path",
+      "level": "Hard",
+      "tip": "ใช้ $\\lambda=1/(\\sqrt2\\pi d^2 N/V)$",
+      "problem": "H₂ $d=2.0\\times10^{-10}\\,m$, $N/V=9.46\\times10^{25}\\,m^{-3}$ หา $\\lambda$",
+      "steps": [
+        "$\\lambda=1/(\\sqrt2\\,\\pi(2\\times10^{-10})^2(9.46\\times10^{25}))$",
+        "$\\lambda\\approx1.2\\times10^{-7}\\,m=120\\,nm$"
+      ],
+      "answer": "$\\lambda\\approx120\\,nm$"
+    },
+    {
+      "title": "Maxwell — vrms vs vp",
+      "level": "Medium",
+      "tip": "$v_p=\\sqrt{2RT/M}$, $v_{rms}=\\sqrt{3RT/M}$",
+      "problem": "N₂ $M=28\\,g/mol$ ที่ $400\\,K$ หา $v_p$ และ $v_{rms}$",
+      "steps": [
+        "$v_p=\\sqrt{2(8.314)(400)/0.028}\\approx490\\,m/s$",
+        "$v_{rms}=\\sqrt{3(8.314)(400)/0.028}\\approx597\\,m/s$"
+      ],
+      "answer": "$v_p\\approx490\\,m/s$, $v_{rms}\\approx597\\,m/s$"
+    }
+  ],
+  "practice": "He $M=4\\,g/mol$ ที่ $300\\,K$ หา $v_{rms}$ และเปรียบเทียบ $v_p$"
+}

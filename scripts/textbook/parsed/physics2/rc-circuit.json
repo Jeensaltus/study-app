@@ -1,0 +1,35 @@
+{
+  "id": "rc-circuit",
+  "title": "RC Circuits",
+  "source": "Serway Physics for Scientists and Engineers, Ch 28, p.830–845",
+  "chapterId": "circuits",
+  "concept": "Charging: $q(t)=C\\varepsilon(1-e^{-t/RC})$, $V_C=\\varepsilon(1-e^{-t/RC})$ Discharging: $q(t)=Q_0e^{-t/RC}$ เวลา $\\tau=RC$ คือ time constant: หลัง $1\\tau$ capacitor ชาร์จถึง $63\\%$ หลัง $5\\tau$ ถือว่าชาร์จเต็มหรือ discharge หมด",
+  "formula": "\\tau=RC, \\quad V_C=V_0(1-e^{-t/RC})",
+  "warning": "ที่ $t=0$ ตัวเก็บประจุเป็น open circuit (กระแสเริ่มสูง) — ใช้ $Q(t)=Q_f(1-e^{-t/RC})$",
+  "examples": [
+    {
+      "title": "RC Circuit — หา τ และ V_C",
+      "level": "Basic",
+      "tip": "",
+      "problem": "$R=10\\,k\\Omega$, $C=100\\,\\mu F$, $\\varepsilon=9\\,V$ หา $\\tau$ และแรงดันบน C หลัง 1 s",
+      "steps": [
+        "$\\tau=RC=10\\times10^3\\times100\\times10^{-6}=1\\,s$",
+        "$V_C=9(1-e^{-1/1})=9(1-e^{-1})=9(0.632)\\approx5.69\\,V$"
+      ],
+      "answer": "$V_C=9"
+    },
+    {
+      "title": "เปรียบเทียบ time constant",
+      "level": "Medium",
+      "tip": "$\\tau=RC$ — คูณ $R$ กับ $C$ แล้วเปรียบเทียบหน่วยวินาที",
+      "problem": "ถ้า $R=5\\,k\\Omega$, $C=200\\,\\mu F$ เปรียบเทียบ $\\tau$ กับ $R=10\\,k\\Omega$, $C=100\\,\\mu F$",
+      "steps": [
+        "$\\tau_1=5\\times10^3\\times200\\times10^{-6}=1.0\\,s$",
+        "$\\tau_2=10\\times10^3\\times100\\times10^{-6}=1.0\\,s$",
+        "$\\tau_1=\\tau_2$ — ผลิต $RC$ เท่ากัน แม้ $R,C$ ต่างกัน"
+      ],
+      "answer": "$\\tau=1.0\\,s$ ทั้งคู่"
+    }
+  ],
+  "practice": "ถ้า $R=5\\,k\\Omega$, $C=200\\,\\mu F$ เปรียบเทียบ $\\tau$ กับตัวอย่างด้านบน"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "magnetic-materials",
+  "title": "Magnetic Materials",
+  "source": "Serway Physics for Scientists and Engineers, Ch 32, p.905–920",
+  "chapterId": "magnetism",
+  "concept": "วัสดุแม่เหล็ก: paramagnetic ($\\chi>0$ เล็ก), diamagnetic ($\\chi<0$), ferromagnetic (domain alignment, hysteresis) ความหนาแน่น flux $B=\\mu_0(H+M)=\\mu H$ โดย $\\mu=\\mu_0(1+\\chi)$",
+  "formula": "B=\\mu_0(H+M),\\quad \\chi=\\frac{M}{H}",
+  "warning": "Ferromagnet มี hysteresis loop — $B$ ขึ้นกับประวัติ magnetization ไม่ใช่แค่ $H$ ปัจจุบัน",
+  "examples": [
+    {
+      "title": "หา B ใน paramagnet",
+      "level": "Basic",
+      "tip": "ใช้ $B=\\mu_0(1+\\chi)H$",
+      "problem": "$H=1000\\,A/m$, $\\chi=2\\times10^{-5}$ หา $B$",
+      "steps": [
+        "$B=4\\pi\\times10^{-7}(1+2\\times10^{-5})(1000)$",
+        "$B\\approx1.26\\times10^{-3}\\,T$"
+      ],
+      "answer": "$B\\approx1.26\\,mT$"
+    },
+    {
+      "title": "เปรียบเทียบ dia vs para",
+      "level": "Medium",
+      "tip": "diamagnetic หัก flux เล็กน้อย",
+      "problem": "ทำไม bismuth ($\\chi\\approx-1.6\\times10^{-4}$) ถูก repel จาก magnetic field?",
+      "steps": [
+        "Diamagnet สร้าง $M$ ตรงข้าม $H$",
+        "ทำให้ $B$ ภายในลดลง → ถูกผลักออกจาก field แรง"
+      ],
+      "answer": "Induced $M$ ตรงข้าม $H$ → repulsion"
+    }
+  ],
+  "practice": "Iron ($\\mu_r=5000$) ใน $H=200\\,A/m$ หา $B$"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "implicit-differentiation",
+  "title": "Implicit Differentiation",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 3.6, p.177–184",
+  "chapterId": "derivatives",
+  "concept": "เมื่อ $y$ ไม่ได้แก้เป็นฟังก์ชันชัดของ $x$ (เช่น $x^2+y^2=25$) ให้หาอนุพันธ์ทั้งสองข้างของสมการ โดยใช้ chain rule กับ $y$ ว่า $\\dfrac{d}{dx}[y]=\\dfrac{dy}{dx}$ แล้วแก้หา $\\dfrac{dy}{dx}$",
+  "formula": "\\frac{d}{dx}[F(x,y)]=0 \\Rightarrow F_x + F_y\\frac{dy}{dx}=0 \\Rightarrow \\frac{dy}{dx}=-\\frac{F_x}{F_y}",
+  "warning": "ทุกครั้งที่หาอนุพันธ์ของ $y$ ต้องคูณ $\\dfrac{dy}{dx}$ — อย่า treat $y$ เป็นค่าคงที่",
+  "examples": [
+    {
+      "title": "วงกลม — สมการ implicit",
+      "level": "Basic",
+      "tip": "หาอนุพันธ์ทั้งสองข้าง แล้วแก้ $dy/dx$",
+      "problem": "ถ้า $x^2+y^2=25$ หา $\\dfrac{dy}{dx}$",
+      "steps": [
+        "หาอนุพันธ์: $2x+2y\\dfrac{dy}{dx}=0$",
+        "$\\dfrac{dy}{dx}=-\\dfrac{x}{y}$ ($y\\neq 0$)"
+      ],
+      "answer": "$-\\dfrac{x}{y}$"
+    },
+    {
+      "title": "เส้นสัมผัสของ ellipse",
+      "level": "Medium",
+      "tip": "แทนจุดบนเส้นโค้งเพื่อหาความชัน",
+      "problem": "ถ้า $4x^2+9y^2=36$ หาความชันเส้นสัมผัสที่ $(3,0)$",
+      "steps": [
+        "หาอนุพันธ์: $8x+18y\\dfrac{dy}{dx}=0$ → $\\dfrac{dy}{dx}=-\\dfrac{4x}{9y}$",
+        "ที่ $(3,0)$: $y=0$ → ความชันแนวตั้ง (เส้นสัมผัส $x=3$)"
+      ],
+      "answer": "เส้นสัมผัส: $x=3$ (แนวตั้ง)"
+    }
+  ],
+  "practice": "ถ้า $x^3+y^3=6xy$ (folium of Descartes) หา $\\dfrac{dy}{dx}$ ที่ $(3,3)$",
+  "graph": "derivative"
+}

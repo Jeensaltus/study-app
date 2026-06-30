@@ -1,0 +1,37 @@
+{
+  "id": "acid-base",
+  "title": "Acid-Base Equilibrium",
+  "source": "Chemistry: The Central Science 12th ed., Ch 16.1–16.4, p.625–655",
+  "chapterId": "equilibrium",
+  "concept": "Brønsted-Lowry: กรดคือ proton donor, เบสคือ proton acceptor $K_a=\\frac{[H^+][A^-]}{[HA]}$ (ionization constant ของกรดอ่อน) $pH=-\\log[H^+]$ ที่ $25°C$: $pH+pOH=14$ กรดแก่ ($HCl$, $HNO_3$, $H_2SO_4$, ฯลฯ) ionize 100% เบสแก่ ($NaOH$, $KOH$, ฯลฯ) ionize 100%",
+  "formula": "pH=-\\log[H^+], \\quad K_a=\\frac{[H^+][A^-]}{[HA]}",
+  "warning": "Ka/Kb ใช้กับ weak acid/base — strong acid แทบ ionize 100%",
+  "examples": [
+    {
+      "title": "หา pH ของ CH₃COOH อ่อน",
+      "level": "Basic",
+      "tip": "",
+      "problem": "กรดแอซิติก $CH_3COOH$ ความเข้มข้น $0.10\\,M$, $K_a=1.8\\times10^{-5}$ หา pH",
+      "steps": [
+        "ICE table: $[H^+]=[A^-]=x$, $[HA]=0.10-x$",
+        "$K_a=x^2/(0.10-x)\\approx x^2/0.10$ (ถ้า $x<<0.10$)",
+        "$x^2=1.8\\times10^{-6}$, $x=[H^+]=1.34\\times10^{-3}\\,M$",
+        "$pH=-\\log(1.34\\times10^{-3})\\approx2.87$"
+      ],
+      "answer": "$pH=-\\log"
+    },
+    {
+      "title": "pH ของ NaOH",
+      "level": "Medium",
+      "tip": "Strong base: $pOH=-\\log[OH^-]$ แล้ว $pH=14-pOH$",
+      "problem": "NaOH ความเข้มข้น $0.05\\,M$ หา pH",
+      "steps": [
+        "$[OH^-]=0.05\\,M$",
+        "$pOH=-\\log(0.05)=1.30$",
+        "$pH=14-1.30=12.70$"
+      ],
+      "answer": "$pH=12.70$"
+    }
+  ],
+  "practice": "NaOH ความเข้มข้น $0.05\\,M$ หา pH"
+}

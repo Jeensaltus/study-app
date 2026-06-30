@@ -1,0 +1,34 @@
+{
+  "id": "photoelectric",
+  "title": "Photoelectric Effect",
+  "source": "Serway Physics for Scientists and Engineers, Ch 40, p.1050–1065",
+  "chapterId": "modern-physics",
+  "concept": "โฟโตอิเล็กทริก: แสงที่มีความถี่สูงมากกระทบโลหะ จะปล่อยอิเล็กตรอนไป พลังงานของโฟตอน $E=hf$ และพลังงานจลน์สูงสุดของอิเล็กตรอนคือ $K_{max}=hf-\\phi$ โดย $\\phi$ คืองานฟังก์ชันของโลหะ.",
+  "formula": "E=hf, \\quad K_{max}=hf-\\phi",
+  "warning": "พลังงานจลน์สูงสุด $K_{max}=hf-\\phi$ — ไม่ขึ้นกับความเข้มแสง",
+  "examples": [
+    {
+      "title": "พลังงานโฟตอน $E=hf$",
+      "level": "Basic",
+      "tip": "ใช้ $h=6.63\\times10^{-34}\\,J\\cdot s$",
+      "problem": "แสงความถี่ $6.0\\times10^{14}\\,Hz$ จงหาพลังงานโฟตอน",
+      "steps": [
+        "$E=hf=6.63\\times10^{-34}(6.0\\times10^{14})=3.98\\times10^{-19}\\,J$"
+      ],
+      "answer": "$E\\approx3.98\\times10^{-19}\\,J$"
+    },
+    {
+      "title": "Photoelectric — $K_{max}$ จาก $\\lambda$",
+      "level": "Medium",
+      "tip": "ใช้ $hf=hc/\\lambda$ แล้วลบ $\\phi$ — แปลงหน่วยให้ตรงกัน (eV หรือ J)",
+      "problem": "แสง $400\\,nm$ กระทบโลหะ $\\phi=2.0\\,eV$ จงหาพลังงานจลน์สูงสุด",
+      "steps": [
+        "$hf=hc/\\lambda=1240\\,eV\\cdot nm/400\\,nm=3.10\\,eV$",
+        "$K_{max}=hf-\\phi=3.10-2.0=1.10\\,eV$",
+        "$K_{max}=1.76\\times10^{-19}\\,J$"
+      ],
+      "answer": "$K_{max}=1.10\\,eV$"
+    }
+  ],
+  "practice": "แสง $400\\,nm$ กระทบโลหะ $\\phi=2.0\\,eV$ จงหาพลังงานจลน์สูงสุด"
+}

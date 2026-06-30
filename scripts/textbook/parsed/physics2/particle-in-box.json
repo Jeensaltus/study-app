@@ -1,0 +1,34 @@
+{
+  "id": "particle-in-box",
+  "title": "Particle in a Box",
+  "source": "Serway Physics for Scientists and Engineers, Ch 41.2, p.1070–1080",
+  "chapterId": "modern-physics",
+  "concept": "Particle in 1D box: $\\psi_n(x)=\\sqrt{2/L}\\sin(n\\pi x/L)$, $E_n=\\frac{n^2h^2}{8mL^2}$ ความน่าจะ $|\\psi|^2$ — หา $P$ ในช่วงด้วยการ integrate $|\\psi|^2 dx$",
+  "formula": "E_n=\\frac{n^2h^2}{8mL^2},\\quad \\int|\\psi|^2\\,dx=1",
+  "warning": "Quantum number $n=1,2,3,\\ldots$ — ground state $n=1$ ไม่เป็นศูนย์",
+  "examples": [
+    {
+      "title": "พลังงานระดับ n=1,4",
+      "level": "Basic",
+      "tip": "$E_n\\propto n^2$",
+      "problem": "electron ใน box $L=0.10\\,nm$ หา $E_1$ และ $E_4$ ($h=6.63\\times10^{-34}$, $m_e=9.11\\times10^{-31}$)",
+      "steps": [
+        "$E_1=h^2/(8mL^2)\\approx6.0\\times10^{-18}\\,J\\approx37.5\\,eV$",
+        "$E_4=16E_1\\approx600\\,eV$"
+      ],
+      "answer": "$E_1\\approx38\\,eV$, $E_4\\approx600\\,eV$"
+    },
+    {
+      "title": "Probability ในครึ่งแรก",
+      "level": "Hard",
+      "tip": "$P=\\int_0^{L/2}|\\psi_1|^2 dx$",
+      "problem": "ground state box $L$ หา $P$ ที่ $0<x<L/2$",
+      "steps": [
+        "$|\\psi_1|^2=(2/L)\\sin^2(\\pi x/L)$",
+        "$P=\\int_0^{L/2}(2/L)\\sin^2(\\pi x/L)dx=\\frac12$ (symmetry)"
+      ],
+      "answer": "$P=0.5$"
+    }
+  ],
+  "practice": "box $L=2\\,nm$ หา $\\Delta E=E_2-E_1$ ของ electron"
+}

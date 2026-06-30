@@ -1,0 +1,37 @@
+{
+  "id": "atomic-model",
+  "title": "Models of the Atom",
+  "source": "Chemistry: The Central Science 12th ed., Ch 6.1–6.3, p.219–240",
+  "chapterId": "atomic-structure",
+  "concept": "แบบจำลองของ Bohr อธิบายสเปกตรัมของ H: อิเล็กตรอนอยู่ในออร์บิทัลพลังงานคงที่ $E_n=-\\frac{2.18\\times10^{-18}}{n^2}\\,J$ เมื่ออิเล็กตรอนกระโดดจากระดับสูงลงต่ำ จะปล่อยโฟตอนที่มีพลังงาน $\\Delta E=hf=hc/\\lambda$ สมการ de Broglie: $\\lambda=h/mv$ (คลื่นของอนุภาค)",
+  "formula": "E_n=-\\frac{2.18\\times10^{-18}}{n^2}\\,J, \\quad \\Delta E=hf",
+  "warning": "quantum number ต้องสอดคล้อง: $|m_l|\\le l\\le n-1$",
+  "examples": [
+    {
+      "title": "Bohr Model — photon $n=3→1$",
+      "level": "Basic",
+      "tip": "",
+      "problem": "หาพลังงานโฟตอนที่ปล่อยออกมาเมื่ออิเล็กตรอนใน H กระโดดจาก $n=3$ ไป $n=1$",
+      "steps": [
+        "$E_1=-2.18\\times10^{-18}\\,J$, $E_3=-2.18\\times10^{-18}/9=-2.42\\times10^{-19}\\,J$",
+        "$\\Delta E=E_1-E_3=-2.18\\times10^{-18}-(-2.42\\times10^{-19})$",
+        "$=-1.94\\times10^{-18}\\,J$ (ลบ = ปล่อยพลังงาน)",
+        "$|\\Delta E|=1.94\\times10^{-18}\\,J$ (UV region ใน Lyman series)"
+      ],
+      "answer": "$|\\Delta E|=1.94\\times10^{-18}\\,J$"
+    },
+    {
+      "title": "Balmer — $n=4\\to2$ หา $\\lambda$",
+      "level": "Medium",
+      "tip": "$\\Delta E=hc/\\lambda$ หรือใช้ $1240/\\lambda(nm)=\\Delta E(eV)$",
+      "problem": "หาความยาวคลื่นของโฟตอนที่ปล่อยจาก $n=4$ ไป $n=2$ ใน H (Balmer series)",
+      "steps": [
+        "$\\Delta E=13.6\\left(\\frac{1}{4}-\\frac{1}{16}\\right)=2.55\\,eV$",
+        "$\\lambda=1240/2.55=486\\,nm$",
+        "อยู่ในช่วง visible (Balmer series)"
+      ],
+      "answer": "$\\lambda=486\\,nm$"
+    }
+  ],
+  "practice": "หาความยาวคลื่นของโฟตอนที่ปล่อยจาก $n=4$ ไป $n=2$ ใน H (Balmer series)"
+}

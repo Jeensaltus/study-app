@@ -1,0 +1,34 @@
+{
+  "id": "ideal-gas-law",
+  "title": "The Ideal Gas Law",
+  "source": "Chemistry: The Central Science 12th ed., Ch 10.1–10.4, p.370–395",
+  "chapterId": "gases",
+  "concept": "กฎก๊าซอุดมคติ $PV=nRT$ เชื่อมความสัมพันธ์ระหว่าง $P$, $V$, $n$, $T$ ที่ STP ($0°C$, $1\\,atm$): $1\\,mol$ ก๊าซมี $V=22.4\\,L$ ก๊าซจริงใกล้ ideal เมื่อ $P$ ต่ำและ $T$ สูง ใช้ $R=0.0821\\,L\\cdot atm/mol\\cdot K$ หรือ $8.314\\,J/mol\\cdot K$",
+  "formula": "PV=nRT",
+  "warning": "อุณหภูมิต้องเป็น Kelvin เสมอ — แปลง °C ด้วย $T(K)=T(°C)+273.15$ และตรวจหน่วย $R$ ให้ตรงกับ $P$, $V$",
+  "examples": [
+    {
+      "title": "หาจำนวน mol จาก P, V, T",
+      "level": "Basic",
+      "tip": "ใช้ $n=PV/(RT)$",
+      "problem": "ก๊าซ $P=1.5\\,atm$, $V=4.0\\,L$, $T=300\\,K$ หา $n$",
+      "steps": [
+        "$n=PV/(RT)=1.5(4.0)/(0.0821)(300)$",
+        "$n=6.0/24.63\\approx0.24\\,mol$"
+      ],
+      "answer": "$n\\approx0.24\\,mol$"
+    },
+    {
+      "title": "หาความดันหลังเปลี่ยน T",
+      "level": "Medium",
+      "tip": "ถ้า $n$, $V$ คงที่ → $P\\propto T$",
+      "problem": "ถัง $O_2$ $n=0.50\\,mol$ ใน $V=10\\,L$ ที่ $27°C$ หา $P$ แล้วหา $P$ ใหม่ที่ $127°C$",
+      "steps": [
+        "$T_1=300\\,K$: $P_1=nRT/V=0.50(0.0821)(300)/10=1.23\\,atm$",
+        "$T_2=400\\,K$: $P_2=P_1(T_2/T_1)=1.23(400/300)=1.64\\,atm$"
+      ],
+      "answer": "$P_1\\approx1.2\\,atm$, $P_2\\approx1.6\\,atm$"
+    }
+  ],
+  "practice": "ก๊าซ $2.0\\,L$ ที่ $STP$ ถูกอุ่นเป็น $100°C$ ในภาชนะปิด หา $P$ สุดท้าย"
+}

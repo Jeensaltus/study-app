@@ -1,0 +1,35 @@
+{
+  "id": "ph-scale",
+  "title": "The pH Scale and Strong Acids/Bases",
+  "source": "Chemistry: The Central Science 12th ed., Ch 16.5–16.6, p.655–675",
+  "chapterId": "acid-base-ph",
+  "concept": "pH นิยาม $pH=-\\log[H^+]$, $pOH=-\\log[OH^-]$ ที่ $25°C$: $pH+pOH=14$ strong acid/base: $[H^+]=C_{acid}$ (หรือ $[OH^-]=C_{base}$) หลัง dilute ใช้ $M_1V_1=M_2V_2$",
+  "formula": "pH=-\\log[H^+],\\quad pH+pOH=14",
+  "warning": "log ใช้ concentration ใน M — strong acid 0.010 M → $pH=2$ ไม่ใช่ 0.01",
+  "examples": [
+    {
+      "title": "pH ของ strong acid",
+      "level": "Basic",
+      "tip": "strong acid 100% ionize",
+      "problem": "$HCl$ 0.0050 M หา pH",
+      "steps": [
+        "$[H^+]=0.0050$",
+        "$pH=-\\log(0.0050)=2.30$"
+      ],
+      "answer": "$pH=2.30$"
+    },
+    {
+      "title": "pH ของ weak acid",
+      "level": "Medium",
+      "tip": "ใช้ $K_a$ และ ICE table",
+      "problem": "$CH_3COOH$ 0.10 M, $K_a=1.8\\times10^{-5}$ หา pH",
+      "steps": [
+        "$K_a=x^2/(0.10-x)\\approx x^2/0.10$",
+        "$x=\\sqrt{1.8\\times10^{-6}}=1.34\\times10^{-3}$",
+        "$pH=-\\log(1.34\\times10^{-3})=2.87$"
+      ],
+      "answer": "$pH\\approx2.87$"
+    }
+  ],
+  "practice": "NaOH 0.020 M หา pH"
+}

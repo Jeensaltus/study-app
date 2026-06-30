@@ -1,0 +1,36 @@
+{
+  "id": "activation-energy",
+  "title": "Activation Energy and Arrhenius Equation",
+  "source": "Chemistry: The Central Science 12th ed., Ch 14.5–14.6, p.550–565",
+  "chapterId": "kinetics",
+  "concept": "พลังงานกระตุ้น $E_a$ คือ energy barrier ที่ต้องมีก่อนปฏิกิริยา สมการ Arrhenius: $k=Ae^{-E_a/RT}$ หรือ $\\ln k=-E_a/(RT)+\\ln A$ plot $\\ln k$ vs $1/T$ ได้ slope $=-E_a/R$",
+  "formula": "k=Ae^{-E_a/RT},\\quad \\ln k=-\\frac{E_a}{RT}+\\ln A",
+  "warning": "ใช้ $R=8.314\\,J/mol\\cdot K$ และ $E_a$ ใน J/mol — อย่าใช้ °C ใน Arrhenius",
+  "examples": [
+    {
+      "title": "หา k จาก E_a",
+      "level": "Basic",
+      "tip": "ใช้ $k=Ae^{-E_a/RT}$",
+      "problem": "ถ้า $A=1.0\\times10^{12}\\,s^{-1}$, $E_a=50\\,kJ/mol$, $T=300\\,K$ หา $k$",
+      "steps": [
+        "$E_a=50000\\,J/mol$",
+        "$k=10^{12}\\exp(-50000/(8.314)(300))$",
+        "$k=10^{12}\\exp(-20.05)\\approx2.0\\times10^3\\,s^{-1}$"
+      ],
+      "answer": "$k\\approx2\\times10^3\\,s^{-1}$"
+    },
+    {
+      "title": "Arrhenius plot — หา E_a",
+      "level": "Medium",
+      "tip": "slope ของ $\\ln k$ vs $1/T$ คือ $-E_a/R$",
+      "problem": "slope ของ Arrhenius plot = $-6000\\,K$ หา $E_a$",
+      "steps": [
+        "$-E_a/R=-6000$",
+        "$E_a=6000(8.314)=49900\\,J/mol$",
+        "$E_a\\approx50\\,kJ/mol$"
+      ],
+      "answer": "$E_a\\approx50\\,kJ/mol$"
+    }
+  ],
+  "practice": "ปฏิกิริยามี $k=0.020\\,s^{-1}$ ที่ $300\\,K$ และ $k=0.080\\,s^{-1}$ ที่ $320\\,K$ หา $E_a$"
+}

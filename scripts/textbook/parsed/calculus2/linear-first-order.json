@@ -1,0 +1,36 @@
+{
+  "id": "linear-first-order",
+  "title": "Linear First-Order Equations",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 9.5, p.591–600",
+  "chapterId": "differential-equations",
+  "concept": "Linear first-order ODE: $y'+P(x)y=Q(x)$ ใช้ integrating factor $\\mu(x)=e^{\\int P(x)dx}$ แล้ว $(\\mu y)'=\\mu Q$ ได้ $\\mu y=\\int\\mu Q\\,dx+C$",
+  "formula": "y'+P(x)y=Q(x), \\quad \\mu=e^{\\int P\\,dx}, \\quad y=\\frac{1}{\\mu}\\left(\\int\\mu Q\\,dx+C\\right)",
+  "warning": "integrating factor ต้อง integrate $P(x)$ ถูกต้อง — อย่าลืม constant ใน exponent ถ้า $P$ ไม่ใช่ antiderivative ง่าย",
+  "examples": [
+    {
+      "title": "Integrating factor พื้นฐาน",
+      "level": "Medium",
+      "tip": "$\\mu=e^{\\int P dx}$",
+      "problem": "แก้ $y'+2y=6$, $y(0)=1$",
+      "steps": [
+        "$\\mu=e^{2x}$",
+        "$(e^{2x}y)'=6e^{2x}$ → $e^{2x}y=3e^{2x}+C$",
+        "$y=3+Ce^{-2x}$; $y(0)=1$ → $C=-2$"
+      ],
+      "answer": "$y=3-2e^{-2x}$"
+    },
+    {
+      "title": "Variable coefficient",
+      "level": "Hard",
+      "tip": "$P(x)=1/x$ → $\\mu=x$",
+      "problem": "แก้ $xy'+y=x^2$ ($x>0$)",
+      "steps": [
+        "แบ่ง $x$: $y'+\\dfrac{1}{x}y=x$",
+        "$\\mu=x$ → $(xy)'=x^2$ → $xy=\\dfrac{x^3}{3}+C$",
+        "$y=\\dfrac{x^2}{3}+\\dfrac{C}{x}$"
+      ],
+      "answer": "$y=\\dfrac{x^2}{3}+\\dfrac{C}{x}$"
+    }
+  ],
+  "practice": "แก้ $y'+y\\tan x=\\sec x$ โดย integrating factor"
+}

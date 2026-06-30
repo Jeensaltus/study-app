@@ -1,0 +1,34 @@
+{
+  "id": "nuclear-basics",
+  "title": "Radioactivity and Nuclear Reactions",
+  "source": "Chemistry: The Central Science 12th ed., Ch 21.1–21.3, p.850–875",
+  "chapterId": "nuclear-chemistry",
+  "concept": "นิวเคลียสไม่เสถียรสลายรังสี: $\\alpha$ (He²⁺), $\\beta^-$ (electron), $\\beta^+$ (positron), $\\gamma$ (photon) half-life $t_{1/2}$: เศษที่เหลือ $=N_0/2^n$ หลัง $n$ half-lives การสมดุลนิวเคลียร์: $N/Z$ ใกล้ 1 สำหรับ light elements",
+  "formula": "N=N_0\\left(\\frac{1}{2}\\right)^{t/t_{1/2}},\\quad \\Delta E=\\Delta mc^2",
+  "warning": "สมการนิวเคลียร์ต้องสมดุล mass number และ atomic number — ตรวจ charge และ nucleon number",
+  "examples": [
+    {
+      "title": "เขียนสมการ alpha decay",
+      "level": "Basic",
+      "tip": "alpha = $^4_2He$ — mass number ลด 4, atomic number ลด 2",
+      "problem": "เขียนสมการ: $^{226}_{88}Ra$ สลาย alpha",
+      "steps": [
+        "$^{226}_{88}Ra \\to ^{222}_{86}Rn + ^4_2He$",
+        "ตรวจ: 226=222+4, 88=86+2 ✓"
+      ],
+      "answer": "$^{226}Ra \\to ^{222}Rn + ^4He$"
+    },
+    {
+      "title": "Half-life calculation",
+      "level": "Medium",
+      "tip": "ใช้ $N/N_0=(1/2)^{t/t_{1/2}}$",
+      "problem": "I-131 มี $t_{1/2}=8.0\\,days$ ตัวอย่างเริ่ม $80\\,mg$ หลัง 24 days เหลือเท่าไร",
+      "steps": [
+        "$t/t_{1/2}=24/8=3$ half-lives",
+        "$N=N_0(1/2)^3=80/8=10\\,mg$"
+      ],
+      "answer": "เหลือ $10\\,mg$"
+    }
+  ],
+  "practice": "C-14 ($t_{1/2}=5730\\,yr$) ในตัวอย่างโบราณมี $N/N_0=0.125$ หาอายุของตัวอย่าง"
+}

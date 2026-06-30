@@ -1,0 +1,35 @@
+{
+  "id": "rate-laws",
+  "title": "Rate Laws and Reaction Order",
+  "source": "Chemistry: The Central Science 12th ed., Ch 14.1–14.3, p.530–550",
+  "chapterId": "kinetics",
+  "concept": "rate law แสดงความสัมพันธ์ rate กับความเข้มข้น: $rate=k[A]^m[B]^n$ โดย $m,n$ คือ order (ได้จาก experiment ไม่ใช่จากสมการดุล) overall order = $m+n$ หน่วยของ $k$ ขึ้นกับ order รวม",
+  "formula": "rate=k[A]^m[B]^n",
+  "warning": "order ไม่จำเป็นต้องเท่ากับ coefficient ในสมการดุล — ต้องหาจากข้อมูลทดลองเท่านั้น",
+  "examples": [
+    {
+      "title": "หา order จากข้อมูลทดลอง",
+      "level": "Basic",
+      "tip": "เปรียบเทียบ rate เมื่อ [A] เปลี่ยน 2 เท่า",
+      "problem": "ถ้า [A] เพิ่ม 2 เท่า แล้ว rate เพิ่ม 4 เท่า order ของ A คือเท่าไร",
+      "steps": [
+        "$rate\\propto[A]^m$",
+        "$4=(2)^m$ → $m=2$",
+        "second order ใน A"
+      ],
+      "answer": "order = 2"
+    },
+    {
+      "title": "คำนวณ rate จาก rate law",
+      "level": "Medium",
+      "tip": "แทนค่า [A], [B] ลงใน rate law",
+      "problem": "$rate=k[A]^2[B]$ โดย $k=0.50\\,M^{-2}s^{-1}$, $[A]=0.20\\,M$, $[B]=0.30\\,M$ หา rate",
+      "steps": [
+        "$rate=0.50(0.20)^2(0.30)$",
+        "$rate=0.50(0.04)(0.30)=0.006\\,M/s$"
+      ],
+      "answer": "$rate=0.006\\,M/s$"
+    }
+  ],
+  "practice": "ปฏิกิริยา $2NO+O_2\\to2NO_2$ มี rate law $rate=k[NO]^2[O_2]$ ถ้า [NO] และ [O₂] เพิ่ม 2 เท่า rate เปลี่ยนกี่เท่า"
+}

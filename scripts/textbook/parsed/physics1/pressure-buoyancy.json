@@ -1,0 +1,35 @@
+{
+  "id": "pressure-buoyancy",
+  "title": "Pressure and Buoyancy",
+  "source": "Serway Physics for Scientists and Engineers, Ch 14, p.350–370",
+  "chapterId": "fluids",
+  "concept": "ความดัน $P=F/A$ ในของเหลวนิ่ง $P=P_0+\\rho gh$ โดย $P_0$ คือความดันที่ผิว กฎอารคิมิดีส: แรงลอยตัว $F_b=\\rho_{fluid}gV_{displaced}$ เท่ากับน้ำหนักของของเหลวที่วัตถุข displacing วัตถุลอยเมื่อ $\\rho_{obj}<\\rho_{fluid}$",
+  "formula": "P=P_0+\\rho gh,\\quad F_b=\\rho_{fluid}gV_{disp}",
+  "warning": "ใช้ความสูง $h$ วัดจากระดับผิวของของเหลว ไม่ใช่จากก้นภาชนะ — และ $V_{disp}$ คือปริมาตรของของเหลวที่ถูกแทนที่",
+  "examples": [
+    {
+      "title": "ความดันที่ความลึก",
+      "level": "Basic",
+      "tip": "ใช้ $P=P_0+\\rho gh$ โดย $P_0=1.01\\times10^5\\,Pa$",
+      "problem": "หาความดันในน้ำลึก $10\\,m$ ($\\rho=1000\\,kg/m^3$, $g=9.8\\,m/s^2$)",
+      "steps": [
+        "$P=1.01\\times10^5+1000(9.8)(10)$",
+        "$P=1.01\\times10^5+9.8\\times10^4=1.99\\times10^5\\,Pa$"
+      ],
+      "answer": "$P\\approx2.0\\times10^5\\,Pa$"
+    },
+    {
+      "title": "แรงลอยตัว — ก้อนไม้ลอยน้ำ",
+      "level": "Medium",
+      "tip": "วัตถุลอยเมื่อ $F_b=W$",
+      "problem": "ก้อนไม้มวล $5\\,kg$ ลอยในน้ำ ($\\rho_w=1000\\,kg/m^3$) หาปริมาณที่จมใต้น้ำ",
+      "steps": [
+        "$F_b=W$ → $\\rho_w g V_{sub}=mg$",
+        "$V_{sub}=m/\\rho_w=5/1000=0.005\\,m^3$",
+        "จม $0.005\\,m^3$ จากปริมาตรทั้งหมด"
+      ],
+      "answer": "$V_{sub}=0.005\\,m^3=5\\,L$"
+    }
+  ],
+  "practice": "ท่อ U มีน้ำมัน ($\\rho=800\\,kg/m^3$) สูง $20\\,cm$ ด้านหนึ่ง และน้ำสูง $25\\,cm$ อีกด้าน หาความต่างความดันที่ก้นท่อ"
+}

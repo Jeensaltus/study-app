@@ -1,0 +1,37 @@
+{
+  "id": "periodic-trends",
+  "title": "Periodic Trends",
+  "source": "Chemistry: The Central Science 12th ed., Ch 7, p.275–295",
+  "chapterId": "atomic-structure",
+  "concept": "Atomic radius: ลดจากซ้ายไปขวาในคาบ (เพราะ $Z_{eff}$ เพิ่ม), เพิ่มจากบนลงล่างในหมู่ Ionization energy: แนวโน้มตรงข้ามกับ atomic radius Electron affinity: ส่วนใหญ่เป็นลบ (ปล่อยพลังงานเมื่อรับ $e^-$) ยกเว้นหมู่ 8A Electronegativity: F มีค่าสูงสุด (4.0)",
+  "formula": "Z_{eff}=Z-S \\quad (S=\\text{shielding constant})",
+  "warning": "แนวโน้ม periodic ใช้ได้ใน period เดียวกัน — อย่าเปรียบ Na กับ Ne",
+  "examples": [
+    {
+      "title": "เรียง Atomic Radius — Na, Mg, Al, Si",
+      "level": "Basic",
+      "tip": "",
+      "problem": "เรียง Na, Mg, Al, Si จากรัศมีมากไปน้อย และอธิบาย",
+      "steps": [
+        "ทุกธาตุอยู่คาบ 3 เดียวกัน",
+        "จากซ้ายไปขวา $Z_{eff}$ เพิ่ม ดึง $e^-$ ให้แน่นขึ้น",
+        "รัศมี: Na > Mg > Al > Si"
+      ],
+      "answer": "รัศมี: Na > Mg > Al > Si"
+    },
+    {
+      "title": "Ionization energy — หมู่ 17",
+      "level": "Medium",
+      "tip": "IE ลดลงเมื่อลงหมู่ (รัศมีใหญ่ขึ้น, $e^-$ ถูกดึงน้อยลง)",
+      "problem": "เรียง F, Cl, Br, I ตาม ionization energy (มากไปน้อย) และอธิบาย",
+      "steps": [
+        "ทุกธาตุอยู่หมู่ 17 (halogen)",
+        "ลงหมู่: รัศมีเพิ่ม → IE ลด",
+        "F มีรัศมีเล็กสุด ดึง $e^-$ แน่นที่สุด",
+        "IE: F > Cl > Br > I"
+      ],
+      "answer": "F > Cl > Br > I"
+    }
+  ],
+  "practice": "เรียง F, Cl, Br, I ตาม ionization energy (มากไปน้อย) และอธิบาย"
+}

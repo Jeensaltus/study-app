@@ -1,0 +1,35 @@
+{
+  "id": "power",
+  "title": "Power",
+  "source": "Serway Physics for Scientists and Engineers, Ch 8, p.195–200",
+  "chapterId": "energy",
+  "concept": "กำลัง $P$ คืออัตราการทำงาน $P=dW/dt$ สำหรับแรงคงที่ $P=\\Fv\\cos\\theta$ หน่วย SI คือ Watt ($1\\,W=1\\,J/s$) กำลังเฉลี่ย $P_{avg}=\\Delta W/\\Delta t$",
+  "formula": "P=\\frac{W}{t}=Fv\\cos\\theta",
+  "warning": "มุม $\\theta$ คือมุมระหว่าง $\\vec F$ กับ $\\vec v$ — ถ้าแรงตั้งฉากกับการเคลื่อนที่ $P=0$",
+  "examples": [
+    {
+      "title": "กำลังจากงานและเวลา",
+      "level": "Basic",
+      "tip": "ใช้ $P=W/t$",
+      "problem": "ยกของ $200\\,N$ ขึ้น $3\\,m$ ใน $6\\,s$ หา $P$",
+      "steps": [
+        "$W=200(3)=600\\,J$",
+        "$P=600/6=100\\,W$"
+      ],
+      "answer": "$P=100\\,W$"
+    },
+    {
+      "title": "กำลังขณะเดินขึ้น",
+      "level": "Medium",
+      "tip": "ใช้ $P=Fv$ เมื่อ $F\\parallel v$",
+      "problem": "คน $70\\,kg$ เดินขึ้นบันได $4\\,m$ ใน $20\\,s$ (ความเร็วคงที่) หา $P$",
+      "steps": [
+        "$F=mg=70(9.8)=686\\,N$",
+        "$v=4/20=0.20\\,m/s$",
+        "$P=Fv=686(0.20)=137\\,W$"
+      ],
+      "answer": "$P\\approx140\\,W$"
+    }
+  ],
+  "practice": "เครื่องยนต์ทำงาน $1.5\\,kJ$ ใน $0.50\\,s$ หา $P$"
+}

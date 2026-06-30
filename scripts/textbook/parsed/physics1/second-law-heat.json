@@ -1,0 +1,34 @@
+{
+  "id": "second-law-heat",
+  "title": "Second Law and Heat Engines",
+  "source": "Serway Physics for Scientists and Engineers, Ch 22, p.540–560",
+  "chapterId": "thermodynamics",
+  "concept": "กฎข้อที่ 2: entropy ของจักรวาลไม่ลดในกระบวนการที่เกิดเองได้ $\\Delta S_{univ}\\ge0$ เครื่องยนต์ความร้อนแปลงความร้อนบางส่วนเป็นงาน ประสิทธิภาพ Carnot สูงสุด $\\eta_C=1-T_C/T_H$ ไม่มีเครื่องยนต์ที่ $\\eta=100\\%$",
+  "formula": "\\eta=\\frac{W}{Q_H}=1-\\frac{Q_C}{Q_H},\\quad \\eta_C=1-\\frac{T_C}{T_H}",
+  "warning": "อุณหภูมิใน $\\eta_C$ ต้องเป็น Kelvin เสมอ — ห้ามใช้ °C",
+  "examples": [
+    {
+      "title": "ประสิทธิภาพเครื่องยนต์",
+      "level": "Basic",
+      "tip": "ใช้ $\\eta=W/Q_H$",
+      "problem": "เครื่องยนต์รับ $Q_H=500\\,J$ ทิ้ง $Q_C=350\\,J$ หา $\\eta$",
+      "steps": [
+        "$W=Q_H-Q_C=150\\,J$",
+        "$\\eta=150/500=0.30=30\\%$"
+      ],
+      "answer": "$\\eta=30\\%$"
+    },
+    {
+      "title": "Carnot efficiency",
+      "level": "Medium",
+      "tip": "แปลง °C เป็น K ก่อน",
+      "problem": "เครื่อง Carnot ระหว่าง $T_H=500°C$ และ $T_C=27°C$ หา $\\eta_C$",
+      "steps": [
+        "$T_H=773\\,K$, $T_C=300\\,K$",
+        "$\\eta_C=1-300/773=1-0.388=0.612$"
+      ],
+      "answer": "$\\eta_C\\approx61\\%$"
+    }
+  ],
+  "practice": "เครื่องยนต์มี $\\eta=40\\%$ รับ $Q_H=800\\,J$ หา $W$ และ $Q_C$"
+}

@@ -1,0 +1,29 @@
+{
+  "domains": {
+    "engineering": {
+      "label": "Engineering",
+      "labelTh": "วิศวกรรม",
+      "count": 90,
+      "withThai": 90
+    },
+    "judicial": {
+      "label": "Judicial",
+      "labelTh": "กฎหมาย/ยุติธรรม",
+      "count": 81,
+      "withThai": 81
+    },
+    "political": {
+      "label": "Political",
+      "labelTh": "การเมือง",
+      "count": 79,
+      "withThai": 79
+    },
+    "science": {
+      "label": "Science",
+      "labelTh": "วิทยาศาสตร์",
+      "count": 103,
+      "withThai": 103
+    }
+  },
+  "generatedAt": "2026-06-28T09:13:52.089Z"
+}

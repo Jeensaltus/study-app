@@ -1,0 +1,36 @@
+{
+  "id": "heat-enthalpy",
+  "title": "Heat and Enthalpy",
+  "source": "Chemistry: The Central Science 12th ed., Ch 5.1–5.4, p.170–195",
+  "chapterId": "thermochemistry",
+  "concept": "ความร้อน $q=mc\\Delta T$ (calorimetry) Enthalpy $H=E+PV$ ที่ความดันคงที่ $\\Delta H=q_p$ ปฏิกิริยา exothermic: $\\Delta H<0$ (คายความร้อน); endothermic: $\\Delta H>0$ (ดูดความร้อน) Hess's Law: $\\Delta H_{rxn}$ เป็นฟังก์ชันของ state เท่านั้น ไม่ขึ้นกับเส้นทาง สามารถรวมสมการได้",
+  "formula": "q=mc\\Delta T, \\quad \\Delta H_{rxn}=\\sum\\Delta H_{products}-\\sum\\Delta H_{reactants}",
+  "warning": "$\\Delta H$ บวก = endothermic — อย่าสลับ sign ของ $q$ กับ $\\Delta H$ ใน calorimetry",
+  "examples": [
+    {
+      "title": "Calorimetry — หา ΔT ของน้ำ",
+      "level": "Basic",
+      "tip": "",
+      "problem": "น้ำ $200\\,g$ รับความร้อน $4180\\,J$ อุณหภูมิเปลี่ยนแปลงเท่าไร ($c=4.18\\,J/g\\cdot C$)",
+      "steps": [
+        "$q=mc\\Delta T$",
+        "$4180=200(4.18)\\Delta T$",
+        "$\\Delta T=4180/836=5°C$"
+      ],
+      "answer": "$\\Delta T=4180/836=5°C$"
+    },
+    {
+      "title": "Hess's Law",
+      "level": "Medium",
+      "tip": "$\\Delta H$ ของปฏิกิริยารวม = ผลรวม $\\Delta H$ ของขั้นย่อย",
+      "problem": "ใช้ Hess's Law หา $\\Delta H$ ของ $C+O_2\\to CO_2$ จาก: (1) $C+\\frac12O_2\\to CO$, $\\Delta H_1=-110.5\\,kJ$ (2) $CO+\\frac12O_2\\to CO_2$, $\\Delta H_2=-283.0\\,kJ$",
+      "steps": [
+        "บวกสมการ: (1)+(2) ได้ $C+O_2\\to CO_2$",
+        "$\\Delta H=\\Delta H_1+\\Delta H_2$",
+        "$\\Delta H=-110.5+(-283.0)=-393.5\\,kJ/mol$"
+      ],
+      "answer": "$\\Delta H=-393.5\\,kJ/mol$"
+    }
+  ],
+  "practice": "ใช้ Hess's Law หา $\\Delta H$ ของ $C+O_2\\to CO_2$ จาก: (1) $C+\\frac12O_2\\to CO$, $\\Delta H_1=-110.5\\,kJ$ (2) $CO+\\frac12O_2\\to CO_2$, $\\Delta H_2=-283.0\\,kJ$"
+}

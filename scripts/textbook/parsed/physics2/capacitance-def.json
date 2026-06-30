@@ -1,0 +1,36 @@
+{
+  "id": "capacitance-def",
+  "title": "Capacitance and Energy Storage",
+  "source": "Serway Physics for Scientists and Engineers, Ch 26, p.780–795",
+  "chapterId": "capacitance",
+  "concept": "Capacitor เก็บพลังงานในรูปสนามไฟฟ้า $C=Q/V$ (farads) Parallel plate: $C=\\varepsilon_0 A/d$ พลังงานที่เก็บ: $U=\\frac{1}{2}CV^2=\\frac{Q^2}{2C}=\\frac{QV}{2}$ ต่อ capacitor แบบ series: $1/C_{eq}=\\sum1/C_i$; แบบ parallel: $C_{eq}=\\sum C_i$",
+  "formula": "C=\\frac{Q}{V}, \\quad U=\\frac{1}{2}CV^2",
+  "warning": "ความจุขึ้นกับ geometry และ dielectric — ไม่ขึ้นกับ $Q$ หรือ $V$ โดยตรง",
+  "examples": [
+    {
+      "title": "Capacitor — ประจุและพลังงาน",
+      "level": "Basic",
+      "tip": "",
+      "problem": "Capacitor $C=20\\,\\mu F$ ต่อกับแบตเตอรี่ $12\\,V$ หาประจุและพลังงานที่เก็บ",
+      "steps": [
+        "$Q=CV=20\\times10^{-6}\\times12=240\\,\\mu C$",
+        "$U=\\frac{1}{2}CV^2=\\frac{1}{2}(20\\times10^{-6})(144)$",
+        "$=1440\\times10^{-6}=1.44\\times10^{-3}\\,J=1.44\\,mJ$"
+      ],
+      "answer": "$=1440\\times10^{-6}=1.44\\times10^{-3}\\,J=1.44\\,mJ$"
+    },
+    {
+      "title": "Capacitor ต่อ series",
+      "level": "Medium",
+      "tip": "ต่อ series: ประจุ $Q$ เท่ากันทุกตัว แต่ $V$ แบ่งตาม $C$",
+      "problem": "Capacitor $10\\,\\mu F$ และ $20\\,\\mu F$ ต่อ series กับ $12\\,V$ หา $C_{eq}$ และประจุ",
+      "steps": [
+        "$1/C_{eq}=1/10+1/20=3/20 \\Rightarrow C_{eq}=6.67\\,\\mu F$",
+        "$Q=C_{eq}V=6.67\\times10^{-6}\\times12=80\\,\\mu C$",
+        "$V_1=Q/C_1=80/10=8\\,V$, $V_2=4\\,V$ (ตรวจ: $8+4=12\\,V$ ✓)"
+      ],
+      "answer": "$C_{eq}=6.67\\,\\mu F$, $Q=80\\,\\mu C$"
+    }
+  ],
+  "practice": "Capacitor $10\\,\\mu F$ และ $20\\,\\mu F$ ต่อ series กับ $12\\,V$ หา $C_{eq}$ และประจุบนแต่ละตัว"
+}

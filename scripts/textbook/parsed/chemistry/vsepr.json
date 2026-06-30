@@ -1,0 +1,36 @@
+{
+  "id": "vsepr",
+  "title": "VSEPR and Molecular Geometry",
+  "source": "Chemistry: The Central Science 12th ed., Ch 9.1–9.3, p.335–355",
+  "chapterId": "bonding",
+  "concept": "VSEPR: คู่ $e^-$ รอบอะตอมกลางผลักกันให้มุมพันธะกว้างสุด แรงผลัก: lone pair–lone pair > lone pair–bond pair > bond pair–bond pair รูปร่าง: AX2 (linear), AX3 (trigonal planar), AX4 (tetrahedral), AX2E2 (bent), AX3E (trigonal pyramidal), AX5 (trigonal bipyramidal), AX6 (octahedral)",
+  "formula": "AX_nE_m: n = \\text{bonds}, m = \\text{lone pairs}",
+  "warning": "จำนวน electron domain รวม lone pair — lone pair ดัน bond angle เล็กลง",
+  "examples": [
+    {
+      "title": "VSEPR — รูปร่าง H₂O, NH₃, CH₄",
+      "level": "Basic",
+      "tip": "",
+      "problem": "ทำนายรูปร่างและมุมพันธะของ $H_2O$, $NH_3$, $CH_4$",
+      "steps": [
+        "$H_2O$: AX2E2 (2 bonds + 2 lone pairs) → bent, มุม $\\approx104.5°$",
+        "$NH_3$: AX3E (3 bonds + 1 lone pair) → trigonal pyramidal, $\\approx107°$",
+        "$CH_4$: AX4 (4 bonds) → tetrahedral, $109.5°$"
+      ],
+      "answer": "$CH_4$: AX4"
+    },
+    {
+      "title": "VSEPR — รูปร่างโมเลกุล",
+      "level": "Medium",
+      "tip": "นับ electron domains รวม lone pairs — lone pair ทำให้ bond angle เล็กลง",
+      "problem": "ทำนายรูปร่างของ $SF_4$, $XeF_2$, $PCl_5$",
+      "steps": [
+        "$SF_4$: 5 domains (4 bond + 1 LP) → seesaw",
+        "$XeF_2$: 5 domains (2 bond + 3 LP) → linear",
+        "$PCl_5$: 5 domains (5 bond, 0 LP) → trigonal bipyramidal"
+      ],
+      "answer": "seesaw, linear, trigonal bipyramidal"
+    }
+  ],
+  "practice": "ทำนายรูปร่างของ $SF_4$, $XeF_2$, $PCl_5$"
+}

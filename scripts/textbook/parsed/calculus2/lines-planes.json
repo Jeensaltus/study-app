@@ -1,0 +1,34 @@
+{
+  "id": "lines-planes",
+  "title": "Equations of Lines and Planes",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 12.5, p.798–808",
+  "chapterId": "vectors-3d",
+  "concept": "เส้นใน 3D: vector form $\\mathbf{r}=\\mathbf{r}_0+t\\mathbf{v}$ หรือ parametric $(x,y,z)=(x_0+at,y_0+bt,z_0+ct)$ ระนาบ: $ax+by+cz=d$ โดย $\\mathbf{n}=\\langle a,b,c\\rangle$ เป็น normal vector",
+  "formula": "\\mathbf{r}=\\mathbf{r}_0+t\\mathbf{v}; \\quad ax+by+cz=d \\ (\\mathbf{n}=\\langle a,b,c\\rangle)",
+  "warning": "normal vector ของ plane ไม่จำเป็นต้องเป็น unit vector — สามารถ scale ได้",
+  "examples": [
+    {
+      "title": "สมการเส้นผ่านสองจุด",
+      "level": "Basic",
+      "tip": "direction vector = ต่างของจุด",
+      "problem": "หาสมการเส้นผ่าน $(1,0,2)$ และ $(3,2,5)$",
+      "steps": [
+        "$\\mathbf{v}=\\langle 2,2,3\\rangle$",
+        "$\\mathbf{r}=\\langle 1,0,2\\rangle+t\\langle 2,2,3\\rangle$"
+      ],
+      "answer": "$x=1+2t,\\ y=2t,\\ z=2+3t$"
+    },
+    {
+      "title": "ระนาบจากจุดและ normal",
+      "level": "Medium",
+      "tip": "$a(x-x_0)+b(y-y_0)+c(z-z_0)=0$",
+      "problem": "หาระนาบผ่าน $(2,-1,3)$ ที่มี normal $\\mathbf{n}=\\langle 1,2,-2\\rangle$",
+      "steps": [
+        "$1(x-2)+2(y+1)-2(z-3)=0$",
+        "$x+2y-2z=0$"
+      ],
+      "answer": "$x+2y-2z=0$"
+    }
+  ],
+  "practice": "หาระยะจาก $(1,1,1)$ ถึง plane $x+2y+2z=9$"
+}

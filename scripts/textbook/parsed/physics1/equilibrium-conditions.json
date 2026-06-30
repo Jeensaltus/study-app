@@ -1,0 +1,36 @@
+{
+  "id": "equilibrium-conditions",
+  "title": "Conditions for Equilibrium",
+  "source": "Serway Physics for Scientists and Engineers, Ch 12, p.300–320",
+  "chapterId": "statics-elasticity",
+  "concept": "สมดุลสถิต: (1) $\\sum\\vec F=0$ — ไม่มีการเร่งเชิงเส้น (2) $\\sum\\vec\\tau=0$ รอบจุดหมุนใดๆ — ไม่มีการเร่งเชิงมุม ทอร์ก $\\tau=rF\\sin\\theta$ เลือก pivot ที่มี unknown force มากเพื่อลดตัวแปร",
+  "formula": "\\sum F_x=0,\\quad \\sum F_y=0,\\quad \\sum\\tau=0",
+  "warning": "กำหนดทิศบวกของทอร์ก (เช่น ทวนเข็มนาฬิกา = บวก) ให้ชัดก่อนเขียนสมการ",
+  "examples": [
+    {
+      "title": "ไม้กระดก — หาตำแหน่งสมดุล",
+      "level": "Basic",
+      "tip": "ทอร์กทวน = ทอร์กตาม",
+      "problem": "เด็ก $30\\,kg$ นั่งห่าง pivot $2\\,m$ อีกด้านเด็ก $40\\,kg$ ต้องนั่งห่างเท่าไร",
+      "steps": [
+        "$30(9.8)(2)=40(9.8)x$",
+        "$x=60/40=1.5\\,m$"
+      ],
+      "answer": "$x=1.5\\,m$"
+    },
+    {
+      "title": "บันไดพิงกำแพง",
+      "level": "Medium",
+      "tip": "สมดุลทอร์ก + $f_s\\le\\mu_s N$",
+      "problem": "บันไดมวล $m$ ยาว $L$ ทำมุม $\\theta$ กับพื้น $\\mu_s$ น้อยสุดที่ไม่ลื่น?",
+      "steps": [
+        "Pivot ที่พื้น: $N_2(L\\sin\\theta)=(mg)(L/2\\cos\\theta)$",
+        "$N_2=mg/(2\\tan\\theta)$",
+        "$\\mu_s\\ge 1/(2\\tan\\theta)$"
+      ],
+      "answer": "$\\mu_s\\ge 1/(2\\tan\\theta)$"
+    }
+  ],
+  "practice": "คาน $6\\,m$ pivot กลาง วาง $100\\,N$ ที่ปลายซ้าย $1\\,m$ จาก pivot หา $F$ ที่ปลายขวา $2\\,m$",
+  "derivation": "จาก $F=ma$ และ $\\tau=I\\alpha$ เมื่อ $a=0$ และ $\\alpha=0$ ได้เงื่อนไขสมดุล"
+}

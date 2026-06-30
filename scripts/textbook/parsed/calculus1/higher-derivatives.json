@@ -1,0 +1,36 @@
+{
+  "id": "higher-derivatives",
+  "title": "Higher Derivatives and Motion",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 3.7, p.185–192",
+  "chapterId": "derivatives",
+  "concept": "อนุพันธ์ลำดับที่ $n$ คือการหาอนุพันธ์ซ้ำ $n$ ครั้ง: $f''(x), f'''(x), \\ldots$ ใน kinematics $s'(t)=v(t)$, $v'(t)=a(t)$ อนุพันธ์ลำดับสองบอกความโค้ง (concavity) และจุดเปลี่ยนความโค้ง",
+  "formula": "v(t)=s'(t), \\quad a(t)=v'(t)=s''(t)",
+  "warning": "สัญลักษณ์: $f''(x)=\\dfrac{d^2y}{dx^2}$ — อย่าสับสนกับ $f(x)^2$",
+  "examples": [
+    {
+      "title": "อนุพันธ์ลำดับสองของพหุนomial",
+      "level": "Basic",
+      "tip": "ใช้ power rule ซ้ำ",
+      "problem": "ถ้า $f(x)=x^4-3x^2+2x$ หา $f''(x)$",
+      "steps": [
+        "$f'(x)=4x^3-6x+2$",
+        "$f''(x)=12x^2-6$"
+      ],
+      "answer": "$12x^2-6$"
+    },
+    {
+      "title": "การเคลื่อนที่ — ตำแหน่ง ความเร็ว ความเร่ง",
+      "level": "Medium",
+      "tip": "อนุพันธ์ตำแหน่งได้ความเร็ว อนุพันธ์ความเร็วได้ความเร่ง",
+      "problem": "ถ้า $s(t)=t^3-6t^2+9t$ (m) หาความเร่งที่ $t=2$ s",
+      "steps": [
+        "$v(t)=s'(t)=3t^2-12t+9$",
+        "$a(t)=v'(t)=6t-12$",
+        "$a(2)=6(2)-12=0$ m/s$^2$"
+      ],
+      "answer": "$0$ m/s$^2$"
+    }
+  ],
+  "practice": "ถ้า $y=e^{2x}\\sin x$ หา $y''$ โดยใช้ product rule สองครั้ง",
+  "graph": "derivative"
+}

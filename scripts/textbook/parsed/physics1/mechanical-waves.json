@@ -1,0 +1,33 @@
+{
+  "id": "mechanical-waves",
+  "title": "Mechanical Waves",
+  "source": "Serway Physics for Scientists and Engineers, Ch 16, p.410–435",
+  "chapterId": "oscillations-waves",
+  "concept": "คลื่นกลเป็นการส่งพลังงานโดยไม่ถ่ายโอมสสาร ความเร็ว $v=f\\lambda=\\omega/k$ สำหรับสตริง $v=\\sqrt{T/\\mu}$ โดย $T$ คือแรงตึงและ $\\mu$ คือความหนาแน่นเชิงเส้น คลื่นยืน (standing wave) เกิดจาก interference ของคลื่นเดินที่สะท้อน",
+  "formula": "v=f\\lambda,\\quad v=\\sqrt{T/\\mu}",
+  "warning": "แยกความเร็วคลื่น ($v$) กับความเร็วอนุภาค ($v_y$ ของจุดบนสตริง) — อย่าสับสน $f$ กับ $T=1/f$",
+  "examples": [
+    {
+      "title": "ความเร็วคลื่นบนสตริง",
+      "level": "Basic",
+      "tip": "ใช้ $v=\\sqrt{T/\\mu}$",
+      "problem": "สตริงแรงตึง $50\\,N$ ความหนาแน่นเชิงเส้น $0.005\\,kg/m$ หา $v$",
+      "steps": [
+        "$v=\\sqrt{50/0.005}=\\sqrt{10000}=100\\,m/s$"
+      ],
+      "answer": "$v=100\\,m/s$"
+    },
+    {
+      "title": "หาความยาวคลื่นและความถี่",
+      "level": "Medium",
+      "tip": "ใช้ $v=f\\lambda$",
+      "problem": "คลื่นเสียงในห้อง $v=340\\,m/s$ ความถี่ $170\\,Hz$ หา $\\lambda$ และคาบ",
+      "steps": [
+        "$\\lambda=v/f=340/170=2\\,m$",
+        "$T=1/f=1/170\\approx0.0059\\,s$"
+      ],
+      "answer": "$\\lambda=2\\,m$, $T\\approx5.9\\,ms$"
+    }
+  ],
+  "practice": "สตริงยาว $2\\,m$ มีโหมดที่ 3 (3 loops) แรงตึง $40\\,N$, $\\mu=0.004\\,kg/m$ หาความถี่ของโหมดนี้"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ac-circuits",
+  "title": "Alternating Current Circuits",
+  "source": "Serway Physics for Scientists and Engineers, Ch 33, p.920–945",
+  "chapterId": "circuits",
+  "concept": "วงจร AC มีกระแสและแรงดันแกว่งตามเวลา $v(t)=V_{max}\\sin(\\omega t)$ อิมพีแดนซ์ $Z=\\sqrt{R^2+(X_L-X_C)^2}$ โดย $X_L=\\omega L$ และ $X_C=1/(\\omega C)$ มุมเฟส $\\phi=\\arctan[(X_L-X_C)/R]$ ที่ resonance $X_L=X_C$ ทำให้ $Z=R$ และ $I$ สูงสุด",
+  "formula": "Z=\\sqrt{R^2+(X_L-X_C)^2},\\quad X_L=\\omega L,\\quad X_C=\\frac{1}{\\omega C}",
+  "warning": "ห้ามบวก $V_R$, $V_L$, $V_C$ แบบตัวเลขตรง ๆ — ต้องใช้ phasor diagram หรือ RMS values กับ $Z$",
+  "examples": [
+    {
+      "title": "หา impedance และ I_rms",
+      "level": "Basic",
+      "tip": "คำนวณ $X_L-X_C$ ก่อน แล้วใช้สูตร $Z$",
+      "problem": "วงจร RLC ต่ออนุกรม: $R=40\\,\\Omega$, $X_L=60\\,\\Omega$, $X_C=20\\,\\Omega$, $V_{rms}=120\\,V$ หา $Z$ และ $I_{rms}$",
+      "steps": [
+        "$Z=\\sqrt{40^2+(60-20)^2}=\\sqrt{1600+1600}=\\sqrt{3200}\\approx56.6\\,\\Omega$",
+        "$I_{rms}=120/56.6\\approx2.12\\,A$"
+      ],
+      "answer": "$Z\\approx56.6\\,\\Omega$, $I_{rms}\\approx2.1\\,A$"
+    },
+    {
+      "title": "Resonance frequency",
+      "level": "Medium",
+      "tip": "ที่ resonance $X_L=X_C$ → $\\omega L=1/(\\omega C)$",
+      "problem": "วงจร $L=0.20\\,H$, $C=50\\,\\mu F$ หาความถี่ resonance $f_0$",
+      "steps": [
+        "$\\omega_0=1/\\sqrt{LC}=1/\\sqrt{0.20\\times50\\times10^{-6}}$",
+        "$\\omega_0=1/\\sqrt{10^{-5}}=316\\,rad/s$",
+        "$f_0=\\omega_0/(2\\pi)\\approx50\\,Hz$"
+      ],
+      "answer": "$f_0\\approx50\\,Hz$"
+    }
+  ],
+  "practice": "วงจร $R=30\\,\\Omega$, $L=0.10\\,H$, $C=100\\,\\mu F$ ต่อ $V_{rms}=100\\,V$ ที่ $f=60\\,Hz$ หา $Z$, $I_{rms}$ และ $\\phi$"
+}

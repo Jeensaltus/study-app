@@ -1,0 +1,36 @@
+{
+  "id": "limit-laws",
+  "title": "Calculating Limits Using Limit Laws",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 2.3, p.96–106",
+  "chapterId": "limits",
+  "concept": "ถ้า $\\lim_{x\\to a}f(x)=L$ และ $\\lim_{x\\to a}g(x)=M$ มีอยู่ กฎลิมิตบอกว่า ลิมิตของผลรวม ผลต่าง ผลคูณ ผลหาร และกำลัง คำนวณจากลิมิตของแต่ละส่วนได้ (ยกเว้นหารเมื่อ $M=0$) ใช้ร่วมกับการแทนค่าตรงเมื่อฟังก์ชันต่อเนื่อง",
+  "formula": "\\lim_{x\\to a}[f(x)\\pm g(x)]=L\\pm M, \\quad \\lim_{x\\to a}[cf(x)]=cL, \\quad \\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\frac{L}{M}\\ (M\\neq 0)",
+  "warning": "กฎลิมิตใช้ได้เมื่อลิมิตของแต่ละส่วนมีอยู่จริง — รูป $0/0$ หรือ $\\infty/\\infty$ ต้องจัดรูปก่อน",
+  "examples": [
+    {
+      "title": "ลิมิตพหุนomial ด้วยการแทนค่า",
+      "level": "Basic",
+      "tip": "พหุนomial ต่อเนื่องทุกจุด → แทนค่าตรงได้",
+      "problem": "หา $\\lim_{x\\to -1}(2x^3-x+4)$",
+      "steps": [
+        "พหุนomial ต่อเนื่อง → แทน $x=-1$",
+        "$2(-1)^3-(-1)+4=-2+1+4=3$"
+      ],
+      "answer": "$3$"
+    },
+    {
+      "title": "ลิมิตเศษส่วน — แยกตัวประกอบ",
+      "level": "Medium",
+      "tip": "ได้ $0/0$ → แยกตัวประกอบแล้วตัดพจน์ร่วม",
+      "problem": "หา $\\lim_{x\\to 2}\\dfrac{x^2-4}{x-2}$",
+      "steps": [
+        "แทน $x=2$: $\\dfrac{0}{0}$",
+        "$x^2-4=(x-2)(x+2)$ → $\\dfrac{(x-2)(x+2)}{x-2}=x+2$ ($x\\neq 2$)",
+        "$\\lim_{x\\to 2}(x+2)=4$"
+      ],
+      "answer": "$4$"
+    }
+  ],
+  "practice": "หา $\\lim_{x\\to 3}\\dfrac{x^2-5x+6}{x^2-9}$ โดยแยกตัวประกอบทั้งเศษและส่วน",
+  "graph": "limit"
+}

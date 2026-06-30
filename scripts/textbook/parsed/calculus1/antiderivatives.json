@@ -1,0 +1,38 @@
+{
+  "id": "antiderivatives",
+  "title": "Antiderivatives and Indefinite Integrals",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 4.9, p.307–314",
+  "chapterId": "integrals",
+  "concept": "ปฏิยานุพันธ์ (antiderivative) $F$ ของ $f$ คือ $F'(x)=f(x)$ อินทิกรัลไม่จำกัด $\\int f(x)\\,dx=F(x)+C$ ต้องใส่ $C$ เสมอเพราะอนุพันธ์ของค่าคงที่เป็น 0",
+  "formula": "\\int f(x)\\,dx = F(x)+C, \\quad F'(x)=f(x)",
+  "warning": "อย่าลืม $+C$ ในอินทิกรัลไม่จำกัด — ข้อสอบมักหักคะแนนถ้าไม่ใส่",
+  "examples": [
+    {
+      "title": "กฎกำลังพื้นฐาน",
+      "level": "Basic",
+      "tip": "$\\int x^n dx=\\dfrac{x^{n+1}}{n+1}+C$ เมื่อ $n\\neq -1$",
+      "problem": "หา $\\int (4x^3-2x+5)\\,dx$",
+      "steps": [
+        "$\\int 4x^3 dx=x^4$",
+        "$\\int (-2x)dx=-x^2$",
+        "$\\int 5\\,dx=5x$",
+        "รวม: $x^4-x^2+5x+C$"
+      ],
+      "answer": "$x^4-x^2+5x+C$"
+    },
+    {
+      "title": "ตรวจคำตอบด้วยการหาอนุพันธ์",
+      "level": "Medium",
+      "tip": "หาอนุพันธ์ของผลลัพธ์ต้องได้ integrand เดิม",
+      "problem": "หา $\\int \\dfrac{3}{x}\\,dx$",
+      "steps": [
+        "ใช้ $\\int \\dfrac{1}{x}dx=\\ln|x|+C$",
+        "$\\int \\dfrac{3}{x}dx=3\\ln|x|+C$",
+        "ตรวจ: $\\dfrac{d}{dx}(3\\ln|x|)=\\dfrac{3}{x}$ ✓"
+      ],
+      "answer": "$3\\ln|x|+C$"
+    }
+  ],
+  "practice": "หา $\\int (\\sqrt{x}+x^{-3/2})\\,dx$ และ $\\int (2e^x-\\sec^2 x)\\,dx$",
+  "graph": "integral"
+}

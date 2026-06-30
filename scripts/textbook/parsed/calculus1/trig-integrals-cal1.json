@@ -1,0 +1,36 @@
+{
+  "id": "trig-integrals-cal1",
+  "title": "Trigonometric Integrals",
+  "source": "Stewart Calculus Early Transcendentals 9th ed., Ch 7.2, p.397–406",
+  "chapterId": "integration-techniques",
+  "concept": "อินทิกรัล $\\int\\sin^m x\\cos^n x\\,dx$: ถ้า $m$ คี่ แยก $\\sin x$ หนึ่งตัว; ถ้า $n$ คี่ แยก $\\cos x$; ถ้าทั้งคู่คู่ ใช้สูตรลดกำลัง $\\sin^2x=\\dfrac{1-\\cos2x}{2}$, $\\cos^2x=\\dfrac{1+\\cos2x}{2}$",
+  "formula": "\\sin^2 x=\\frac{1-\\cos 2x}{2}, \\quad \\cos^2 x=\\frac{1+\\cos 2x}{2}",
+  "warning": "ตรวจว่ากำลัง sin หรือ cos เป็นเลขคี่ก่อนเลือกวิธี — ใช้ผิดวิธีจะติด",
+  "examples": [
+    {
+      "title": "กำลัง sin คี่",
+      "level": "Medium",
+      "tip": "แยก $\\sin x$ แล้ว u-sub $u=\\cos x$",
+      "problem": "หา $\\int\\sin^3 x\\,dx$",
+      "steps": [
+        "$\\int\\sin^2 x\\sin x\\,dx=\\int(1-\\cos^2 x)\\sin x\\,dx$",
+        "$u=\\cos x$, $du=-\\sin x\\,dx$",
+        "$-\\int(1-u^2)du=-\\cos x+\\dfrac{\\cos^3 x}{3}+C$"
+      ],
+      "answer": "$-\\cos x+\\dfrac{\\cos^3 x}{3}+C$"
+    },
+    {
+      "title": "กำลัง cos คู่",
+      "level": "Medium",
+      "tip": "ใช้สูตรลดกำลังซ้ำ",
+      "problem": "หา $\\int\\cos^2(2x)\\,dx$",
+      "steps": [
+        "$\\cos^2(2x)=\\dfrac{1+\\cos(4x)}{2}$",
+        "$\\int=\\dfrac{x}{2}+\\dfrac{\\sin(4x)}{8}+C$"
+      ],
+      "answer": "$\\dfrac{x}{2}+\\dfrac{\\sin(4x)}{8}+C$"
+    }
+  ],
+  "practice": "หา $\\int\\sin^2 x\\cos^3 x\\,dx$",
+  "graph": "integral"
+}
