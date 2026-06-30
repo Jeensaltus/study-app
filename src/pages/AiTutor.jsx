@@ -443,7 +443,12 @@ export default function AiTutor() {
                     <div className="absolute bottom-full left-0 z-20 mb-2 w-64 overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-xl dark:border-slate-700 dark:bg-slate-900">
                       <div className="border-b border-slate-100 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-slate-800">
                         เลือก AI Model
-                        {!aiStatus.gemini && !aiStatus.nvidia ? (
+                        {aiStatus.apiReachable === false ? (
+                          <span className="mt-1 block font-normal normal-case text-red-600 dark:text-red-400">
+                            API บนเซิร์ฟเวอร์ไม่ทำงาน — ตรวจ Root Directory บน Vercel (ต้องว่าง ไม่ใช่ study-app) แล้ว Redeploy
+                          </span>
+                        ) : null}
+                        {aiStatus.apiReachable !== false && !aiStatus.gemini && !aiStatus.nvidia ? (
                           <span className="mt-1 block font-normal normal-case text-amber-600 dark:text-amber-400">
                             ยังไม่เชื่อม API — ตั้ง GEMINI_API_KEY / NVIDIA_API_KEY บน Vercel
                           </span>

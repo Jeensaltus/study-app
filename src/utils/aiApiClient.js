@@ -13,10 +13,18 @@ export async function fetchAiStatus(force = false) {
     const response = await fetch("/api/ai/status", {
       headers: { "X-Device-Id": getDeviceId() },
     });
-    if (!response.ok) throw new Error("status unavailable");
-    cachedStatus = await response.json();
-  } catch {
-    cachedStatus = { gemini: false, nvidia: false };
+    const contentType = response.headers.get("content-type") ?? "";
+    if (!response.ok || !contentType.includes("application/json")) {
+      throw new Error(`status ${response.status}`);
+    }
+    cachedStatus = { ...(await response.json()), apiReachable: true };
+  } catch (error) {
+    cachedStatus = {
+      gemini: false,
+      nvidia: false,
+      apiReachable: false,
+      apiError: error?.message ?? "unreachable",
+    };
   }
 
   statusFetchedAt = Date.now();
@@ -24,7 +32,7 @@ export async function fetchAiStatus(force = false) {
 }
 
 export function getCachedAiStatus() {
-  return cachedStatus ?? { gemini: false, nvidia: false };
+  return cachedStatus ?? { gemini: false, nvidia: false, apiReachable: false };
 }
 
 async function postAi(path, body) {

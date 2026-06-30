@@ -251,7 +251,7 @@ export async function handleAiRoute(req, res, routeOverride) {
     return false;
   }
 
-  const deviceId = req.headers["x-device-id"];
+  const deviceId = (req.headers ?? {})["x-device-id"];
   if (deviceId && typeof res.setHeader === "function") {
     res.setHeader("X-Device-Id-Ack", String(deviceId).slice(0, 36));
   }

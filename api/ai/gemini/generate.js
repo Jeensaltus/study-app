@@ -1,7 +1,7 @@
 import { handleAiRoute } from "../../../server/aiProxy.mjs";
 
-export default function handler(req, res) {
-  return handleAiRoute(req, res, "/api/ai/gemini/generate");
+export default async function handler(req, res) {
+  await handleAiRoute(req, res, "/api/ai/gemini/generate");
 }
 
 export const config = {
