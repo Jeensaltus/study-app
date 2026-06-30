@@ -17,7 +17,18 @@ function getGeminiApiKey() {
 }
 
 function isLikelyGeminiApiKey(key) {
-  return typeof key === "string" && key.startsWith("AIza");
+  if (typeof key !== "string") return false;
+  const trimmed = key.trim();
+  if (trimmed.length < 20) return false;
+  // Standard keys (legacy) and Auth keys (AI Studio default since 2026)
+  return trimmed.startsWith("AIza") || trimmed.startsWith("AQ.");
+}
+
+function geminiRequestHeaders(apiKey) {
+  return {
+    "Content-Type": "application/json",
+    "x-goog-api-key": apiKey.trim(),
+  };
 }
 
 function getNvidiaApiKey() {
@@ -28,8 +39,6 @@ export function getAiStatus() {
   const geminiKey = getGeminiApiKey();
   return {
     gemini: Boolean(geminiKey) && isLikelyGeminiApiKey(geminiKey),
-    geminiKeyConfigured: Boolean(geminiKey),
-    geminiKeyInvalid: Boolean(geminiKey) && !isLikelyGeminiApiKey(geminiKey),
     nvidia: Boolean(getNvidiaApiKey()),
   };
 }
@@ -112,13 +121,13 @@ async function geminiChat(body) {
   if (!apiKey) throw new Error("Gemini API key not configured on server");
   if (!isLikelyGeminiApiKey(apiKey)) {
     throw new Error(
-      "Gemini API key format looks wrong — create a key at Google AI Studio (starts with AIza), not Cloud Console OAuth keys"
+      "Gemini API key format looks wrong — use a key from Google AI Studio (AIza… or AQ.…)"
     );
   }
 
   const model = body.model ?? "gemini-2.5-flash";
   const latestMessage = body.messages?.[body.messages.length - 1];
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
   const payload = {
     systemInstruction: body.systemInstruction
@@ -132,7 +141,7 @@ async function geminiChat(body) {
 
   const response = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: geminiRequestHeaders(apiKey),
     body: JSON.stringify(payload),
   });
 
@@ -150,16 +159,16 @@ async function geminiGenerate(body) {
   if (!apiKey) throw new Error("Gemini API key not configured on server");
   if (!isLikelyGeminiApiKey(apiKey)) {
     throw new Error(
-      "Gemini API key format looks wrong — create a key at Google AI Studio (starts with AIza)"
+      "Gemini API key format looks wrong — use a key from Google AI Studio (AIza… or AQ.…)"
     );
   }
 
   const model = body.model ?? "gemini-2.5-flash";
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
   const response = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: geminiRequestHeaders(apiKey),
     body: JSON.stringify({
       contents: [{ role: "user", parts: [{ text: body.prompt ?? "" }] }],
       generationConfig: {

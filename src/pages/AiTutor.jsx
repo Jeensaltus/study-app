@@ -448,11 +448,6 @@ export default function AiTutor() {
                             ยังไม่เชื่อม API — ตั้ง GEMINI_API_KEY / NVIDIA_API_KEY บน Vercel
                           </span>
                         ) : null}
-                        {aiStatus.geminiKeyInvalid ? (
-                          <span className="mt-1 block font-normal normal-case text-red-600 dark:text-red-400">
-                            Gemini key ผิดรูปแบบ — ใช้ key จาก AI Studio ที่ขึ้นต้น AIza
-                          </span>
-                        ) : null}
                       </div>
                       <div className="max-h-72 overflow-y-auto p-1">
                         {MODEL_OPTIONS.map((option) => {
