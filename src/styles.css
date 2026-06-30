@@ -39,8 +39,8 @@ textarea {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  top: -0.16em;
-  line-height: 0;
+  top: -0.14em;
+  line-height: 1;
 }
 .quiz-pdf-page .pdf-math-inline .katex {
   font-size: 1.05em;

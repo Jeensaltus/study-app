@@ -5,12 +5,12 @@ const CAPTURE_PIXEL_RATIO = 2;
 
 function captureOptions(element) {
   return {
-    width: PDF_PAGE.widthPx,
-    height: Math.max(element.offsetHeight, PDF_PAGE.heightPx),
     pixelRatio: CAPTURE_PIXEL_RATIO,
     cacheBust: true,
     backgroundColor: "#ffffff",
     skipFonts: false,
+    width: PDF_PAGE.widthPx,
+    height: element.offsetHeight,
   };
 }
 
@@ -42,7 +42,8 @@ export async function exportQuizToPdf(pageElements, filename) {
   const pageHeightMm = 297;
 
   for (let i = 0; i < pages.length; i++) {
-    const imgData = await capturePageToPng(pages[i]);
+    const page = pages[i];
+    const imgData = await capturePageToPng(page);
     if (i > 0) pdf.addPage();
     pdf.addImage(imgData, "PNG", 0, 0, pageWidthMm, pageHeightMm, undefined, "FAST");
   }

@@ -113,20 +113,51 @@ export default function QuizPdfDocument({ quiz, showAnswers, pageRefs }) {
 
   useLayoutEffect(() => {
     const root = measureRef.current;
-    if (!root) return;
+    if (!root) return undefined;
 
-    const blocks = [...root.querySelectorAll("[data-pdf-block]")];
-    const header = root.querySelector("[data-pdf-header]");
-    const heights = blocks.map((el) => el.getBoundingClientRect().height);
-    const headerHeight = (header?.getBoundingClientRect().height ?? 0) + 28;
-    const nextPages = paginateBlocks(heights, headerHeight, PDF_PAGE.contentHeightPx - 32);
+    let cancelled = false;
+    let rafId = 0;
 
-    setPages((prev) => {
-      const same =
-        prev?.length === nextPages.length &&
-        prev.every((page, i) => page.length === nextPages[i].length && page.every((v, j) => v === nextPages[i][j]));
-      return same ? prev : nextPages;
+    const measureAndPaginate = () => {
+      if (cancelled) return;
+
+      const blocks = [...root.querySelectorAll("[data-pdf-block]")];
+      const header = root.querySelector("[data-pdf-header]");
+      const katexNodes = [...root.querySelectorAll(".katex")];
+      const katexReady =
+        katexNodes.length === 0 || katexNodes.every((node) => node.getBoundingClientRect().height > 0);
+      const blocksReady = blocks.length > 0 && blocks.every((block) => block.getBoundingClientRect().height > 12);
+
+      if (!katexReady || !blocksReady) {
+        rafId = requestAnimationFrame(measureAndPaginate);
+        return;
+      }
+
+      const heights = blocks.map((el) => el.getBoundingClientRect().height);
+      const headerHeight = (header?.getBoundingClientRect().height ?? 0) + 28;
+      const nextPages = paginateBlocks(heights, headerHeight, PDF_PAGE.contentHeightPx - 32);
+
+      setPages((prev) => {
+        const same =
+          prev?.length === nextPages.length &&
+          prev.every((page, i) => page.length === nextPages[i].length && page.every((v, j) => v === nextPages[i][j]));
+        return same ? prev : nextPages;
+      });
+    };
+
+    rafId = requestAnimationFrame(measureAndPaginate);
+
+    const observer = new ResizeObserver(() => {
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(measureAndPaginate);
     });
+    observer.observe(root);
+
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(rafId);
+      observer.disconnect();
+    };
   }, [quiz, showAnswers, questions.length]);
 
   return (
