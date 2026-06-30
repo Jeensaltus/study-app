@@ -3,7 +3,7 @@ import { subjectsMeta } from "../data/subjectsMeta";
 import { proxyGeminiChat, proxyNvidiaChat } from "./aiApiClient";
 
 const NVIDIA_MODELS = {
-  "minimax-m3": { id: "minimaxai/minimax-m3", name: "MiniMax M3" },
+  "minimax-m3": { id: "minimaxai/minimax-m2.7", name: "MiniMax M2.7" },
   "deepseek-v4-flash": { id: "deepseek-ai/deepseek-v4-flash", name: "DeepSeek V4 Flash" },
   "nemotron-super": { id: "nvidia/nemotron-3-super-120b-a12b", name: "Nemotron Super 120B" },
   "qwen3.5-122b": { id: "qwen/qwen3.5-122b-a10b", name: "Qwen 3.5 122B" },

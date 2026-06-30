@@ -16,7 +16,7 @@ export async function fetchAiStatus(force = false) {
     if (!response.ok) throw new Error("status unavailable");
     cachedStatus = await response.json();
   } catch {
-    cachedStatus = { gemini: false, nvidia: false };
+    cachedStatus = { gemini: false, nvidia: false, geminiKeyInvalid: false };
   }
 
   statusFetchedAt = Date.now();
@@ -24,7 +24,7 @@ export async function fetchAiStatus(force = false) {
 }
 
 export function getCachedAiStatus() {
-  return cachedStatus ?? { gemini: false, nvidia: false };
+  return cachedStatus ?? { gemini: false, nvidia: false, geminiKeyInvalid: false };
 }
 
 async function postAi(path, body) {

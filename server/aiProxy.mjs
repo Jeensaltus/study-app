@@ -4,7 +4,9 @@
 const MAX_BODY_BYTES = 4 * 1024 * 1024;
 
 const NVIDIA_MODELS = {
-  "minimax-m3": "minimaxai/minimax-m3",
+  // minimax-m3 alias → M2.7 (M3 is not on NVIDIA integrate API yet; M2.5/M2.7 are)
+  "minimax-m3": "minimaxai/minimax-m2.7",
+  "minimax-m2.7": "minimaxai/minimax-m2.7",
   "deepseek-v4-flash": "deepseek-ai/deepseek-v4-flash",
   "nemotron-super": "nvidia/nemotron-3-super-120b-a12b",
   "qwen3.5-122b": "qwen/qwen3.5-122b-a10b",
@@ -14,18 +16,37 @@ function getGeminiApiKey() {
   return process.env.GEMINI_API_KEY ?? process.env.VITE_GEMINI_API_KEY ?? "";
 }
 
+function isLikelyGeminiApiKey(key) {
+  return typeof key === "string" && key.startsWith("AIza");
+}
+}
+
 function getNvidiaApiKey() {
   return process.env.NVIDIA_API_KEY ?? process.env.VITE_NVIDIA_API_KEY ?? "";
 }
 
 export function getAiStatus() {
+  const geminiKey = getGeminiApiKey();
   return {
-    gemini: Boolean(getGeminiApiKey()),
+    gemini: Boolean(geminiKey) && isLikelyGeminiApiKey(geminiKey),
+    geminiKeyConfigured: Boolean(geminiKey),
+    geminiKeyInvalid: Boolean(geminiKey) && !isLikelyGeminiApiKey(geminiKey),
     nvidia: Boolean(getNvidiaApiKey()),
   };
 }
 
 function readJsonBody(req) {
+  if (req.body !== undefined && req.body !== null) {
+    if (typeof req.body === "string") {
+      try {
+        return Promise.resolve(req.body ? JSON.parse(req.body) : {});
+      } catch (error) {
+        return Promise.reject(error);
+      }
+    }
+    return Promise.resolve(req.body);
+  }
+
   return new Promise((resolve, reject) => {
     const chunks = [];
     let size = 0;
@@ -90,6 +111,11 @@ function mapGeminiHistory(messages = []) {
 async function geminiChat(body) {
   const apiKey = getGeminiApiKey();
   if (!apiKey) throw new Error("Gemini API key not configured on server");
+  if (!isLikelyGeminiApiKey(apiKey)) {
+    throw new Error(
+      "Gemini API key format looks wrong — create a key at Google AI Studio (starts with AIza), not Cloud Console OAuth keys"
+    );
+  }
 
   const model = body.model ?? "gemini-2.5-flash";
   const latestMessage = body.messages?.[body.messages.length - 1];
@@ -123,6 +149,11 @@ async function geminiChat(body) {
 async function geminiGenerate(body) {
   const apiKey = getGeminiApiKey();
   if (!apiKey) throw new Error("Gemini API key not configured on server");
+  if (!isLikelyGeminiApiKey(apiKey)) {
+    throw new Error(
+      "Gemini API key format looks wrong — create a key at Google AI Studio (starts with AIza)"
+    );
+  }
 
   const model = body.model ?? "gemini-2.5-flash";
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
@@ -172,14 +203,16 @@ async function nvidiaChat(body) {
 
   const data = await response.json();
   if (!response.ok) {
-    throw new Error(data?.error?.message ?? `NVIDIA error ${response.status}`);
+    const message = data?.error?.message ?? `NVIDIA error ${response.status}`;
+    throw new Error(`${message} (model: ${modelId})`);
   }
 
   return { text: data.choices?.[0]?.message?.content ?? "" };
 }
 
 export async function handleAiApiRequest(req, res) {
-  const url = req.url?.split("?")[0] ?? "";
+  const rawUrl = req.url ?? "";
+  const url = rawUrl.startsWith("http") ? new URL(rawUrl).pathname : rawUrl.split("?")[0];
 
   if (req.method === "GET" && url === "/api/ai/status") {
     sendJson(res, 200, getAiStatus());

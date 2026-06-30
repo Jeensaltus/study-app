@@ -26,7 +26,7 @@ const NVIDIA_FALLBACK_MODELS = [
   { id: "deepseek-v4-flash", apiId: "deepseek-ai/deepseek-v4-flash", name: "DeepSeek V4 Flash" },
   { id: "qwen3.5-122b", apiId: "qwen/qwen3.5-122b-a10b", name: "Qwen 3.5 122B" },
   { id: "nemotron-super", apiId: "nvidia/nemotron-3-super-120b-a12b", name: "Nemotron Super 120B" },
-  { id: "minimax-m3", apiId: "minimaxai/minimax-m3", name: "MiniMax M3" },
+  { id: "minimax-m3", apiId: "minimaxai/minimax-m2.7", name: "MiniMax M2.7" },
 ];
 
 const DIFFICULTY_GUIDE = {

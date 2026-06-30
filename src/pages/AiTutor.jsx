@@ -47,8 +47,8 @@ const MODEL_OPTIONS = [
   },
   {
     id: "minimax-m3",
-    label: "MiniMax M3",
-    shortLabel: "M3",
+    label: "MiniMax M2.7",
+    shortLabel: "MiniMax",
     provider: "nvidia",
     icon: Bot,
     activeClass: "bg-green-50 text-green-600 border-green-200 dark:bg-green-950/50 dark:text-green-300 dark:border-green-800",
@@ -445,7 +445,12 @@ export default function AiTutor() {
                         เลือก AI Model
                         {!aiStatus.gemini && !aiStatus.nvidia ? (
                           <span className="mt-1 block font-normal normal-case text-amber-600 dark:text-amber-400">
-                            ยังไม่เชื่อม API — รัน server + ตั้ง key ใน .env
+                            ยังไม่เชื่อม API — ตั้ง GEMINI_API_KEY / NVIDIA_API_KEY บน Vercel
+                          </span>
+                        ) : null}
+                        {aiStatus.geminiKeyInvalid ? (
+                          <span className="mt-1 block font-normal normal-case text-red-600 dark:text-red-400">
+                            Gemini key ผิดรูปแบบ — ใช้ key จาก AI Studio ที่ขึ้นต้น AIza
                           </span>
                         ) : null}
                       </div>
